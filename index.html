@@ -15,16 +15,6 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1234567,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
   <style>
     body { background-color: #e6fff2; }
     header { background-color: #2e7d32; color: white; padding: 1.5em; text-align: center; }
@@ -37,25 +27,41 @@
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kẹo Dừa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sanpham">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <header>
     <h1>Trang giới thiệu đặc sản: Kẹo Dừa</h1>
   </header>
 
-  <section class="container my-4">
+  <section class="container my-4" id="sanpham">
     <div class="mb-4">
       <h2>Giới thiệu 3 loại đặc sản nổi bật</h2>
       <p>Chúng tôi xin giới thiệu đến quý khách hàng 3 loại kẹo dừa đặc sản nổi bật của Bến Tre:</p>
       <ul>
-        <li><strong>Kẹo Dừa Truyền Thống</strong>: vị ngọt thanh, mềm dẻo, gói trọn hương vị truyền thống.</li>
-        <li><strong>Kẹo Dừa Sầu Riêng</strong>: sự kết hợp độc đáo giữa nước cốt dừa và sầu riêng chín mọng.</li>
-        <li><strong>Kẹo Dừa Ca Cao</strong>: hoà quyện giữa vị béo của dừa và vị đắng nhẹ của ca cao nguyên chất.</li>
+        <li><a href="detail-truyenthong.html"><strong>Kẹo Dừa Truyền Thống</strong></a>: vị ngọt thanh, mềm dẻo, gói trọn hương vị truyền thống.</li>
+        <li><a href="detail-saurieng.html"><strong>Kẹo Dừa Sầu Riêng</strong></a>: sự kết hợp độc đáo giữa nước cốt dừa và sầu riêng chín mọng.</li>
+        <li><a href="detail-cacao.html"><strong>Kẹo Dừa Ca Cao</strong></a>: hoà quyện giữa vị béo của dừa và vị đắng nhẹ của ca cao nguyên chất.</li>
       </ul>
     </div>
 
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa truyền thống">
+          <a href="detail-truyenthong.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa truyền thống"></a>
           <div class="card-body">
             <h5 class="card-title">Kẹo Dừa Truyền Thống</h5>
             <p class="card-text">Hương vị nguyên bản, mềm dẻo và thơm ngon. Được làm từ nước cốt dừa nguyên chất.</p>
@@ -64,7 +70,7 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa sầu riêng">
+          <a href="detail-saurieng.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa sầu riêng"></a>
           <div class="card-body">
             <h5 class="card-title">Kẹo Dừa Sầu Riêng</h5>
             <p class="card-text">Sự kết hợp độc đáo giữa nước cốt dừa và sầu riêng chín mọng. Vị ngọt ngào và đậm đà.</p>
@@ -73,7 +79,7 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa ca cao">
+          <a href="detail-cacao.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa ca cao"></a>
           <div class="card-body">
             <h5 class="card-title">Kẹo Dừa Ca Cao</h5>
             <p class="card-text">Vị béo của dừa kết hợp với vị đắng nhẹ của ca cao tạo nên một trải nghiệm mới mẻ.</p>
@@ -82,7 +88,7 @@
       </div>
     </div>
 
-    <div class="contact-form mt-5">
+    <div class="contact-form mt-5" id="lienhe">
       <h3>Liên hệ với chúng tôi</h3>
       <form action="https://formspree.io/f/mayvlqgq" method="POST">
         <div class="mb-3">
@@ -123,5 +129,7 @@
     <a href="https://zalo.me/0123456789" target="_blank" title="Zalo">Z</a>
     <a href="https://m.me/yourpage" target="_blank" title="Messenger">M</a>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
