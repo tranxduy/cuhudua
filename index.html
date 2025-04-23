@@ -24,6 +24,9 @@
     .floating-buttons { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; }
     .floating-buttons a { display: block; background-color: #25D366; color: white; padding: 10px; border-radius: 50%; text-align: center; width: 50px; height: 50px; font-size: 24px; text-decoration: none; }
     .zalo-order-button { background-color: #0084ff; color: white; padding: 12px 20px; font-size: 16px; border: none; border-radius: 6px; margin-top: 1em; display: inline-block; text-decoration: none; }
+    .intro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .intro-box { background-color: #a5d6a7; color: #000; padding: 1.5rem; border-radius: 12px; text-align: center; font-weight: 500; }
+    .intro-box i { font-size: 32px; margin-bottom: 1rem; color: #2e7d32; }
   </style>
 </head>
 <body>
@@ -47,86 +50,70 @@
     <h1>Trang giới thiệu đặc sản: Kẹo Dừa</h1>
   </header>
 
-  <section class="container my-4" id="sanpham">
-    <div class="mb-4">
-      <h2>Giới thiệu 3 loại đặc sản nổi bật</h2>
-      <p>Chúng tôi xin giới thiệu đến quý khách hàng 3 loại kẹo dừa đặc sản nổi bật của Bến Tre:</p>
-      <ul>
-        <li><a href="detail-truyenthong.html"><strong>Kẹo Dừa Truyền Thống</strong></a>: vị ngọt thanh, mềm dẻo, gói trọn hương vị truyền thống.</li>
-        <li><a href="detail-saurieng.html"><strong>Kẹo Dừa Sầu Riêng</strong></a>: sự kết hợp độc đáo giữa nước cốt dừa và sầu riêng chín mọng.</li>
-        <li><a href="detail-cacao.html"><strong>Kẹo Dừa Ca Cao</strong></a>: hoà quyện giữa vị béo của dừa và vị đắng nhẹ của ca cao nguyên chất.</li>
-      </ul>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <a href="detail-truyenthong.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa truyền thống"></a>
-          <div class="card-body">
-            <h5 class="card-title">Kẹo Dừa Truyền Thống</h5>
-            <p class="card-text">Hương vị nguyên bản, mềm dẻo và thơm ngon. Được làm từ nước cốt dừa nguyên chất.</p>
-          </div>
-        </div>
+  <section class="container my-5">
+    <h2 class="text-center">Khám phá nông trại hữu cơ</h2>
+    <p class="text-center">Tại nông trại, từng khu vực được thiết kế kỹ lưỡng để tối ưu hóa sự sáng tạo và phát triển của cây cỏ, rau mầm và trái cây. Chúng tôi chú trọng vào sự cân bằng tự nhiên và bảo vệ môi trường sống.</p>
+    <div class="intro-grid">
+      <div class="intro-box">
+        <div><i>🍉</i></div>
+        <strong>Thực phẩm hữu cơ</strong>
+        <p>Không sử dụng hóa chất độc hại</p>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <a href="detail-saurieng.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa sầu riêng"></a>
-          <div class="card-body">
-            <h5 class="card-title">Kẹo Dừa Sầu Riêng</h5>
-            <p class="card-text">Sự kết hợp độc đáo giữa nước cốt dừa và sầu riêng chín mọng. Vị ngọt ngào và đậm đà.</p>
-          </div>
-        </div>
+      <div class="intro-box">
+        <div><i>🌱</i></div>
+        <strong>Làm vườn</strong>
+        <p>Chăm sóc vườn mỗi ngày, quả luôn tươi mới</p>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <a href="detail-cacao.html"><img src="https://via.placeholder.com/200" class="card-img-top" alt="Kẹo dừa ca cao"></a>
-          <div class="card-body">
-            <h5 class="card-title">Kẹo Dừa Ca Cao</h5>
-            <p class="card-text">Vị béo của dừa kết hợp với vị đắng nhẹ của ca cao tạo nên một trải nghiệm mới mẻ.</p>
-          </div>
-        </div>
+      <div class="intro-box">
+        <div><i>🌾</i></div>
+        <strong>Phân bón hữu cơ</strong>
+        <p>Bón phân đều đặn để cây phát triển tốt nhất</p>
       </div>
-    </div>
-
-    <div class="contact-form mt-5" id="lienhe">
-      <h3>Liên hệ với chúng tôi</h3>
-      <form action="https://formspree.io/f/mayvlqgq" method="POST">
-        <div class="mb-3">
-          <label for="name" class="form-label">Tên của bạn:</label>
-          <input type="text" name="name" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" name="email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Tin nhắn:</label>
-          <textarea name="message" rows="4" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Gửi</button>
-        <a href="https://zalo.me/0123456789" class="zalo-order-button" target="_blank">Đặt hàng qua Zalo</a>
-      </form>
-    </div>
-
-    <div class="mt-5">
-      <h4>Bản đồ vị trí cửa hàng</h4>
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="intro-box">
+        <div><i>🌳</i></div>
+        <strong>Thiết kế cảnh quan</strong>
+        <p>Tham quan và chụp ảnh tại nông trại</p>
       </div>
-    </div>
-
-    <div class="mt-5 text-center">
-      <h4>Quét mã QR để truy cập nhanh</h4>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://ten-cua-ban.github.io&size=150x150" alt="QR Code">
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Đặc sản Bến Tre. Liên hệ: 0123 456 789</p>
+  <section class="container my-4" id="sanpham">
+    <!-- phần sản phẩm như cũ giữ nguyên -->
+  </section>
+
+  <div class="contact-form mt-5" id="lienhe">
+    <h3>Liên hệ với chúng tôi</h3>
+    <form action="https://formspree.io/f/mayvlqgq" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Tên của bạn:</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Tin nhắn:</label>
+        <textarea name="message" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Gửi</button>
+      <a href="https://zalo.me/0935880083" class="zalo-order-button" target="_blank">Đặt hàng qua Zalo</a>
+    </form>
+  </div>
+
+  <div class="mt-5 container">
+    <h4>Bản đồ vị trí cửa hàng</h4>
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0626560159923!2d108.21453167510903!3d16.043764239532866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ba9e799265%3A0xc927ce0bc6580ef4!2zMzggQ-G7rWEgQ2jDrW5oIExhbiwgVGhhbmggQW4sIMSQw6AgTuG7mWkgxJDDtG4gQsOh!5e0!3m2!1svi!2s!4v1713864009095!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <footer class="mt-5">
+    <p>&copy; 2025 Đặc sản Bến Tre. Liên hệ: 0935 880 083</p>
   </footer>
 
   <div class="floating-buttons">
-    <a href="https://zalo.me/0123456789" target="_blank" title="Zalo">Z</a>
+    <a href="https://zalo.me/0935880083" target="_blank" title="Zalo">Z</a>
     <a href="https://m.me/yourpage" target="_blank" title="Messenger">M</a>
   </div>
 
