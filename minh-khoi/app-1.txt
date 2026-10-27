@@ -1,0 +1,184 @@
+
+(()=>{'use strict';
+const NAV=[['home','🏠','Trang chủ'],['learn','📚','Bài học'],['arena','🏆','Thi thử'],['speed','⚡','Thử thách 5 phút'],['report','📈','Tiến bộ'],['parent','👨‍👩‍👦','Phụ huynh']];
+const SUBJECT={math:'Toán',vi:'Tiếng Việt',mathen:'Toán tiếng Anh',en:'Tiếng Anh',finance:'Tài chính'};
+const TOPICS=[
+{id:'missing',s:'math',t:1,icon:'🧩',name:'Số còn thiếu',desc:'Điền số vào dãy, tìm số liền trước và số liền sau'},
+{id:'count',s:'math',t:1,icon:'🍎',name:'Đếm và nhận biết số',desc:'Các số từ 0 đến 10, nhiều hơn – ít hơn'},
+{id:'compare',s:'math',t:1,icon:'⚖️',name:'So sánh các số',desc:'Lớn hơn, bé hơn, bằng nhau'},
+{id:'add10',s:'math',t:1,icon:'➕',name:'Phép cộng đến 10',desc:'Tính nhẩm và hiểu ý nghĩa phép cộng'},
+{id:'sub10',s:'math',t:1,icon:'➖',name:'Phép trừ đến 10',desc:'Tách, bớt và tìm hiệu số'},
+{id:'parts',s:'math',t:1,icon:'🎯',name:'Mấy và mấy?',desc:'Tách và gộp một số trong phạm vi 10'},
+{id:'sequence',s:'math',t:1,icon:'🔢',name:'Quy luật và dãy số',desc:'Đếm tiến, đếm lùi, tìm quy luật đơn giản'},
+{id:'shape',s:'math',t:1,icon:'🔺',name:'Hình phẳng và hình khối',desc:'Tam giác, tròn, vuông, chữ nhật, khối lập phương'},
+{id:'position',s:'math',t:1,icon:'🧭',name:'Vị trí và định hướng',desc:'Trên – dưới, trước – sau, trái – phải'},
+{id:'tens',s:'math',t:2,icon:'💯',name:'Chục và đơn vị',desc:'Số đến 100, cấu tạo số có hai chữ số'},
+{id:'add20',s:'math',t:2,icon:'🧮',name:'Cộng trong phạm vi 20',desc:'Tính toán với số có một hoặc hai chữ số'},
+{id:'sub20',s:'math',t:2,icon:'🎲',name:'Trừ trong phạm vi 20',desc:'Làm quen phép trừ không quá 20'},
+{id:'add100',s:'math',t:2,icon:'🚀',name:'Cộng trong phạm vi 100',desc:'Cộng các số phù hợp lớp 1, không nhớ'},
+{id:'sub100',s:'math',t:2,icon:'🌈',name:'Trừ trong phạm vi 100',desc:'Trừ các số phù hợp lớp 1, không nhớ'},
+{id:'word',s:'math',t:2,icon:'🛒',name:'Toán có lời văn',desc:'Đọc hiểu tình huống, chọn phép tính'},
+{id:'measure',s:'math',t:2,icon:'📏',name:'Đo độ dài',desc:'Xăng-ti-mét và dài hơn – ngắn hơn'},
+{id:'time',s:'math',t:2,icon:'🕒',name:'Đồng hồ và thứ trong tuần',desc:'Giờ đúng, ngày trong tuần'},
+{id:'logic',s:'math',t:2,icon:'💡',name:'Suy luận logic',desc:'Tìm quy luật, loại suy và tư duy toán học'},
+{id:'rhyme',s:'vi',t:1,icon:'🔤',name:'Âm và vần',desc:'Nhận diện vần trong tiếng, từ quen thuộc'},
+{id:'spelling',s:'vi',t:1,icon:'✍️',name:'Chính tả cơ bản',desc:'Phân biệt c/k, g/gh, ng/ngh, s/x, ch/tr'},
+{id:'wordvi',s:'vi',t:1,icon:'🌻',name:'Từ ngữ quen thuộc',desc:'Sự vật, hoạt động và đặc điểm'},
+{id:'sentence',s:'vi',t:2,icon:'📖',name:'Câu và dấu câu',desc:'Ghép câu đúng, dùng dấu chấm hoặc dấu hỏi'},
+{id:'reading',s:'vi',t:2,icon:'🐰',name:'Đọc hiểu ngắn',desc:'Đọc 1–2 câu rồi trả lời'},
+{id:'rhyme2',s:'vi',t:2,icon:'🌿',name:'Vần nâng cao',desc:'uông/uôc, iên/iêt, oang/oac, ương/ươc'},
+{id:'vocab',s:'en',t:1,icon:'🗣️',name:'Từ vựng tiếng Anh',desc:'Con vật, đồ vật và màu sắc quen thuộc'},
+{id:'greetings',s:'en',t:1,icon:'👋',name:'Chào hỏi tiếng Anh',desc:'Hello, goodbye, thank you, my name is…'},
+{id:'numbersen',s:'en',t:1,icon:'🔟',name:'Số và màu sắc tiếng Anh',desc:'One to ten, red, yellow, blue…'},
+{id:'matheng',s:'mathen',t:1,icon:'🧠',name:'Toán bằng tiếng Anh',desc:'Add, subtract, greater than, missing number'},
+{id:'finance',s:'finance',t:1,icon:'🪙',name:'Tiền và lựa chọn',desc:'Lựa chọn tiết kiệm đơn giản, số tiền nguyên'}
+];
+
+// Kho bổ sung độc lập, tạo độ đa dạng giữa các mã đề, không chép câu chữ từ đề thương mại.
+const SPELLING_EXTRA=[
+['Từ nào viết đúng?','quả cam',['quả kam','quả kham','quả can'],'Tên loại quả được viết là “quả cam”.'],
+['Chọn từ viết đúng.','cái kẹo',['cái cẹo','cái khẹo','cái keọ'],'Trước e, âm /k/ được viết bằng k.'],
+['Từ nào viết đúng chính tả?','nghe nhạc',['nge nhạc','nghe nhạt','nghe nhác'],'Trước e, âm ng được viết ngh.'],
+['Chọn cách viết đúng.','nghỉ học',['ngỉ học','nghĩ hộc','nghỉ họk'],'Tiếng “nghỉ” có ngh, dấu hỏi.'],
+['Từ nào viết đúng?','cái ghim',['cái gim','cái ghem','cái khim'],'Âm g trước i được viết gh.'],
+['Từ nào viết đúng?','trống trường',['chống trường','trống chường','trống trườn'],'Cụm đúng là “trống trường”.'],
+['Từ nào viết đúng?','chim sẻ',['trim sẻ','chim xẻ','chim sẽ'],'Viết “chim sẻ” với ch và dấu hỏi.'],
+['Từ nào viết đúng?','cây xanh',['cây sanh','cây xang','cay xanh'],'Cụm đúng là “cây xanh”.'],
+['Chọn từ đúng chính tả.','quyển vở',['quyển vỡ','quyễng vở','quyển vờ'],'Viết “quyển vở” với dấu hỏi ở vở.'],
+['Từ nào viết đúng?','giỏ xách',['dỏ xách','giỏ sách','rỏ xách'],'Giỏ xách là đồ dùng để đựng đồ.'],
+['Từ nào viết đúng?','chổi quét',['trổi quét','chổi kêt','chỗi quét'],'Viết đúng là “chổi quét”.'],
+['Từ nào viết đúng?','hạt giống',['hạc giống','hạt dống','hạt giốn'],'Cụm đúng là “hạt giống”.'],
+['Từ nào viết đúng?','nắng vàng',['nắng vằng','nắn vàng','nắng vàn'],'Viết đúng là “nắng vàng”.'],
+['Từ nào viết đúng?','lá cây',['lá cay','lã cây','lá cậy'],'Viết “lá cây” với dấu sắc ở lá.'],
+['Từ nào viết đúng?','ngày mai',['ngài mai','ngầy mai','ngày may'],'“Ngày mai” là ngày sau hôm nay.'],
+['Từ nào viết đúng?','con khỉ',['con kỉ','con khỹ','con khĩ'],'Tên con vật là “con khỉ”.'],
+['Từ nào viết đúng?','bông hoa',['bông hoe','bông hoae','bôn hoa'],'Viết đúng là “bông hoa”.'],
+['Từ nào viết đúng?','đường làng',['đườn làng','đường làngg','đườn làngg'],'Viết đúng là “đường làng”.'],
+['Từ nào viết đúng?','giữ gìn',['dữ gìn','giữ dìn','giử gìn'],'Cụm đúng là “giữ gìn”.'],
+['Chọn từ viết đúng.','lớp học',['lớp hộc','lốp học','lớp họk'],'Viết đúng là “lớp học”.'],
+['Chọn từ viết đúng.','mặt trời',['mặt chời','mặc trời','mạt trời'],'Viết đúng là “mặt trời”.'],
+['Từ nào đúng chính tả?','góc sân',['ghóc sân','gốc sâng','góc sâng'],'Viết đúng là “góc sân”.'],
+['Từ nào đúng chính tả?','bạn bè',['bạng bè','bạn bẻ','bạn be'],'Viết đúng là “bạn bè”.'],
+['Từ nào đúng chính tả?','cây tre',['cây che','cây chê','cây te'],'Viết đúng là “cây tre”.'],
+['Từ nào viết đúng?','đọc sách',['độc sách','đọc xách','đọc sác'],'Viết đúng là “đọc sách”.'],
+['Từ nào viết đúng?','mùa hè',['mùa he','muà hè','mùa hề'],'Viết đúng là “mùa hè”.'],
+['Từ nào viết đúng?','học bài',['học bày','hộc bài','hóc bài'],'Viết đúng là “học bài”.'],
+['Từ nào viết đúng?','bầu trời',['bầu chời','bầu trờy','bàu trời'],'Viết đúng là “bầu trời”.']
+];
+const WORDVI_EXTRA=[
+['Từ nào chỉ hoạt động?','vẽ tranh',['cái hộp','màu xanh','cây bàng'],'“Vẽ tranh” chỉ việc làm.'],
+['Từ nào chỉ hoạt động?','nhảy dây',['quả bóng','vui vẻ','mặt trăng'],'“Nhảy dây” là một hoạt động.'],
+['Từ nào chỉ hoạt động?','quét nhà',['cái thước','bàn ghế','trắng tinh'],'“Quét nhà” chỉ việc làm.'],
+['Từ nào chỉ hoạt động?','tưới cây',['bông hoa','thẳng hàng','con thỏ'],'“Tưới cây” là việc làm.'],
+['Từ nào chỉ hoạt động?','rửa tay',['cái chậu','sạch sẽ','quả nho'],'“Rửa tay” là việc làm.'],
+['Từ nào chỉ đồ vật?','cái bát',['học bài','màu đỏ','cười'],'“Cái bát” là một đồ vật.'],
+['Từ nào chỉ đồ vật?','bút chì',['chạy bộ','nhỏ xíu','con chim'],'“Bút chì” là đồ dùng học tập.'],
+['Từ nào chỉ đồ vật?','cặp sách',['đẹp đẽ','hát','con bò'],'“Cặp sách” là một đồ vật.'],
+['Từ nào chỉ đồ vật?','cái gương',['đang bay','mềm mại','con gà'],'“Cái gương” là đồ vật.'],
+['Từ nào chỉ con vật?','con sóc',['cây mít','bơi lội','quyển vở'],'“Con sóc” là con vật.'],
+['Từ nào chỉ con vật?','con hươu',['bông sen','cái mũ','chạy nhanh'],'“Con hươu” là con vật.'],
+['Từ nào chỉ con vật?','con vịt',['cái kéo','cao lớn','nhảy múa'],'“Con vịt” là con vật.'],
+['Từ nào chỉ con vật?','con voi',['cây xoài','đọc sách','ngọt lịm'],'“Con voi” là con vật.'],
+['Từ nào chỉ cây cối?','cây cau',['con mèo','cái bàn','bơi lội'],'“Cây cau” là cây.'],
+['Từ nào chỉ cây cối?','cây dừa',['con chim','đi học','quả bóng'],'“Cây dừa” là một cây.'],
+['Từ nào chỉ đặc điểm?','tròn',['con thỏ','cái hộp','đang viết'],'“Tròn” nêu đặc điểm hình dạng.'],
+['Từ nào chỉ đặc điểm?','mềm',['cái cặp','chạy','con ong'],'“Mềm” nêu đặc điểm của vật.'],
+['Từ nào chỉ đặc điểm?','ngọt',['bơi','cái đĩa','con gà'],'“Ngọt” nêu đặc điểm hương vị.'],
+['Từ nào chỉ đặc điểm?','rộng',['quả táo','đứng dậy','con cá'],'“Rộng” nêu đặc điểm kích thước.'],
+['Từ nào chỉ hoạt động học tập?','viết chữ',['màu hồng','cái giường','con vịt'],'“Viết chữ” là hoạt động học tập.'],
+['Từ nào chỉ hoạt động học tập?','giơ tay',['bàn học','xinh xắn','cá vàng'],'“Giơ tay” là hành động.'],
+['Từ nào chỉ người thân?','ông nội',['cái ghế','con chó','hát bài'],'“Ông nội” là người thân.'],
+['Từ nào chỉ người thân?','chị gái',['quả cam','nhảy xa','màu tím'],'“Chị gái” là người thân.'],
+['Từ nào chỉ người thân?','mẹ',['lớp học','con cá','đi nhanh'],'“Mẹ” là người thân.']
+];
+const SENTENCE_EXTRA=[
+['Câu nào là câu hỏi?','Bạn có thích đọc sách không?',['Em thích đọc sách.','Mẹ đang nấu cơm.','Hoa nở rất đẹp.'],'Câu hỏi thường có từ để hỏi và dấu hỏi.'],
+['Câu nào kể một việc?','Bé đang quét sân.',['Bạn tên gì?','Cái áo màu đỏ.','Quyển vở rất mới.'],'“Quét sân” là một việc bé đang làm.'],
+['Dấu gì kết thúc câu “Con tên là gì”?','Dấu hỏi (?)',['Dấu chấm (.)','Dấu phẩy (,)','Dấu hai chấm (:)'],'Đây là câu hỏi nên dùng dấu hỏi.'],
+['Chữ nào cần viết hoa khi bắt đầu câu?','Chữ đầu tiên',['Chữ cuối cùng','Tất cả chữ','Không chữ nào'],'Đầu câu viết hoa chữ cái đầu tiên.'],
+['Câu nào được viết đúng?','Bà kể chuyện cho em.',['bà kể chuyện cho em.','Bà kể chuyện cho em','Bà kể chuyện cho em?'],'Câu kể viết hoa đầu câu và có dấu chấm.'],
+['Câu nào nói về màu sắc?','Chiếc lá màu xanh.',['Chim đang hót.','Bé mở cửa.','Bố đi chợ.'],'“Màu xanh” diễn tả màu sắc.'],
+['Câu nào nói về thời tiết?','Hôm nay trời mưa.',['Lan đọc sách.','Mẹ nấu cơm.','Chó nằm ngủ.'],'“Trời mưa” nói về thời tiết.']
+];
+const READING_EXTRA=[
+['Bé Hà chăm sóc chậu hoa hồng. Mỗi sáng, Hà tưới nước cho hoa.','Hà chăm sóc hoa gì?','Hoa hồng',['Hoa cúc','Hoa mai','Hoa sen'],'Đoạn đọc nói Hà chăm sóc hoa hồng.'],
+['Trời mưa to. Bé An mang ô đến trường.','Bé An mang gì đến trường?','Cái ô',['Cái mũ','Quả bóng','Cái quạt'],'Bé An mang ô vì trời mưa.'],
+['Sáng nay, bố nấu mì cho cả nhà. Mẹ dọn bàn ăn.','Ai nấu mì?','Bố',['Mẹ','Bà','Bé'],'Đoạn văn nói bố nấu mì.'],
+['Đàn vịt bơi trong ao. Vịt con đi theo vịt mẹ.','Đàn vịt bơi ở đâu?','Trong ao',['Trên cây','Trên mái','Trong lớp'],'Đàn vịt bơi trong ao.'],
+['Mai có một chiếc cặp màu đỏ. Mai để sách và bút vào cặp.','Chiếc cặp của Mai màu gì?','Màu đỏ',['Màu tím','Màu xanh','Màu vàng'],'Câu đầu cho biết màu của chiếc cặp.'],
+['Cây bàng ở sân trường có nhiều lá xanh. Giờ ra chơi, các bạn ngồi dưới bóng cây.','Cây gì ở sân trường?','Cây bàng',['Cây chuối','Cây dừa','Cây cau'],'Câu đầu nhắc tới cây bàng.'],
+['Mèo con thấy một cuộn len. Mèo dùng chân đẩy cuộn len lăn đi.','Mèo con chơi với gì?','Cuộn len',['Quả bóng','Cái bát','Quyển vở'],'Mèo chơi với cuộn len.'],
+['Cuối tuần, gia đình Khôi ra biển. Khôi cùng anh xây lâu đài cát.','Khôi xây gì ở biển?','Lâu đài cát',['Ngôi nhà gỗ','Cầu tre','Sân bóng'],'Đoạn văn nói Khôi xây lâu đài cát.'],
+['Trong vườn có năm cây ổi. Bà đang hái những quả ổi chín.','Bà hái quả gì?','Quả ổi',['Quả táo','Quả lê','Quả cam'],'Bà hái quả ổi chín.']
+];
+const byId=id=>TOPICS.find(t=>t.id===id);
+const $=s=>document.querySelector(s);
+const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const rng=seed=>()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return ((t^t>>>14)>>>0)/4294967296};
+const rand=(r,min,max)=>min+Math.floor(r()*(max-min+1));
+const pick=(r,x)=>x[Math.floor(r()*x.length)];
+const shuffled=(r,a)=>a.map(x=>[r(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const clamp=(v,l,h)=>Math.max(l,Math.min(h,v));
+const today=()=>new Date().toLocaleDateString('sv-SE');
+const DAY=24*3600*1000;
+const DEFAULT={name:'Minh Khôi',stars:0,goal:15,sound:true,history:[],skills:{},answered:0,correct:0,daily:{},streak:0,lastDay:'',difficulty:'mixed'};
+function load(){try{return {...structuredClone(DEFAULT),...JSON.parse(localStorage.getItem('mk_v3')||'{}')}}catch(e){return structuredClone(DEFAULT)}};
+let data=load(),route='home',learnFilter='math',termFilter='all',examTerm='1',archiveYear='2025',archiveLevel='all',session=null,result=null,clock=null,showHint=false,reviewFilter='wrong';
+function save(){try{localStorage.setItem('mk_v3',JSON.stringify(data))}catch(e){}}
+function navigate(r){if(session&&r!=='quiz'){if(!confirm('Đang làm bài. Rời khỏi trang sẽ mất kết quả bài này. Bạn chắc chắn chứ?'))return;clearInterval(clock);session=null}route=r;render();window.scrollTo({top:0,behavior:'smooth'})}
+function playTone(good){if(!data.sound)return;try{let ctx=new (window.AudioContext||window.webkitAudioContext)();let notes=good?[523,659,784]:[330,260];notes.forEach((f,i)=>{let o=ctx.createOscillator(),v=ctx.createGain();o.type='sine';o.frequency.value=f;v.gain.setValueAtTime(.0001,ctx.currentTime+i*.12);v.gain.exponentialRampToValueAtTime(.06,ctx.currentTime+i*.12+.015);v.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+i*.12+.16);o.connect(v);v.connect(ctx.destination);o.start(ctx.currentTime+i*.12);o.stop(ctx.currentTime+i*.12+.18)});setTimeout(()=>ctx.close(),650)}catch(e){}}
+function level(){return data.stars>=800?'Bậc thầy':data.stars>=400?'Nhà thông thái':data.stars>=180?'Nhà khám phá':data.stars>=60?'Phi hành gia':'Tập sự'}
+function getSkill(id){return data.skills[id]||{right:0,total:0}}
+function accuracy(id){let s=getSkill(id);return s.total?Math.round(100*s.right/s.total):0}
+function dayInfo(){let rec=data.daily[today()]||{minutes:0,answers:0,right:0};return rec}
+function navHtml(mobile=false){return NAV.map(([key,ico,name])=>`<button class="${route===key?'active':''}" data-route="${key}" aria-current="${route===key?'page':'false'}"><span class="${mobile?'':'ico'}">${ico}</span>${name}</button>`).join('')}
+function uiFrame(){const label=NAV.find(x=>x[0]===route)?.[2]||'Luyện tập';$('#desktopnav').innerHTML=navHtml();$('#mobilenav').innerHTML=navHtml(true);$('#crumb').textContent=label;$('#totalStars').textContent=data.stars;$('#levelLabel').textContent=level()}
+function progressbar(p){return `<div class="bar"><span style="width:${clamp(p,0,100)}%"></span></div>`}
+function render(){uiFrame();$('#view').innerHTML=({home:renderHome,learn:renderLearn,arena:renderArena,speed:renderSpeed,report:renderReport,parent:renderParent,quiz:renderQuiz,result:renderResult,sources:renderSources}[route]||renderHome)();if(route==='quiz'){attachQuizTimer();}}
+function renderHome(){let daily=dayInfo();let perc=Math.round(100*Math.min(1,daily.minutes/data.goal)), overall=data.answered?Math.round(data.correct*100/data.answered):0;return `<div class="view"><div class="dash-hero"><div><div style="font-size:12px;letter-spacing:2px;font-weight:1000;opacity:.85">✦ CHÀO MỪNG, NHÀ KHÁM PHÁ!</div><h1>Hôm nay Minh Khôi<br>muốn chinh phục gì? ✨</h1><p>Học một chút, hiểu thật sâu, mỗi ngày tiến bộ thêm!<br>Hãy bắt đầu từ một thử thách thật vui nhé.</p><div class="row"><button class="btn white" data-act="daily">🚀 Học ngay</button><button class="btn" style="background:#ffffff24;box-shadow:none;border:1px solid #fff6" data-route="arena">🏆 Thi thử</button></div></div><div class="hero-orbit"></div><div class="art">👩‍🚀</div></div>
+<div class="grid stat-grid"><div class="stat"><div class="bubble" style="background:#fff2d7">⭐</div><div><div class="num">${data.stars}</div><div class="label">Sao tích lũy</div></div></div><div class="stat"><div class="bubble" style="background:#e7faf1">✅</div><div><div class="num">${data.answered?overall+'%':'—'}</div><div class="label">Trả lời chính xác</div></div></div><div class="stat"><div class="bubble" style="background:#e9edff">🎯</div><div><div class="num">${data.answered}</div><div class="label">Câu đã làm</div></div></div><div class="stat"><div class="bubble" style="background:#ffe9f0">🔥</div><div><div class="num">${data.streak}</div><div class="label">Ngày học liên tiếp</div></div></div></div>
+<div class="section-head"><div><h2>Khởi động hôm nay 🌈</h2><p>Ba lựa chọn cho một buổi học thú vị</p></div><button data-route="learn">Tất cả bài học →</button></div><div class="grid tiles">
+<div class="tile"><div class="corner">🧩</div><div class="tile-icon" style="background:#fff0dc">🧩</div><h3>Thám tử số còn thiếu</h3><p>Tìm số ẩn trong dãy và sửa lỗi rất hay gặp ở lớp 1.</p><div class="meta">Toán • 10 câu • Cơ bản</div><button class="btn orange" data-topic="missing">Bắt đầu luyện tập →</button></div>
+<div class="tile"><div class="corner">📚</div><div class="tile-icon" style="background:#eeeaff">📚</div><h3>Học theo chủ điểm</h3><p>Đi từ cơ bản đến nâng cao, học đúng kiến thức từng học kỳ.</p><div class="meta">Toán • Tiếng Việt • Tiếng Anh</div><button class="btn" data-route="learn">Khám phá bài học →</button></div>
+<div class="tile"><div class="corner">🏆</div><div class="tile-icon" style="background:#e1faf4">🏆</div><h3>Đấu trường thi thử</h3><p>24 đề cấp trường/khu vực (20 phút) và các chế độ toàn quốc (15 phút).</p><div class="meta">24 đề cố định cấp trường/khu vực • Tự chấm điểm</div><button class="btn" style="background:#19b49f" data-route="arena">Vào đấu trường →</button></div></div>
+<div class="grid two-col" style="margin-top:23px"><div class="panel"><h3>📊 Kỹ năng trọng tâm</h3>${['missing','count','compare','add10'].map(id=>`<div class="skillline"><span>${escapeHtml(byId(id).name)}</span><strong>${getSkill(id).total?accuracy(id)+'%':'Chưa luyện'}</strong></div>${progressbar(accuracy(id))}`).join('')}</div><div class="panel"><h3>🎯 Mục tiêu 15 phút mỗi ngày</h3><div class="callout"><b>${daily.minutes>=data.goal?'🎉 Hoàn thành xuất sắc!':'💪 Hôm nay đã học '+daily.minutes+' / '+data.goal+' phút'}</b><p>Mục tiêu là học đều và hiểu bài. Không cần học quá lâu trong một lần.</p>${progressbar(perc)}</div><div style="margin-top:16px" class="row"><button class="btn light" data-act="daily">Tiếp tục học →</button><button class="btn outline" data-route="report">Xem tiến bộ</button></div></div></div></div>`}
+function renderLearn(){let opts=[['math','🔢 Toán'],['vi','📖 Tiếng Việt'],['mathen','🧠 Toán tiếng Anh'],['en','🔤 Tiếng Anh'],['finance','🪙 Tài chính']];let list=TOPICS.filter(x=>x.s===learnFilter&&(termFilter==='all'||x.t===Number(termFilter)));return `<div class="view"><div class="page-title"><h1>📚 Thư viện bài học lớp 1</h1><p>Học theo chủ điểm, rèn một kỹ năng mỗi lần. Câu hỏi được tạo mới khi luyện tập.</p></div><div class="tabs">${opts.map(([id,title])=>`<button class="tab ${learnFilter===id?'active':''}" data-filter="${id}">${title}</button>`).join('')}</div><div class="tabs" style="margin-top:-6px"><button class="tab ${termFilter==='all'?'active':''}" data-term="all">Cả năm</button><button class="tab ${termFilter==='1'?'active':''}" data-term="1">Học kỳ 1</button><button class="tab ${termFilter==='2'?'active':''}" data-term="2">Học kỳ 2</button></div><div class="grid learn-grid">${list.map(t=>`<article class="lesson"><div class="lesson-top"><div class="lesson-ico">${t.icon}</div><div class="flex-1"><h3>${escapeHtml(t.name)}</h3><span class="term">HỌC KỲ ${t.t}</span></div></div><p>${escapeHtml(t.desc)}</p>${progressbar(accuracy(t.id))}<div class="lesson-foot"><span class="progress-label">${getSkill(t.id).total?`${accuracy(t.id)}% đúng • ${getSkill(t.id).total} lượt`:'Chưa học'}</span><button class="btn tiny" data-topic="${t.id}">Luyện 10 câu →</button></div></article>`).join('')||'<p>Chưa có bài học ở học kỳ này.</p>'}</div></div>`}
+const BLUEPRINTS=[{id:'2024',name:'2024–2025',dist:{math:15,vi:8,mathen:4,en:3},desc:'Cấu trúc Đấu trường toàn quốc 2024–2025'},{id:'2025',name:'2025–2026',dist:{math:10,vi:8,mathen:6,en:6},desc:'Cấu trúc Đấu trường toàn quốc 2025–2026'},{id:'2026',name:'2026–2027',dist:{math:10,vi:8,mathen:4,en:4,finance:4},desc:'Cấu trúc hiện hành, bổ sung kiến thức tài chính'}];
+
+// 24 đề mô phỏng gắn mã cố định: 4 cấp trường + 4 cấp khu vực, mỗi năm học.
+// Số câu, thời gian và môn học bám vào thông báo từng mùa/địa phương. Không phải đề thi nguyên bản.
+const ARCHIVE_SOURCES={
+'23school':{name:'Chủ điểm cấp trường 2023–2024; lịch thi Bình Dương',url:'https://c1mauluong.phuongkienhung.edu.vn/thong-bao/on-tap-dau-truong-vioedu-cap-truong-90.html?download=1&id=0',extra:'https://thdautieng.dautieng.edu.vn/thong-bao/lich-thi-vioedu-cap-truong-nam-hoc-2023-2024-280.html'},
+'23region':{name:'Thể lệ, cấu trúc cấp địa phương 2023–2024 (Bình Dương)',url:'https://thdautieng.dautieng.edu.vn/thong-bao/lich-thi-vioedu-cap-truong-nam-hoc-2023-2024-280.html'},
+'24school':{name:'Thông tin cấp trường 2024–2025, VioEdu',url:'https://tintuc.vio.edu.vn/tiep-suc-anh-tai-but-toc-dau-truong-vioedu/',extra:'https://fileth.hcm.edu.vn/data/doc/2024/thphamhuulau/2024_11/7/mot-so-thong-tin-ve-san-choi_711202413.pdf'},
+'24region':{name:'Thể lệ khu vực 2024–2025, cấu trúc có thể khác theo địa phương',url:'https://tintuc.vio.edu.vn/khung-the-le-dau-truong-vioedu-khu-vuc-nam-hoc-2024-2025/',extra:'https://848603edf5.vws.vegacdn.vn/data/doc/haiphong/2024/thquoctuan/2024_10/29/the-le-san-choi-dau-truong-vioedu-20242025_2910202419.pdf'},
+'25school':{name:'Cơ cấu lớp 1 cấp trường Hà Nội 2025–2026',url:'https://c1ngockhanh.giangvo.edu.vn/tin-tuc-su-kien/thong-bao-to-chuc-vong-chung-ket-cap-truong-san-choi-au-truong-vioedu-nam-hoc-2025-2026-pmtd22sw5802'},
+'25region':{name:'Thông báo vòng cấp khu vực VioEdu 2025–2026',url:'https://tintuc.vio.edu.vn/thong-tin-ve-vong-thi-cap-khu-vuc-dau-truong-vioedu-khu-vuc-nam-hoc-2025-2026/',extra:'https://c1badinh.ngocha.edu.vn/chi-tiet/truong-tieu-hoc-ba-inh-thong-bao-huong-dan-tham-gia-vong-chung-ket-cap-khu-vuc-san-choi-dau-truong-vioedu-tp-ha-noi-nam-hoc-2025-2026'},
+'25sampleSchool':{name:'Đề trải nghiệm do Toán IQ biên soạn, không phải đề thi thật',url:'https://www.toaniq.com/de-thi-trai-nghiem-dau-truong-vioedu-lop-1-vck-cap-truong-nam-2025-2026/'},
+'25sampleRegion':{name:'Đề trải nghiệm do Toán IQ biên soạn, không phải đề thi thật',url:'https://www.toaniq.com/de-thi-trai-nghiem-dau-truong-vioedu-lop-1-cap-khu-vuc/'}
+};
+const PAST_EXAMS=[];
+for(const cfg of [
+{year:'2023',label:'2023–2024',level:'school',dist:{math:23,vi:7},place:'Bình Dương • tham khảo',source:'23school',term:'1'},
+{year:'2023',label:'2023–2024',level:'region',dist:{math:23,vi:7},place:'Bình Dương • mô phỏng tiếp nối',source:'23region',term:'all'},
+{year:'2024',label:'2024–2025',level:'school',dist:{math:23,vi:7},place:'TP. Hồ Chí Minh • tham khảo',source:'24school',term:'1'},
+{year:'2024',label:'2024–2025',level:'region',dist:{math:23,vi:7},place:'TP. Hồ Chí Minh • tham khảo',source:'24region',term:'all'},
+{year:'2025',label:'2025–2026',level:'school',dist:{math:16,vi:14},place:'Hà Nội • khối 1',source:'25school',term:'1'},
+{year:'2025',label:'2025–2026',level:'region',dist:{math:12,mathen:8,vi:10},place:'Hà Nội • khối tiểu học',source:'25region',term:'all'}
+]){
+for(let i=1;i<=4;i++){
+let dist={...cfg.dist},source=cfg.source,place=cfg.place;
+if(cfg.year==='2024'&&cfg.level==='region'&&i>=3){dist={math:20,mathen:3,vi:7};place='Hải Phòng • thể lệ địa phương'}
+const code=`${cfg.year}-${cfg.level==='school'?'T':'K'}-${String(i).padStart(2,'0')}`;
+PAST_EXAMS.push({id:code,year:cfg.year,label:cfg.label,level:cfg.level,number:i,dist,place,source,term:cfg.term,minutes:20,seed:parseInt(cfg.year+'0'+(cfg.level==='school'?'1':'2')+i,10)});
+}}
+function renderArchive(){
+let tests=PAST_EXAMS.filter(x=>(archiveYear==='all'||x.year===archiveYear)&&(archiveLevel==='all'||x.level===archiveLevel));
+return `<div class="section-head" id="past-exams"><div><h2>📚 Kho 24 đề cấp trường & khu vực</h2><p>Ba năm học 2023–2026 • mỗi đề 30 câu/20 phút • mã đề cố định, đáp án tự chấm</p></div></div>
+<div class="panel" style="margin-bottom:18px;padding:17px 19px"><div class="row" style="justify-content:space-between"><div class="row"><span style="font-size:13px;font-weight:900;color:#6c638f">Năm học:</span>${[['all','Tất cả'],['2023','2023–24'],['2024','2024–25'],['2025','2025–26']].map(([v,t])=>`<button class="tab ${archiveYear===v?'active':''}" style="padding:9px 12px;margin:2px 0" data-archive-year="${v}">${t}</button>`).join('')}</div><div class="row"><span style="font-size:13px;font-weight:900;color:#6c638f">Cấp thi:</span>${[['all','Cả hai'],['school','🏫 Cấp trường'],['region','🏙️ Cấp khu vực']].map(([v,t])=>`<button class="tab ${archiveLevel===v?'active':''}" style="padding:9px 12px;margin:2px 0" data-archive-level="${v}">${t}</button>`).join('')}</div></div></div>
+<div class="grid exam-grid">${tests.map(x=>{let attempts=data.history.filter(z=>z.archiveId===x.id),best=attempts.length?Math.max(...attempts.map(a=>a.score)):0;return `<article class="exam-card"><div class="row" style="justify-content:space-between"><div style="font-size:32px">${x.level==='school'?'🏫':'🏙️'}</div><span class="tag ${attempts.length?'':'warn'}">${attempts.length?'✓ Đã làm '+attempts.length+' lần':'Chưa làm'}</span></div><h3 style="margin-bottom:5px">${x.level==='school'?'Cấp trường':'Cấp khu vực'} • Đề ${String(x.number).padStart(2,'0')}</h3><p style="margin:5px 0 10px"><b>Mùa ${x.label}</b><br>${escapeHtml(x.place)}<br><span style="font-size:11px;color:#978ba7">Mã đề: ${x.id}</span></p><div class="exam-split">${Object.entries(x.dist).map(([k,v])=>`<span>${SUBJECT[k]}: ${v}</span>`).join('')}</div>${attempts.length?`<p style="color:#149c84;font-weight:800;font-size:12px">🏅 Điểm tốt nhất: ${best}/30</p>`:''}<button class="btn" style="width:100%" data-past="${x.id}">${attempts.length?'Làm lại đề này':'Bắt đầu 30 câu'} →</button><div style="margin-top:12px;font-size:11px"><a href="${ARCHIVE_SOURCES[x.source].url}" target="_blank" rel="noopener">🔗 Nguồn cơ cấu/chủ điểm</a></div></article>`}).join('')}</div><div class="callout" style="margin-top:18px"><b>🔎 Phân biệt đề thật và đề ôn</b><p>24 đề ở đây là <b>đề mô phỏng tự biên soạn</b>, không phải 24 đề thi gốc VioEdu. Các số câu/môn và thời lượng được lấy từ thông báo nhà tổ chức hoặc trường; riêng các đề 2023–2024 và biến thể địa phương chỉ mô phỏng theo khung tương ứng. Bộ đề của các trang thương mại chưa thể đưa nguyên văn vào website khi chưa có quyền sử dụng. Mỗi mã đề dùng cùng bộ câu hỏi khi làm lại để tiện đối chiếu tiến bộ. Không sử dụng kết quả để dự đoán điểm thi chính thức.</p></div>`;
+}
+function startPast(id){let x=PAST_EXAMS.find(x=>x.id===id);if(!x)return;makeSession('archive',`${x.level==='school'?'Cấp trường':'Cấp khu vực'} ${x.label} • Đề ${String(x.number).padStart(2,'0')}`,x.dist,x.term,x.minutes,'',x.seed);session.archiveId=id;session.source=x.source;session.level=x.level;session.year=x.year;}
+function renderArena(){return `<div class="view"><div class="page-title"><h1>🏆 Đấu trường thi thử</h1><p>Chọn giữa <b>Đấu trường toàn quốc (15 phút)</b> và <b>24 đề cấp trường/khu vực (20 phút)</b>. Cơ cấu theo thông báo từng địa phương. Tất cả câu hỏi bên dưới do website tự biên soạn, không phải đề gốc.</p></div><div class="exam-head"><h2>🚀 30 câu hỏi • 15 phút</h2><p>Thi như thật: một câu mỗi màn hình, đồng hồ đếm ngược, chỉ xem đáp án và lời giải sau khi nộp bài.</p></div><div class="panel" style="margin-bottom:20px"><div class="setting" style="border:0;padding:0"><div><b>Phạm vi ôn tập</b><small>Chọn học kỳ 1 để phù hợp giai đoạn đầu lớp 1; chọn cả năm để luyện nâng cao.</small></div><select id="examTerm" aria-label="Phạm vi ôn tập"><option value="1" ${examTerm==='1'?'selected':''}>Học kỳ 1</option><option value="all" ${examTerm==='all'?'selected':''}>Cả năm</option></select></div></div><div class="grid exam-grid">${BLUEPRINTS.map(b=>`<article class="exam-card"><div style="font-size:35px">${b.id==='2024'?'🛡️':b.id==='2025'?'🏅':'🪐'}</div><h3>Mùa ${b.name}</h3><p>${b.desc}</p><div class="exam-split">${Object.entries(b.dist).map(([s,n])=>`<span>${SUBJECT[s]} ${n}</span>`).join('')}</div><button class="btn" style="width:100%" data-exam="${b.id}">Bắt đầu thi →</button></article>`).join('')}</div>${renderArchive()}<div class="callout" style="margin-top:22px"><b>📌 Lưu ý về tính sát đề</b><p>Website bám cấu trúc đã công bố và nhóm kiến thức lớp 1. Không có quyền truy cập ngân hàng đề mật/đề thi thật của VioEdu, nên không bảo đảm độ khó hoặc câu chữ trùng với bài thi chính thức.</p></div></div>`}
+function renderSpeed(){return `<div class="view"><div class="page-title"><h1>⚡ Thử thách tốc độ 5 phút</h1><p>Rèn phản xạ qua 20 câu trong 5 phút — lấy cảm hứng từ hình thức thách đấu, tự tranh tài với kết quả của chính mình.</p></div><div class="grid tiles"><div class="tile"><div class="tile-icon" style="background:#e8fff4">🎈</div><h3>Cơ bản dễ vui</h3><p>Toán và Tiếng Việt học kỳ 1, giúp con tự tin trước khi thi tốc độ.</p><button class="btn" data-speed="easy">Bắt đầu 20 câu</button></div><div class="tile"><div class="tile-icon" style="background:#fff3dd">⚡</div><h3>Siêu tốc hỗn hợp</h3><p>Toán, Tiếng Việt, Tiếng Anh và Toán tiếng Anh trong 5 phút.</p><button class="btn orange" data-speed="mix">Vào trận đấu</button></div><div class="tile"><div class="tile-icon" style="background:#f0eaff">🧩</div><h3>Giải cứu dãy số</h3><p>10 câu số còn thiếu, thời gian thoải mái và gợi ý khi cần.</p><button class="btn" data-topic="missing">Luyện tập trọng tâm</button></div></div><div class="panel" style="margin-top:24px"><h3>🌟 Cách tự thi tiến bộ</h3><p class="tips">Không so sánh con với những bạn khác. Hãy để Minh Khôi tự phá kỷ lục của mình, ưu tiên chính xác trước khi tăng tốc. Nếu con mệt, dừng buổi học tại đây.</p></div></div>`}
+function renderReport(){let h=[...data.history].reverse(),top=TOPICS.filter(t=>getSkill(t.id).total).sort((a,b)=>accuracy(a.id)-accuracy(b.id));return `<div class="view"><div class="page-title"><h1>📈 Báo cáo tiến bộ</h1><p>Điểm mạnh, điểm cần luyện và lịch sử bài làm — lưu ngay trên trình duyệt này.</p></div><div class="grid stat-grid" style="margin-bottom:23px"><div class="stat"><div class="bubble" style="background:#f1edff">✏️</div><div><div class="num">${data.history.length}</div><div class="label">Buổi đã hoàn thành</div></div></div><div class="stat"><div class="bubble" style="background:#e9f9e8">✅</div><div><div class="num">${data.correct}</div><div class="label">Câu trả lời đúng</div></div></div><div class="stat"><div class="bubble" style="background:#fff5e6">⭐</div><div><div class="num">${data.stars}</div><div class="label">Sao tích lũy</div></div></div><div class="stat"><div class="bubble" style="background:#ffecf2">🔥</div><div><div class="num">${data.streak}</div><div class="label">Chuỗi ngày</div></div></div></div><div class="grid report-layout"><div class="panel"><h3>📋 Lịch sử thi và luyện tập</h3>${h.length?`<div style="overflow-x:auto"><table class="history"><thead><tr><th>Thời điểm</th><th>Bài luyện</th><th>Điểm</th><th>Thời gian</th></tr></thead><tbody>${h.slice(0,30).map(x=>`<tr><td>${escapeHtml(x.date)}</td><td>${escapeHtml(x.title)}</td><td><span class="tag ${x.score/x.total<.7?'warn':''}">${x.score}/${x.total}</span></td><td>${Math.floor(x.seconds/60)}p ${x.seconds%60}s</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty"><div class="emoji">📝</div>Chưa có kết quả. Hãy hoàn thành bài luyện đầu tiên!</div>'}</div><div class="panel"><h3>🎯 Kỹ năng cần củng cố</h3>${top.length?top.slice(0,6).map(t=>`<div class="skillline"><span>${t.icon} ${escapeHtml(t.name)}</span><b>${accuracy(t.id)}%</b></div>${progressbar(accuracy(t.id))}`).join(''):'<p class="tips">Sau một số bài luyện, website sẽ tự gợi ý kỹ năng làm chưa tốt để ôn lại.</p>'}<button class="btn light" style="margin-top:17px;width:100%" data-topic="${top.length?top[0].id:'missing'}">Luyện kỹ năng cần cải thiện →</button></div></div><div class="section-head"><h2>🎖️ Huy hiệu hành trình</h2></div><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">${[['🎯','Mở màn',data.answered>=1,'Trả lời câu đầu'],['🏅','Chăm chỉ',data.answered>=50,'Hoàn thành 50 câu'],['⭐','Sưu tập sao',data.stars>=100,'Đạt 100 sao'],['🧩','Thám tử số',getSkill('missing').right>=20,'20 câu dãy số đúng'],['🔥','Bền bỉ',data.streak>=3,'Học 3 ngày liên tiếp']].map(([i,t,on,desc])=>`<div class="reward ${on?'':'locked'}"><span>${i}</span><b>${t}</b><small>${desc}</small></div>`).join('')}</div></div>`}
