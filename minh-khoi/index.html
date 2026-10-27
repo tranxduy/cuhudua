@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#6855ef"><meta name="description" content="Hành tinh Minh Khôi: luyện thi lớp 1 theo thể lệ VioEdu 2026–2027, đề mô phỏng 30 câu/20 phút, 24 đề lịch sử và luyện theo chủ điểm.">
+<meta name="theme-color" content="#6855ef"><meta name="description" content="Hành tinh Minh Khôi: luyện thi lớp 1 theo thể lệ VioEdu 2026–2027, đề mô phỏng 30 câu/20 phút, 36 đề lịch sử và luyện theo chủ điểm.">
 <title>Hành tinh Minh Khôi • Lớp 1</title>
 <style>
 :root{--ink:#25284d;--muted:#78809d;--purple:#6657eb;--lav:#eeecff;--teal:#16b8a6;--orange:#ff9e52;--pink:#ff6f91;--blue:#4389ff;--line:#e8eaf5;--white:#fff;--bg:#f5f7ff;--shade:0 16px 40px rgba(61,60,113,.075)}
@@ -19,23 +19,23 @@
 <aside class="sidebar"><div class="brand"><div class="brand-mark">✦</div><div><strong>Hành tinh<br>Minh Khôi</strong><small>HỌC VUI • LỚP 1</small></div></div>
 <nav id="desktopnav" class="nav"></nav>
 <div class="sidebar-bottom"><div class="daily-card"><b>🚀 Nhiệm vụ hôm nay</b><p>Chỉ 15 phút mỗi ngày để tiến bộ từng chút một!</p><button data-act="daily">Bắt đầu thử thách ↗</button></div><div class="footer-note">Bản học tập cá nhân • Không liên kết VioEdu</div></div></aside>
-<main class="layout"><header class="topbar"><div class="crumb">Lớp 1 <span style="padding:0 6px">›</span> <b id="crumb">Trang chủ</b></div><div class="user-bits"><span class="pill stars">⭐ <span id="totalStars">0</span> sao</span><span class="pill">🏅 <span id="levelLabel">Tập sự</span></span><div class="avatar">🧒🏻</div></div></header><section id="view" aria-live="polite"></section><footer class="footer">Hành tinh Minh Khôi — ôn lớp 1 theo thể lệ VioEdu 2026–2027, có 24 đề mô phỏng lịch sử; không phải trang chính thức hoặc đề gốc VioEdu. Dữ liệu tiến bộ lưu trên trình duyệt thiết bị này. <a href="#" data-act="sources">Nguồn tham khảo và giới hạn nội dung</a>.</footer></main>
+<main class="layout"><header class="topbar"><div class="crumb">Lớp 1 <span style="padding:0 6px">›</span> <b id="crumb">Trang chủ</b></div><div class="user-bits"><span class="pill stars">⭐ <span id="totalStars">0</span> sao</span><span class="pill">🏅 <span id="levelLabel">Tập sự</span></span><div class="avatar">🧒🏻</div></div></header><section id="view" aria-live="polite"></section><footer class="footer">Hành tinh Minh Khôi — ôn lớp 1 theo thể lệ VioEdu 2026–2027, có 36 đề mô phỏng lịch sử (2023–2026) ở cấp Trường, Quận/Huyện hoặc Khu vực và Tỉnh/Thành phố; không phải trang chính thức hoặc đề gốc VioEdu. Dữ liệu tiến bộ lưu trên trình duyệt thiết bị này. <a href="#" data-act="sources">Nguồn tham khảo và giới hạn nội dung</a>.</footer></main>
 </div><nav id="mobilenav" class="mobilebar"></nav>
 <script>
 (async()=>{
  try{
-  const contents=[];
-  for(const path of ['v2627-1.txt?v=20261027b','v2627-2.txt?v=20261027b','v2627-3.txt?v=20261027b']){
-    const res=await fetch(path,{cache:'no-store'});
-    if(!res.ok)throw Error(path+': '+res.status);
-    contents.push(await res.text());
+  const content=[];
+  for(const file of ['v2627-1.txt?v=20261027c','v2627-2.txt?v=20261027c','v2627-3.txt?v=20261027c']){
+   const response=await fetch(file,{cache:'no-store'});
+   if(!response.ok)throw Error('File '+file+' '+response.status);
+   content.push(await response.text());
   }
-  const objectUrl=URL.createObjectURL(new Blob(contents,{type:'text/javascript'}));
+  const objectUrl=URL.createObjectURL(new Blob(content,{type:'text/javascript'}));
   const script=document.createElement('script');script.src=objectUrl;
   script.onload=()=>URL.revokeObjectURL(objectUrl);
-  script.onerror=()=>{URL.revokeObjectURL(objectUrl);throw Error('Không thể thực thi bài học.')};
+  script.onerror=()=>{URL.revokeObjectURL(objectUrl);document.getElementById('view').textContent='Ứng dụng chưa tải xong. Hãy thử lại.'};
   document.body.appendChild(script);
- }catch(err){console.error(err);document.getElementById('view').innerHTML='<div class="panel"><h2>Không thể tải ứng dụng</h2><p>Hãy kiểm tra Internet rồi tải lại trang, hoặc mở bản HTML ngoại tuyến.</p></div>'}
+ }catch(e){console.error(e);const target=document.getElementById('view');if(target)target.innerHTML='<div class="panel"><h2>Không thể tải nội dung</h2><p>Kiểm tra Internet rồi tải lại trang. Bản HTML tải về vẫn hoạt động ngoại tuyến.</p></div>'}
 })();
 </script>
 </body></html>
