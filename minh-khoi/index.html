@@ -30,23 +30,24 @@
 <main class="layout"><header class="topbar"><div class="crumb">Lớp 1 <span style="padding:0 6px">›</span> <b id="crumb">Trang chủ</b></div><div class="user-bits"><span class="pill stars">⭐ <span id="totalStars">0</span> sao</span><span class="pill">🏅 <span id="levelLabel">Tập sự</span></span><div class="avatar">🧒🏻</div></div></header><section id="view" aria-live="polite"></section><footer class="footer">Hành tinh Minh Khôi — ôn lớp 1 theo thể lệ VioEdu 2026–2027, có 36 đề mô phỏng lịch sử (2023–2026) ở cấp Trường, Quận/Huyện hoặc Khu vực và Tỉnh/Thành phố; không phải trang chính thức hoặc đề gốc VioEdu. Dữ liệu tiến bộ lưu trên trình duyệt thiết bị này. <a href="#" data-act="sources">Nguồn tham khảo và giới hạn nội dung</a>. <a href="#" data-route="ocr">Đọc tài liệu dài bằng Unlimited OCR 2</a>.</footer></main>
 </div><nav id="mobilenav" class="mobilebar"></nav>
 <script>
-(async()=>{
- try{
-  const segments=[];
-  for (const name of ['ocr2-1.txt?v=20261028d','ocr2-2.txt?v=20261028d','ocr2-3.txt?v=20261028d','ocr2-4.txt?v=20261028d']) {
-   const response=await fetch(name,{cache:'no-store'});
-   if (!response.ok) throw Error(name+': '+response.status);
-   segments.push(await response.text());
+(async function(){
+ try {
+  const blocks=[];
+  for(const part of ['dangbai-1.txt?v=20261028e','dangbai-2.txt?v=20261028e','dangbai-3.txt?v=20261028e','dangbai-4.txt?v=20261028e','dangbai-5.txt?v=20261028e']){
+   const response=await fetch(part,{cache:'no-store'});
+   if(!response.ok) throw new Error('Không tải được '+part+': '+response.status);
+   blocks.push(await response.text());
   }
-  const url=URL.createObjectURL(new Blob(segments,{type:'text/javascript'}));
-  const script=document.createElement('script');script.src=url;
+  const url=URL.createObjectURL(new Blob(blocks,{type:'text/javascript'}));
+  const script=document.createElement('script');
+  script.src=url;
   script.onload=()=>URL.revokeObjectURL(url);
-  script.onerror=()=>{URL.revokeObjectURL(url);alert('Không tải được mã website. Hãy tải lại trang.');};
+  script.onerror=()=>{URL.revokeObjectURL(url);alert('Lỗi tải ứng dụng. Vui lòng tải lại.');};
   document.body.appendChild(script);
- }catch(e){
-  console.error(e);
-  const view=document.getElementById('view');
-  if(view)view.innerHTML='<div class="panel"><h2>Không thể tải ứng dụng</h2><p>Kiểm tra kết nối Internet hoặc sử dụng bản HTML tải về.</p></div>';
+ } catch(error){
+   console.error(error);
+   const panel=document.getElementById('view');
+   if(panel)panel.textContent='Không thể tải nội dung. Vui lòng kiểm tra Internet và tải lại.';
  }
 })();
 </script>
