@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-05-03
+TÊN HỒ SƠ: Kiểm định thiết bị nâng sắp hết hạn
+NGÀY LẬP: 2026-10-20
+ĐƠN VỊ: Phân xưởng Sửa chữa
+TRƯỞNG ĐƠN VỊ GIẢ: Đặng Quốc Tuấn
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Nguyễn Hoàng Nam
+LĨNH VỰC: Bảo trì – Vật tư
+LOẠI NGHIỆP VỤ: kiểm định
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 24
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Thiết bị nâng dự kiến hết hạn kiểm định sau 4 ngày; chưa đặt lịch kiểm định.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Danh mục kiểm định
+2. chứng thư
+3. lịch kiểm tra
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: safety_incident.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: maintenance, production, safety, procurement, finance.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phân xưởng Sửa chữa xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG
