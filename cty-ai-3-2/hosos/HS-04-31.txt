@@ -1,0 +1,59 @@
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-04-31
+TÊN_HỒ_SƠ: Đấu thầu tư vấn – yêu cầu điều chỉnh (tháng 04)
+LĨNH_VỰC: project
+THÁNG: 4
+NĂM: 2026
+ĐƠN_VỊ: QLDT
+NHÂN_VIÊN_GIẢ: Nguyễn Minh Triết
+TRƯỞNG_BỘ_PHẬN_GIẢ: Phạm Hoàng Phúc
+LOẠI_KHOẢN_MỤC: Tư vấn
+GIÁ_TRỊ_ĐỀ_NGHỊ: 465.1
+DỰ_TOÁN_HỒ_SƠ: 486
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: PENDING
+CỜ_KIỂM_TRA: CHO_PHE_DUYET
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện đấu thầu tư vấn – yêu cầu điều chỉnh (tháng 04), đơn vị QLDT lập hồ sơ đề nghị giá trị 465,1 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Nguyễn Minh Triết; trách nhiệm kiểm tra: Phạm Hoàng Phúc.
+
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 486 triệu đồng; số đề nghị 465,1 triệu đồng, chênh lệch -20,9 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: CHỜ QUYẾT ĐỊNH.
+Mã chứng từ mô phỏng: YC-HS-04-31; DT-HS-04-31; BB-HS-04-31; QD-HS-04-31; CT-HS-04-31.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+MÃ DỰ ÁN: DA-A
+TÊN DỰ ÁN: Dự án thủy điện Tân Sơn (giả định)
+TỔNG MỨC ĐẦU TƯ GIẢ ĐỊNH (TRIỆU): 23000
+TIẾN ĐỘ KẾ HOẠCH (%): 75
+TIẾN ĐỘ THỰC HIỆN GIẢ ĐỊNH (%): 65
+CHI PHÍ RIÊNG CỦA HỒ SƠ: 465,1 triệu; không cộng lặp tổng mức đầu tư ở từng giai đoạn.
+BẰNG CHỨNG: tiến độ hợp đồng, biên bản nghiệm thu, báo cáo khối lượng, tờ trình giải ngân (đều giả định).
+
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Nguyễn Minh Triết lập phiếu đề nghị xử lý tháng 4/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Phạm Hoàng Phúc rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: ĐANG CHỜ PHÊ DUYỆT GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Chưa thực hiện; giá trị đã xử lý là 0.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 0 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 0 triệu đồng.
+Giá trị đã thanh toán giả định: 0 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 465,1 triệu đồng.
+Kết quả hồ sơ: Chờ phê duyệt.
+Kiến nghị: Trình đúng người có thẩm quyền; chưa ghi nhận chi phí đã xử lý.
+
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

@@ -1,0 +1,52 @@
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-08-15
+TÊN_HỒ_SƠ: Kiểm tra thiết bị nâng – thiếu chứng nhận (tháng 04)
+LĨNH_VỰC: safety
+THÁNG: 4
+NĂM: 2026
+ĐƠN_VỊ: AT
+NHÂN_VIÊN_GIẢ: Hoàng Minh Khôi
+TRƯỞNG_BỘ_PHẬN_GIẢ: Lê Khánh Toàn
+LOẠI_KHOẢN_MỤC: Kiểm định
+GIÁ_TRỊ_ĐỀ_NGHỊ: 22
+DỰ_TOÁN_HỒ_SƠ: 23
+GIÁ_TRỊ_ĐÃ_DUYỆT: 22
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 22
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 22
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ kiểm tra thiết bị nâng – thiếu chứng nhận (tháng 04), phát sinh trong tháng 04/2026. Hoàng Minh Khôi lập đề xuất với giá trị 22 triệu đồng; trưởng đơn vị là Lê Khánh Toàn.
+Phạm vi: HỒ SƠ AN TOÀN: Kiểm định. Có danh mục hồ đập, lịch kiểm tra/diễn tập và phiếu khắc phục giả lập; khi có vấn đề an toàn phải yêu cầu xác nhận của người phụ trách chuyên môn. Web không điều khiển thiết bị.
+
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 23 triệu đồng. Đề nghị 22 triệu đồng, chênh lệch dự toán -1 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-08-15, bảng dự toán DT-HS-08-15, biên bản BB-HS-08-15, phiếu xác nhận CT-HS-08-15. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
+
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Cờ rủi ro: KHONG.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
+
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Hoàng Minh Khôi lập hồ sơ và giao đầu mối.
+B2: Lê Khánh Toàn kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: đã ký phê duyệt giả.
+B6: Bộ phận nghiệp vụ: đã kết thúc nghiệp vụ giả.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
+
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Giá trị đề nghị: 22 triệu. Giá trị đã duyệt: 22 triệu. Giá trị đã xử lý: 22 triệu.
+Giá trị đã thanh toán: 22 triệu; còn chưa hoàn tất theo đề nghị: 0 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
+
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: CLOSED.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Hoàng Minh Khôi chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH

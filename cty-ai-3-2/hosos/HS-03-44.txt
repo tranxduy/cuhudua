@@ -1,0 +1,56 @@
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-03-44
+TÊN_HỒ_SƠ: Mua sắm thiết bị đo lường – đang xử lý hợp đồng (tháng 04)
+LĨNH_VỰC: procurement
+THÁNG: 4
+NĂM: 2026
+ĐƠN_VỊ: QLDT
+NHÂN_VIÊN_GIẢ: Trần Quốc Kiệt
+TRƯỞNG_BỘ_PHẬN_GIẢ: Phạm Hoàng Phúc
+LOẠI_KHOẢN_MỤC: Thiết bị
+GIÁ_TRỊ_ĐỀ_NGHỊ: 409.2
+DỰ_TOÁN_HỒ_SƠ: 446
+GIÁ_TRỊ_ĐÃ_DUYỆT: 409.2
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 409.2
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 409.2
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện mua sắm thiết bị đo lường – đang xử lý hợp đồng (tháng 04), đơn vị QLDT lập hồ sơ đề nghị giá trị 409,2 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Trần Quốc Kiệt; trách nhiệm kiểm tra: Phạm Hoàng Phúc.
+
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 446 triệu đồng; số đề nghị 409,2 triệu đồng, chênh lệch -36,8 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
+Mã chứng từ mô phỏng: YC-HS-03-44; DT-HS-03-44; BB-HS-03-44; QD-HS-03-44; CT-HS-03-44.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+LOẠI MUA SẮM: Thiết bị
+PHƯƠNG THỨC DỰ KIẾN: Lựa chọn nhà thầu theo kế hoạch và quy định (chờ xác minh)
+HỒ SƠ KIỂM SOÁT: Nhu cầu, kế hoạch/dự toán, căn cứ giá, lựa chọn nhà thầu (nếu áp dụng), phê duyệt kết quả, hợp đồng, nghiệm thu và thanh toán.
+CĂN CỨ CHỈ DẪN: QĐ29 ngày 31/12/2025 (chỉ dẫn mô phỏng; rà trực tiếp văn bản ký khi áp dụng thật).
+
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Trần Quốc Kiệt lập phiếu đề nghị xử lý tháng 4/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Phạm Hoàng Phúc rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 409,2 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 409,2 triệu đồng.
+Giá trị đã thanh toán giả định: 409,2 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
+Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
+Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
+
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

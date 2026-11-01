@@ -1,0 +1,57 @@
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-02-30
+TÊN_HỒ_SƠ: Đối chiếu công tơ giao nhận – thiếu xác nhận đo đếm (tháng 10)
+LĨNH_VỰC: production
+THÁNG: 10
+NĂM: 2026
+ĐƠN_VỊ: VH
+NHÂN_VIÊN_GIẢ: Vũ Đức Anh
+TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hữu Vinh
+LOẠI_KHOẢN_MỤC: Đo đếm
+GIÁ_TRỊ_ĐỀ_NGHỊ: 1355.2
+DỰ_TOÁN_HỒ_SƠ: 1355.2
+GIÁ_TRỊ_ĐÃ_DUYỆT: 1355.2
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 1355.2
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 1355.2
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện đối chiếu công tơ giao nhận – thiếu xác nhận đo đếm (tháng 10), đơn vị VH lập hồ sơ đề nghị giá trị 1.355,2 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Vũ Đức Anh; trách nhiệm kiểm tra: Nguyễn Hữu Vinh.
+
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 1.355,2 triệu đồng; số đề nghị 1.355,2 triệu đồng, chênh lệch 0 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
+Mã chứng từ mô phỏng: YC-HS-02-30; DT-HS-02-30; BB-HS-02-30; QD-HS-02-30; CT-HS-02-30.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+SẢN LƯỢNG KẾ HOẠCH (kWh): 1198000
+SẢN LƯỢNG GHI NHẬN GIẢ (kWh): 1154872
+DOANH THU MINH HỌA (TRIỆU ĐỒNG): 1.15
+TÀI LIỆU NGUỒN: Phiếu ghi chỉ số, nhật ký ca, bảng kê điện năng, đối chiếu kinh doanh điện.
+NGUYÊN TẮC: Điện năng và doanh thu này là sản phẩm của một hồ sơ theo ca/giai đoạn độc lập; khi tổng hợp phải dùng đúng các hồ sơ hoàn tất, không thay cho hóa đơn điện thực tế.
+
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Vũ Đức Anh lập phiếu đề nghị xử lý tháng 10/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hữu Vinh rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 1.355,2 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 1.355,2 triệu đồng.
+Giá trị đã thanh toán giả định: 1.355,2 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
+Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
+Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
+
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

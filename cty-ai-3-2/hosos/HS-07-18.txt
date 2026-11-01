@@ -1,0 +1,52 @@
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-07-18
+TÊN_HỒ_SƠ: Hồ sơ lưu trữ điện tử – chưa giao đầu mối (tháng 03)
+LĨNH_VỰC: governance
+THÁNG: 3
+NĂM: 2026
+ĐƠN_VỊ: TH
+NHÂN_VIÊN_GIẢ: Phạm Đức Quang
+TRƯỞNG_BỘ_PHẬN_GIẢ: Trần Bảo Minh
+LOẠI_KHOẢN_MỤC: Lưu trữ
+GIÁ_TRỊ_ĐỀ_NGHỊ: 0
+DỰ_TOÁN_HỒ_SƠ: 0
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: REVIEW
+CỜ_KIỂM_TRA: THIEU_CHUNG_TU
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ hồ sơ lưu trữ điện tử – chưa giao đầu mối (tháng 03), phát sinh trong tháng 03/2026. Phạm Đức Quang lập đề xuất với giá trị 0 triệu đồng; trưởng đơn vị là Trần Bảo Minh.
+Phạm vi: HỒ SƠ QUẢN TRỊ: Lưu trữ. Dự thảo công văn, tờ trình, danh sách ý kiến các đơn vị, kết luận và phiếu giao việc được giả lập. Tổng Giám đốc, HĐQT và Ban Kiểm soát không dùng chung thẩm quyền phê duyệt.
+
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 0 triệu đồng. Đề nghị 0 triệu đồng, chênh lệch dự toán 0 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-07-18, bảng dự toán DT-HS-07-18, biên bản BB-HS-07-18, phiếu xác nhận CT-HS-07-18. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
+
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Thiếu chứng từ, phải bổ sung trước khi thực hiện.
+Cờ rủi ro: THIEU_CHUNG_TU.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
+
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Phạm Đức Quang lập hồ sơ và giao đầu mối.
+B2: Trần Bảo Minh kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: chưa phê duyệt; chuyển bổ sung/đợi.
+B6: Bộ phận nghiệp vụ: tạm dừng vì chưa hoàn thành điều kiện.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
+
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Thiếu chứng từ, phải bổ sung trước khi thực hiện.
+Giá trị đề nghị: 0 triệu. Giá trị đã duyệt: 0 triệu. Giá trị đã xử lý: 0 triệu.
+Giá trị đã thanh toán: 0 triệu; còn chưa hoàn tất theo đề nghị: 0 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
+
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: REVIEW.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Phạm Đức Quang chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH

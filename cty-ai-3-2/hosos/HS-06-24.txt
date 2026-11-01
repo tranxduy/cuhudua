@@ -1,0 +1,52 @@
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-06-24
+TÊN_HỒ_SƠ: Công tác phí nhân viên – cần bổ sung phụ lục (tháng 02)
+LĨNH_VỰC: hr
+THÁNG: 2
+NĂM: 2026
+ĐƠN_VỊ: TH
+NHÂN_VIÊN_GIẢ: Lê Hồng Nhung
+TRƯỞNG_BỘ_PHẬN_GIẢ: Trần Bảo Minh
+LOẠI_KHOẢN_MỤC: Công tác phí
+GIÁ_TRỊ_ĐỀ_NGHỊ: 88
+DỰ_TOÁN_HỒ_SƠ: 95.9
+GIÁ_TRỊ_ĐÃ_DUYỆT: 88
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 88
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 88
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ công tác phí nhân viên – cần bổ sung phụ lục (tháng 02), phát sinh trong tháng 02/2026. Lê Hồng Nhung lập đề xuất với giá trị 88 triệu đồng; trưởng đơn vị là Trần Bảo Minh.
+Phạm vi: CÔNG TÁC NHÂN SỰ: Công tác phí. Có sổ công/đào tạo/đề xuất giả, thông tin nhân sự và số tiền đều hư cấu. Phiếu đối chiếu bảng công và bảng lương được mô phỏng; không dùng để tính trả lương thật.
+
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 95,9 triệu đồng. Đề nghị 88 triệu đồng, chênh lệch dự toán -7,9 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-06-24, bảng dự toán DT-HS-06-24, biên bản BB-HS-06-24, phiếu xác nhận CT-HS-06-24. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
+
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Cờ rủi ro: KHONG.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
+
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Lê Hồng Nhung lập hồ sơ và giao đầu mối.
+B2: Trần Bảo Minh kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: đã ký phê duyệt giả.
+B6: Bộ phận nghiệp vụ: đã kết thúc nghiệp vụ giả.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
+
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Giá trị đề nghị: 88 triệu. Giá trị đã duyệt: 88 triệu. Giá trị đã xử lý: 88 triệu.
+Giá trị đã thanh toán: 88 triệu; còn chưa hoàn tất theo đề nghị: 0 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
+
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: CLOSED.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Lê Hồng Nhung chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH

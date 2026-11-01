@@ -1,40 +1,56 @@
-CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
-MÃ HỒ SƠ: HS-01-05
-TÊN HỒ SƠ: Tháng vận hành bình thường
-NGÀY LẬP: 2026-10-24
-ĐƠN VỊ: Phân xưởng Vận hành
-TRƯỞNG ĐƠN VỊ GIẢ: Nguyễn Hữu Vinh (Quản đốc)
-NHÂN VIÊN PHỤ TRÁCH GIẢ: Vũ Đức Anh
-LĨNH VỰC: Sản xuất điện
-LOẠI NGHIỆP VỤ: báo cáo vận hành
-GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 1200
-MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤUẬN
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-01-05
+TÊN_HỒ_SƠ: Chi phí hành chính văn phòng – đối chiếu nguồn và số liệu (tháng 03)
+LĨNH_VỰC: finance
+THÁNG: 3
+NĂM: 2026
+ĐƠN_VỊ: TCKT
+NHÂN_VIÊN_GIẢ: Đỗ Quang Huy
+TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hồng An
+LOẠI_KHOẢN_MỤC: Quản lý doanh nghiệp
+GIÁ_TRỊ_ĐỀ_NGHỊ: 25
+DỰ_TOÁN_HỒ_SƠ: 23.9
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: REVIEW
+CỜ_KIỂM_TRA: THIEU_CHUNG_TU
+BẢN_CÔNG_KHAI: DEMO_ONLY
 
-I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
-Bảng điện năng giả định đầy đủ, chốt số liệu và nhật ký trực đã đối chiếu nội bộ.
-Tài liệu này được biên soạn dưới dạng văn bản có cấu trúc để các Agent có thể đọc nguyên văn, không cần OCR.
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện chi phí hành chính văn phòng – đối chiếu nguồn và số liệu (tháng 03), đơn vị TCKT lập hồ sơ đề nghị giá trị 25 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Đỗ Quang Huy; trách nhiệm kiểm tra: Nguyễn Hồng An.
 
-II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
-1. Bảng tổng hợp
-2. biên bản đối soát
-3. chữ ký người kiểm tra
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 23,9 triệu đồng; số đề nghị 25 triệu đồng, chênh lệch 1,1 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
 
-III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
-Cờ tình huống: không có dấu hiệu rủi ro theo dữ liệu giả định.
-Các mục minh chứng nêu ở mục II được giả định đã có đầy đủ; cần người kiểm tra trước khi kết luận.
-Không có chứng từ gốc, chữ ký số, phê duyệt hoặc thanh toán thật đi kèm.
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: THIẾU / CHỜ XÁC MINH.
+Mã chứng từ mô phỏng: YC-HS-01-05; DT-HS-01-05; BB-HS-01-05; QD-HS-01-05; CT-HS-01-05.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+PHÂN LOẠI CHI PHÍ: Quản lý doanh nghiệp
+BẢNG KIỂM TRA KẾ TOÁN: Có bảng dự toán theo khoản mục, dự thảo bút toán và bảng đối chiếu (tất cả đều mô phỏng).
+BÚT TOÁN ĐỀ NGHỊ: Ghi nhận vào sổ chi phí khi đủ chứng từ và được người đúng thẩm quyền phê duyệt; phần mềm demo không ghi sổ kế toán thực.
+NGUYÊN TẮC BÁO CÁO: Chỉ tính GIÁ_TRỊ_ĐÃ_XỬ_LÝ ở hồ sơ CLOSED vào tổng chi phí lũy kế đến tháng 10; không cộng số đề nghị của hồ sơ chờ.
 
-IV. PHỐI HỢP AGENT
-Nhóm chuyên môn tham gia: production, maintenance, finance, safety.
-Đầu ra bắt buộc: nhận xét theo dữ liệu TXT, nguồn dòng văn bản, cảnh báo, kế hoạch hành động, nhật ký bàn giao và trình người kiểm tra.
-Agent Kiểm soát chéo nhận kết quả chuyên môn trước Agent Thư ký. Người được giao chịu trách nhiệm xác minh, không xem kết luận mô phỏng là kết luận kiểm toán.
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Đỗ Quang Huy lập phiếu đề nghị xử lý tháng 3/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hồng An rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: TRẢ HỒ SƠ BỔ SUNG GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Chưa thực hiện; giá trị đã xử lý là 0.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
 
-V. NGUỒN QUY ĐỊNH THAM CHIẾU
-QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025: quy định mua sắm, chỉ áp dụng khi nghiệp vụ thuộc phạm vi và có xác minh tài liệu ký.
-QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024: Quy chế quản lý tài chính, chỉ dùng tham khảo khi chưa xác nhận hiệu lực và sửa đổi.
-Không suy đoán mức phê duyệt hay tính hợp lệ từ tình huống giả.
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 0 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 0 triệu đồng.
+Giá trị đã thanh toán giả định: 0 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 25 triệu đồng.
+Kết quả hồ sơ: Chờ bổ sung chứng từ.
+Kiến nghị: Bổ sung bảng kiểm và chứng từ trước khi cho phép xử lý.
 
-VI. KIẾN NGHỊ THỬ NGHIỆM
-Đơn vị Phân xưởng Vận hành rà soát minh chứng và kết quả Agent; báo cáo đầu mối điều hành trước khi có bất kỳ quyết định chính thức.
-
-HẾT HỒ SƠ MÔ PHỎNG
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

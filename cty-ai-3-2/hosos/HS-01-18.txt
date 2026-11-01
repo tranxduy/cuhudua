@@ -1,0 +1,56 @@
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-01-18
+TÊN_HỒ_SƠ: Chi phí khấu hao – phân bổ – chứng từ đã được tổng hợp (tháng 03)
+LĨNH_VỰC: finance
+THÁNG: 3
+NĂM: 2026
+ĐƠN_VỊ: TCKT
+NHÂN_VIÊN_GIẢ: Phạm Anh Khoa
+TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hồng An
+LOẠI_KHOẢN_MỤC: Khấu hao
+GIÁ_TRỊ_ĐỀ_NGHỊ: 90
+DỰ_TOÁN_HỒ_SƠ: 90
+GIÁ_TRỊ_ĐÃ_DUYỆT: 90
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 90
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 90
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện chi phí khấu hao – phân bổ – chứng từ đã được tổng hợp (tháng 03), đơn vị TCKT lập hồ sơ đề nghị giá trị 90 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Phạm Anh Khoa; trách nhiệm kiểm tra: Nguyễn Hồng An.
+
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 90 triệu đồng; số đề nghị 90 triệu đồng, chênh lệch 0 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
+Mã chứng từ mô phỏng: YC-HS-01-18; DT-HS-01-18; BB-HS-01-18; QD-HS-01-18; CT-HS-01-18.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+PHÂN LOẠI CHI PHÍ: Khấu hao
+BẢNG KIỂM TRA KẾ TOÁN: Có bảng dự toán theo khoản mục, dự thảo bút toán và bảng đối chiếu (tất cả đều mô phỏng).
+BÚT TOÁN ĐỀ NGHỊ: Ghi nhận vào sổ chi phí khi đủ chứng từ và được người đúng thẩm quyền phê duyệt; phần mềm demo không ghi sổ kế toán thực.
+NGUYÊN TẮC BÁO CÁO: Chỉ tính GIÁ_TRỊ_ĐÃ_XỬ_LÝ ở hồ sơ CLOSED vào tổng chi phí lũy kế đến tháng 10; không cộng số đề nghị của hồ sơ chờ.
+
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Phạm Anh Khoa lập phiếu đề nghị xử lý tháng 3/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hồng An rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 90 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 90 triệu đồng.
+Giá trị đã thanh toán giả định: 90 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
+Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
+Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
+
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

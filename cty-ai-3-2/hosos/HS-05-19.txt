@@ -1,0 +1,52 @@
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-05-19
+TÊN_HỒ_SƠ: Kiểm tra rơ-le bảo vệ – đang chờ phụ tùng (tháng 06)
+LĨNH_VỰC: maintenance
+THÁNG: 6
+NĂM: 2026
+ĐƠN_VỊ: SC
+NHÂN_VIÊN_GIẢ: Trần Minh Duy
+TRƯỞNG_BỘ_PHẬN_GIẢ: Đặng Quốc Tuấn
+LOẠI_KHOẢN_MỤC: Điện
+GIÁ_TRỊ_ĐỀ_NGHỊ: 66.6
+DỰ_TOÁN_HỒ_SƠ: 69.6
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: PENDING
+CỜ_KIỂM_TRA: CHO_PHE_DUYET
+BẢN_CÔNG_KHAI: DEMO_ONLY
+
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ kiểm tra rơ-le bảo vệ – đang chờ phụ tùng (tháng 06), phát sinh trong tháng 06/2026. Trần Minh Duy lập đề xuất với giá trị 66,6 triệu đồng; trưởng đơn vị là Đặng Quốc Tuấn.
+Phạm vi: BẢNG THEO DÕI THIẾT BỊ: Điện. Phiếu sửa chữa CT-HS-05-19, mã kho PK-HS-05-19, mã nghiệm thu NT-HS-05-19 (đều giả). Công việc bảo dưỡng phải xác minh số giờ dừng máy, người trực ca và an toàn trước khi thực hiện.
+
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 69,6 triệu đồng. Đề nghị 66,6 triệu đồng, chênh lệch dự toán -3 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-05-19, bảng dự toán DT-HS-05-19, biên bản BB-HS-05-19, phiếu xác nhận CT-HS-05-19. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
+
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Chờ phê duyệt đúng thẩm quyền.
+Cờ rủi ro: CHO_PHE_DUYET.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
+
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Trần Minh Duy lập hồ sơ và giao đầu mối.
+B2: Đặng Quốc Tuấn kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: chưa phê duyệt; chuyển bổ sung/đợi.
+B6: Bộ phận nghiệp vụ: tạm dừng vì chưa hoàn thành điều kiện.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
+
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Chờ phê duyệt đúng thẩm quyền.
+Giá trị đề nghị: 66,6 triệu. Giá trị đã duyệt: 0 triệu. Giá trị đã xử lý: 0 triệu.
+Giá trị đã thanh toán: 0 triệu; còn chưa hoàn tất theo đề nghị: 66,6 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
+
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: PENDING.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Trần Minh Duy chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH

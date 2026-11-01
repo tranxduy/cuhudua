@@ -1,39 +1,52 @@
-CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
-MÃ HỒ SƠ: HS-08-05
-TÊN HỒ SƠ: Báo cáo môi trường đúng hạn
-NGÀY LẬP: 2026-10-26
-ĐƠN VỊ: Tổ An toàn – Môi trường (mô phỏng)
-TRƯỞNG ĐƠN VỊ GIẢ: Lê Khánh Toàn
-NHÂN VIÊN PHỤ TRÁCH GIẢ: Hoàng Minh Khôi
-LĨNH VỰC: An toàn – Môi trường
-LOẠI NGHIỆP VỤ: quan trắc môi trường
-GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 24
-MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-08-05
+TÊN_HỒ_SƠ: Đánh giá rủi ro an toàn điện – đã đối chiếu số liệu (tháng 03)
+LĨNH_VỰC: safety
+THÁNG: 3
+NĂM: 2026
+ĐƠN_VỊ: AT
+NHÂN_VIÊN_GIẢ: Hoàng Minh Khôi
+TRƯỞNG_BỘ_PHẬN_GIẢ: Lê Khánh Toàn
+LOẠI_KHOẢN_MỤC: An toàn điện
+GIÁ_TRỊ_ĐỀ_NGHỊ: 10
+DỰ_TOÁN_HỒ_SƠ: 9.5
+GIÁ_TRỊ_ĐÃ_DUYỆT: 10
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 10
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 10
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
 
-I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
-Bảng quan trắc giả định có số liệu, phiếu kiểm tra và chữ ký xác nhận.
-Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ đánh giá rủi ro an toàn điện – đã đối chiếu số liệu (tháng 03), phát sinh trong tháng 03/2026. Hoàng Minh Khôi lập đề xuất với giá trị 10 triệu đồng; trưởng đơn vị là Lê Khánh Toàn.
+Phạm vi: HỒ SƠ AN TOÀN: An toàn điện. Có danh mục hồ đập, lịch kiểm tra/diễn tập và phiếu khắc phục giả lập; khi có vấn đề an toàn phải yêu cầu xác nhận của người phụ trách chuyên môn. Web không điều khiển thiết bị.
 
-II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
-1. Biên bản quan trắc
-2. bảng số liệu
-3. báo cáo
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 9,5 triệu đồng. Đề nghị 10 triệu đồng, chênh lệch dự toán 0,5 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-08-05, bảng dự toán DT-HS-08-05, biên bản BB-HS-08-05, phiếu xác nhận CT-HS-08-05. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
 
-III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
-Cờ tình huống: không có dấu hiệu rủi ro theo dữ liệu giả định.
-Các minh chứng mục II được giả định đã có; chưa được xác thực.
-Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Cờ rủi ro: KHONG.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
 
-IV. PHỐI HỢP AGENT
-Các Agent chuyên môn: safety, production, maintenance, records.
-Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
-Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Hoàng Minh Khôi lập hồ sơ và giao đầu mối.
+B2: Lê Khánh Toàn kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: đã ký phê duyệt giả.
+B6: Bộ phận nghiệp vụ: đã kết thúc nghiệp vụ giả.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
 
-V. NGUỒN QUY ĐỊNH THAM CHIẾU
-QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
-QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
-Không tự kết luận tính hợp lệ của hồ sơ giả định.
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
+Giá trị đề nghị: 10 triệu. Giá trị đã duyệt: 10 triệu. Giá trị đã xử lý: 10 triệu.
+Giá trị đã thanh toán: 10 triệu; còn chưa hoàn tất theo đề nghị: 0 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
 
-VI. KIẾN NGHỊ THỬ NGHIỆM
-Đơn vị Tổ An toàn – Môi trường (mô phỏng) xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
-HẾT HỒ SƠ MÔ PHỎNG
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: CLOSED.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Hoàng Minh Khôi chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH

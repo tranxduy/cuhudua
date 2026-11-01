@@ -1,41 +1,57 @@
-CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
-MÃ HỒ SƠ: HS-02-04
-TÊN HỒ SƠ: Công nợ quá hạn chưa đối chiếu
-NGÀY LẬP: 2026-10-22
-ĐƠN VỊ: Phòng Tài chính – Kế toán
-TRƯỞNG ĐƠN VỊ GIẢ: Nguyễn Hồng An (Kế toán trưởng)
-NHÂN VIÊN PHỤ TRÁCH GIẢ: Võ Thùy Dương
-LĨNH VỰC: Tài chính – Kế toán
-LOẠI NGHIỆP VỤ: công nợ
-GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 910
-MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤUẬN
+CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+MÃ_HỒ_SƠ: HS-02-04
+TÊN_HỒ_SƠ: Giá bán điện bình quân – đạt kế hoạch (tháng 10)
+LĨNH_VỰC: production
+THÁNG: 10
+NĂM: 2026
+ĐƠN_VỊ: VH
+NHÂN_VIÊN_GIẢ: Đỗ Minh Tài
+TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hữu Vinh
+LOẠI_KHOẢN_MỤC: Doanh thu
+GIÁ_TRỊ_ĐỀ_NGHỊ: 2340.8
+DỰ_TOÁN_HỒ_SƠ: 2551.5
+GIÁ_TRỊ_ĐÃ_DUYỆT: 2340.8
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 2340.8
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 2340.8
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+BẢN_CÔNG_KHAI: DEMO_ONLY
 
-I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
-Khoản phải thu giả định 910 triệu, quá hạn 46 ngày; chưa có biên bản đối chiếu công nợ.
-Tài liệu này được biên soạn dưới dạng văn bản có cấu trúc để các Agent có thể đọc nguyên văn, không cần OCR.
+01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
+Căn cứ nhu cầu thực hiện giá bán điện bình quân – đạt kế hoạch (tháng 10), đơn vị VH lập hồ sơ đề nghị giá trị 2.340,8 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
+Đầu mối lập hồ sơ: Đỗ Minh Tài; trách nhiệm kiểm tra: Nguyễn Hữu Vinh.
 
-II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
-1. Sổ công nợ
-2. hợp đồng
-3. biên bản xác nhận
-4. thư nhắc nợ
+02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
+Dự toán riêng cho hồ sơ 2.551,5 triệu đồng; số đề nghị 2.340,8 triệu đồng, chênh lệch -210,7 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
 
-III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
-Cờ tình huống: late_deadline.
-Chưa xác minh hoặc thiếu minh chứng: reconcile.
-Không có chứng từ gốc, chữ ký số, phê duyệt hoặc thanh toán thật đi kèm.
+03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
+Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
+Mã chứng từ mô phỏng: YC-HS-02-04; DT-HS-02-04; BB-HS-02-04; QD-HS-02-04; CT-HS-02-04.
+Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
+SẢN LƯỢNG KẾ HOẠCH (kWh): 1272000
+SẢN LƯỢNG GHI NHẬN GIẢ (kWh): 1272000
+DOANH THU MINH HỌA (TRIỆU ĐỒNG): 1.221
+TÀI LIỆU NGUỒN: Phiếu ghi chỉ số, nhật ký ca, bảng kê điện năng, đối chiếu kinh doanh điện.
+NGUYÊN TẮC: Điện năng và doanh thu này là sản phẩm của một hồ sơ theo ca/giai đoạn độc lập; khi tổng hợp phải dùng đúng các hồ sơ hoàn tất, không thay cho hóa đơn điện thực tế.
 
-IV. PHỐI HỢP AGENT
-Nhóm chuyên môn tham gia: finance, accounting, legal.
-Đầu ra bắt buộc: nhận xét theo dữ liệu TXT, nguồn dòng văn bản, cảnh báo, kế hoạch hành động, nhật ký bàn giao và trình người kiểm tra.
-Agent Kiểm soát chéo nhận kết quả chuyên môn trước Agent Thư ký. Người được giao chịu trách nhiệm xác minh, không xem kết luận mô phỏng là kết luận kiểm toán.
+04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
+B1 - ĐỀ NGHỊ: Đỗ Minh Tài lập phiếu đề nghị xử lý tháng 10/2026.
+B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hữu Vinh rà kế hoạch, ngân sách và điều kiện thực hiện.
+B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
+B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
+B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
+B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
+B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
 
-V. NGUỒN QUY ĐỊNH THAM CHIẾU
-QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025: quy định mua sắm, chỉ áp dụng khi nghiệp vụ thuộc phạm vi và có xác minh tài liệu ký.
-QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024: Quy chế quản lý tài chính, chỉ dùng tham khảo khi chưa xác nhận hiệu lực và sửa đổi.
-Không suy đoán mức phê duyệt hay tính hợp lệ từ tình huống giả.
+05. BÁO CÁO KẾT QUẢ HỒ SƠ
+Giá trị được duyệt giả định: 2.340,8 triệu đồng.
+Giá trị đã xử lý giả định trong kỳ: 2.340,8 triệu đồng.
+Giá trị đã thanh toán giả định: 2.340,8 triệu đồng.
+Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
+Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
+Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
 
-VI. KIẾN NGHỊ THỬ NGHIỆM
-Đơn vị Phòng Tài chính – Kế toán rà soát minh chứng và kết quả Agent; báo cáo đầu mối điều hành trước khi có bất kỳ quyết định chính thức.
-
-HẾT HỒ SƠ MÔ PHỎNG
+06. ĐẦU RA CỦA HỆ THỐNG CTY AI
+Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
+Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
+HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH

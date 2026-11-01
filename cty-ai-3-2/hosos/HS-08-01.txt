@@ -1,39 +1,52 @@
-CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
-MÃ HỒ SƠ: HS-08-01
-TÊN HỒ SƠ: Mực nước hồ tăng nhanh
-NGÀY LẬP: 2026-10-14
-ĐƠN VỊ: Tổ An toàn – Môi trường (mô phỏng)
-TRƯỞNG ĐƠN VỊ GIẢ: Lê Khánh Toàn
-NHÂN VIÊN PHỤ TRÁCH GIẢ: Nguyễn Bảo Long
-LĨNH VỰC: An toàn – Môi trường
-LOẠI NGHIỆP VỤ: an toàn hồ chứa
-GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 0
-MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+MÃ_HỒ_SƠ: HS-08-01
+TÊN_HỒ_SƠ: Kiểm tra an toàn đập – đã đối chiếu số liệu (tháng 01)
+LĨNH_VỰC: safety
+THÁNG: 1
+NĂM: 2026
+ĐƠN_VỊ: AT
+NHÂN_VIÊN_GIẢ: Nguyễn Bảo Long
+TRƯỞNG_BỘ_PHẬN_GIẢ: Lê Khánh Toàn
+LOẠI_KHOẢN_MỤC: Đập
+GIÁ_TRỊ_ĐỀ_NGHỊ: 18
+DỰ_TOÁN_HỒ_SƠ: 17.2
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: REVIEW
+CỜ_KIỂM_TRA: THIEU_CHUNG_TU
+BẢN_CÔNG_KHAI: DEMO_ONLY
 
-I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
-Mực nước giả định tăng nhanh trong 2 giờ; chưa xác nhận số đo đối chiếu từ ca trực.
-Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
+Hồ sơ nghiệp vụ kiểm tra an toàn đập – đã đối chiếu số liệu (tháng 01), phát sinh trong tháng 01/2026. Nguyễn Bảo Long lập đề xuất với giá trị 18 triệu đồng; trưởng đơn vị là Lê Khánh Toàn.
+Phạm vi: HỒ SƠ AN TOÀN: Đập. Có danh mục hồ đập, lịch kiểm tra/diễn tập và phiếu khắc phục giả lập; khi có vấn đề an toàn phải yêu cầu xác nhận của người phụ trách chuyên môn. Web không điều khiển thiết bị.
 
-II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
-1. Bảng đo mực nước
-2. nhật ký vận hành
-3. thông báo
+02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
+Số kế hoạch riêng của hồ sơ 17,2 triệu đồng. Đề nghị 18 triệu đồng, chênh lệch dự toán 0,8 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
+Danh mục chứng từ kiểm tra: Tờ trình YC-HS-08-01, bảng dự toán DT-HS-08-01, biên bản BB-HS-08-01, phiếu xác nhận CT-HS-08-01. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
 
-III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
-Cờ tình huống: safety_incident.
-Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
-Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
+Tình trạng: Thiếu chứng từ, phải bổ sung trước khi thực hiện.
+Cờ rủi ro: THIEU_CHUNG_TU.
+Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
 
-IV. PHỐI HỢP AGENT
-Các Agent chuyên môn: safety, production, maintenance, records.
-Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
-Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
+B1: Nguyễn Bảo Long lập hồ sơ và giao đầu mối.
+B2: Lê Khánh Toàn kiểm tra quy mô, kế hoạch và lý do phát sinh.
+B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
+B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
+B5: Người có thẩm quyền giả định: chưa phê duyệt; chuyển bổ sung/đợi.
+B6: Bộ phận nghiệp vụ: tạm dừng vì chưa hoàn thành điều kiện.
+B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
 
-V. NGUỒN QUY ĐỊNH THAM CHIẾU
-QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
-QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
-Không tự kết luận tính hợp lệ của hồ sơ giả định.
+05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
+Kết luận mô phỏng: Thiếu chứng từ, phải bổ sung trước khi thực hiện.
+Giá trị đề nghị: 18 triệu. Giá trị đã duyệt: 0 triệu. Giá trị đã xử lý: 0 triệu.
+Giá trị đã thanh toán: 0 triệu; còn chưa hoàn tất theo đề nghị: 18 triệu.
+Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
 
-VI. KIẾN NGHỊ THỬ NGHIỆM
-Đơn vị Tổ An toàn – Môi trường (mô phỏng) xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
-HẾT HỒ SƠ MÔ PHỎNG
+06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
+Trạng thái để báo cáo: REVIEW.
+Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
+Người chủ trì Nguyễn Bảo Long chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
+HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH
