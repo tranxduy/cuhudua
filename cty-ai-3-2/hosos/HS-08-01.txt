@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-08-01
+TÊN HỒ SƠ: Mực nước hồ tăng nhanh
+NGÀY LẬP: 2026-10-14
+ĐƠN VỊ: Tổ An toàn – Môi trường (mô phỏng)
+TRƯỞNG ĐƠN VỊ GIẢ: Lê Khánh Toàn
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Nguyễn Bảo Long
+LĨNH VỰC: An toàn – Môi trường
+LOẠI NGHIỆP VỤ: an toàn hồ chứa
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 0
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Mực nước giả định tăng nhanh trong 2 giờ; chưa xác nhận số đo đối chiếu từ ca trực.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Bảng đo mực nước
+2. nhật ký vận hành
+3. thông báo
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: safety_incident.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: safety, production, maintenance, records.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Tổ An toàn – Môi trường (mô phỏng) xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG
