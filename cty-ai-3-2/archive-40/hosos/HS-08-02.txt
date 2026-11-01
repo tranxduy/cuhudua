@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-08-02
+TÊN HỒ SƠ: Diễn tập PCCC thiếu biên bản
+NGÀY LẬP: 2026-10-17
+ĐƠN VỊ: Tổ An toàn – Môi trường (mô phỏng)
+TRƯỞNG ĐƠN VỊ GIẢ: Lê Khánh Toàn
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Trần Mỹ Duyên
+LĨNH VỰC: An toàn – Môi trường
+LOẠI NGHIỆP VỤ: PCCC
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 18
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Kế hoạch diễn tập có nhưng chưa có biên bản kết quả và danh sách điểm danh.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Kế hoạch
+2. biên bản diễn tập
+3. ảnh minh chứng
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: missing_record.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: safety, production, maintenance, records.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Tổ An toàn – Môi trường (mô phỏng) xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG

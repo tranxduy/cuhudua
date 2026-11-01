@@ -1,0 +1,41 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-02-04
+TÊN HỒ SƠ: Công nợ quá hạn chưa đối chiếu
+NGÀY LẬP: 2026-10-22
+ĐƠN VỊ: Phòng Tài chính – Kế toán
+TRƯỞNG ĐƠN VỊ GIẢ: Nguyễn Hồng An (Kế toán trưởng)
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Võ Thùy Dương
+LĨNH VỰC: Tài chính – Kế toán
+LOẠI NGHIỆP VỤ: công nợ
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 910
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤUẬN
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Khoản phải thu giả định 910 triệu, quá hạn 46 ngày; chưa có biên bản đối chiếu công nợ.
+Tài liệu này được biên soạn dưới dạng văn bản có cấu trúc để các Agent có thể đọc nguyên văn, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Sổ công nợ
+2. hợp đồng
+3. biên bản xác nhận
+4. thư nhắc nợ
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: late_deadline.
+Chưa xác minh hoặc thiếu minh chứng: reconcile.
+Không có chứng từ gốc, chữ ký số, phê duyệt hoặc thanh toán thật đi kèm.
+
+IV. PHỐI HỢP AGENT
+Nhóm chuyên môn tham gia: finance, accounting, legal.
+Đầu ra bắt buộc: nhận xét theo dữ liệu TXT, nguồn dòng văn bản, cảnh báo, kế hoạch hành động, nhật ký bàn giao và trình người kiểm tra.
+Agent Kiểm soát chéo nhận kết quả chuyên môn trước Agent Thư ký. Người được giao chịu trách nhiệm xác minh, không xem kết luận mô phỏng là kết luận kiểm toán.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025: quy định mua sắm, chỉ áp dụng khi nghiệp vụ thuộc phạm vi và có xác minh tài liệu ký.
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024: Quy chế quản lý tài chính, chỉ dùng tham khảo khi chưa xác nhận hiệu lực và sửa đổi.
+Không suy đoán mức phê duyệt hay tính hợp lệ từ tình huống giả.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Tài chính – Kế toán rà soát minh chứng và kết quả Agent; báo cáo đầu mối điều hành trước khi có bất kỳ quyết định chính thức.
+
+HẾT HỒ SƠ MÔ PHỎNG

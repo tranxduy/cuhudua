@@ -1,0 +1,41 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-03-02
+TÊN HỒ SƠ: Mua dịch vụ 16 triệu
+NGÀY LẬP: 2026-10-17
+ĐƠN VỊ: Phòng Quản lý đầu tư và Kinh doanh
+TRƯỞNG ĐƠN VỊ GIẢ: Phạm Hoàng Phúc (Trưởng phòng)
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Lê Quang Bình
+LĨNH VỰC: Mua sắm – Hợp đồng
+LOẠI NGHIỆP VỤ: mua sắm nhỏ lẻ
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 16
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤUẬN
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Dịch vụ bảo dưỡng phụ trợ giá 16 triệu; đã có đề xuất và phê duyệt, hợp đồng tùy tính chất cần người kiểm tra.
+Tài liệu này được biên soạn dưới dạng văn bản có cấu trúc để các Agent có thể đọc nguyên văn, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Đề xuất
+2. báo giá
+3. phê duyệt
+4. hóa đơn
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: không có dấu hiệu rủi ro theo dữ liệu giả định.
+Các mục minh chứng nêu ở mục II được giả định đã có đầy đủ; cần người kiểm tra trước khi kết luận.
+Không có chứng từ gốc, chữ ký số, phê duyệt hoặc thanh toán thật đi kèm.
+
+IV. PHỐI HỢP AGENT
+Nhóm chuyên môn tham gia: procurement, legal, finance, accounting.
+Đầu ra bắt buộc: nhận xét theo dữ liệu TXT, nguồn dòng văn bản, cảnh báo, kế hoạch hành động, nhật ký bàn giao và trình người kiểm tra.
+Agent Kiểm soát chéo nhận kết quả chuyên môn trước Agent Thư ký. Người được giao chịu trách nhiệm xác minh, không xem kết luận mô phỏng là kết luận kiểm toán.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025: quy định mua sắm, chỉ áp dụng khi nghiệp vụ thuộc phạm vi và có xác minh tài liệu ký.
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024: Quy chế quản lý tài chính, chỉ dùng tham khảo khi chưa xác nhận hiệu lực và sửa đổi.
+Không suy đoán mức phê duyệt hay tính hợp lệ từ tình huống giả.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Quản lý đầu tư và Kinh doanh rà soát minh chứng và kết quả Agent; báo cáo đầu mối điều hành trước khi có bất kỳ quyết định chính thức.
+
+HẾT HỒ SƠ MÔ PHỎNG

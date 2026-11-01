@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-07-03
+TÊN HỒ SƠ: Dự thảo tờ trình chưa rõ thẩm quyền
+NGÀY LẬP: 2026-10-19
+ĐƠN VỊ: Phòng Tổng hợp
+TRƯỞNG ĐƠN VỊ GIẢ: Trần Bảo Minh
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Phạm Đức Quang
+LĨNH VỰC: Quản trị – Văn thư
+LOẠI NGHIỆP VỤ: quản trị
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 155
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Tờ trình mua tài sản chưa nêu rõ cơ quan có thẩm quyền quyết định.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Tờ trình
+2. ma trận thẩm quyền
+3. quyết định phân cấp
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: missing_approval.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: records, legal, finance, audit.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Tổng hợp xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG

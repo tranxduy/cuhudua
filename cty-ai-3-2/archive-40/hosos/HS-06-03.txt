@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-06-03
+TÊN HỒ SƠ: Thanh toán công tác phí thiếu hóa đơn
+NGÀY LẬP: 2026-10-18
+ĐƠN VỊ: Phòng Tổng hợp
+TRƯỞNG ĐƠN VỊ GIẢ: Trần Bảo Minh
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Phạm Đức Quang
+LĨNH VỰC: Nhân sự – Tiền lương
+LOẠI NGHIỆP VỤ: công tác phí
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 5.6
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Đề nghị thanh toán công tác phí 5,6 triệu, có lịch nhưng chưa đủ hóa đơn.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Giấy đi đường
+2. hóa đơn
+3. bảng kê thanh toán
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: missing_invoice.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: hr, accounting, finance, legal.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Tổng hợp xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG

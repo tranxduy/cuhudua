@@ -1,0 +1,781 @@
+{
+  "product": "CTY AI 3.2",
+  "version": "3.2.0",
+  "demo": true,
+  "updated": "2026-11-01",
+  "notice": "100% tên nhân viên, số liệu, hồ sơ là hư cấu. Cấu trúc các nhóm công việc tham chiếu mô hình thủy điện; nhóm An toàn là đầu mối mô phỏng.",
+  "execs": [
+    {
+      "name": "Đỗ Quang Hưng",
+      "role": "Tổng Giám đốc",
+      "demo": true
+    },
+    {
+      "name": "Trần Quốc Vũ",
+      "role": "Phó Tổng Giám đốc",
+      "demo": true
+    }
+  ],
+  "departments": [
+    {
+      "code": "TCKT",
+      "name": "Phòng Tài chính – Kế toán",
+      "leader": "Nguyễn Hồng An",
+      "leaderRole": "Kế toán trưởng",
+      "staff": [
+        "Lê Thị Bảo Ngọc",
+        "Trần Minh Hằng",
+        "Phạm Anh Khoa",
+        "Võ Thùy Dương",
+        "Đỗ Quang Huy"
+      ]
+    },
+    {
+      "code": "QLDT",
+      "name": "Phòng Quản lý đầu tư và Kinh doanh",
+      "leader": "Phạm Hoàng Phúc",
+      "leaderRole": "Trưởng phòng",
+      "staff": [
+        "Nguyễn Minh Triết",
+        "Lê Quang Bình",
+        "Võ Thị Ngọc Linh",
+        "Trần Quốc Kiệt",
+        "Đặng Thị Bích Hà"
+      ]
+    },
+    {
+      "code": "TH",
+      "name": "Phòng Tổng hợp",
+      "leader": "Trần Bảo Minh",
+      "leaderRole": "Trưởng phòng",
+      "staff": [
+        "Hoàng Thị Thúy Vy",
+        "Nguyễn Khánh Lan",
+        "Phạm Đức Quang",
+        "Lê Hồng Nhung",
+        "Võ Thành Nam"
+      ]
+    },
+    {
+      "code": "VH",
+      "name": "Phân xưởng Vận hành",
+      "leader": "Nguyễn Hữu Vinh",
+      "leaderRole": "Quản đốc",
+      "staff": [
+        "Trần Hải Đăng",
+        "Lê Văn Hoài",
+        "Phan Quốc Bảo",
+        "Đỗ Minh Tài",
+        "Vũ Đức Anh"
+      ]
+    },
+    {
+      "code": "SC",
+      "name": "Phân xưởng Sửa chữa",
+      "leader": "Đặng Quốc Tuấn",
+      "leaderRole": "Quản đốc",
+      "staff": [
+        "Võ Minh Thành",
+        "Lê Đức Thịnh",
+        "Nguyễn Hoàng Nam",
+        "Trần Minh Duy",
+        "Phạm Anh Sơn"
+      ]
+    },
+    {
+      "code": "AT",
+      "name": "Tổ An toàn – Môi trường (mô phỏng)",
+      "leader": "Lê Khánh Toàn",
+      "leaderRole": "Tổ trưởng giả định",
+      "staff": [
+        "Nguyễn Bảo Long",
+        "Trần Mỹ Duyên",
+        "Phạm Đình Trung",
+        "Võ Hữu Phát",
+        "Hoàng Minh Khôi"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "HS-01-01",
+      "title": "Báo cáo sản lượng tuần thiếu bảng công tơ",
+      "amount": 280,
+      "flag": "production_gap",
+      "domain": "production",
+      "domainName": "Sản xuất điện",
+      "dept": "VH",
+      "owner": "Trần Hải Đăng",
+      "file": "hosos/HS-01-01.txt",
+      "agents": [
+        "production",
+        "maintenance",
+        "finance",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-01-02",
+      "title": "Dừng tổ máy ngoài lịch",
+      "amount": 145,
+      "flag": "safety_incident",
+      "domain": "production",
+      "domainName": "Sản xuất điện",
+      "dept": "VH",
+      "owner": "Lê Văn Hoài",
+      "file": "hosos/HS-01-02.txt",
+      "agents": [
+        "production",
+        "maintenance",
+        "finance",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-01-03",
+      "title": "Bất thường chênh lệch điện giao nhận",
+      "amount": 510,
+      "flag": "reconcile_gap",
+      "domain": "production",
+      "domainName": "Sản xuất điện",
+      "dept": "VH",
+      "owner": "Phan Quốc Bảo",
+      "file": "hosos/HS-01-03.txt",
+      "agents": [
+        "production",
+        "maintenance",
+        "finance",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-01-04",
+      "title": "Giá bán bình quân thấp hơn dự kiến",
+      "amount": 7600,
+      "flag": "price_variance",
+      "domain": "production",
+      "domainName": "Sản xuất điện",
+      "dept": "VH",
+      "owner": "Đỗ Minh Tài",
+      "file": "hosos/HS-01-04.txt",
+      "agents": [
+        "production",
+        "maintenance",
+        "finance",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-01-05",
+      "title": "Tháng vận hành bình thường",
+      "amount": 1200,
+      "flag": "",
+      "domain": "production",
+      "domainName": "Sản xuất điện",
+      "dept": "VH",
+      "owner": "Vũ Đức Anh",
+      "file": "hosos/HS-01-05.txt",
+      "agents": [
+        "production",
+        "maintenance",
+        "finance",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-02-01",
+      "title": "Thanh toán sửa chữa thiếu nghiệm thu",
+      "amount": 320,
+      "flag": "missing_acceptance",
+      "domain": "finance",
+      "domainName": "Tài chính – Kế toán",
+      "dept": "TCKT",
+      "owner": "Lê Thị Bảo Ngọc",
+      "file": "hosos/HS-02-01.txt",
+      "agents": [
+        "finance",
+        "accounting",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-02-02",
+      "title": "Đối chiếu ngân hàng phát sinh chênh lệch",
+      "amount": 25,
+      "flag": "reconcile_gap",
+      "domain": "finance",
+      "domainName": "Tài chính – Kế toán",
+      "dept": "TCKT",
+      "owner": "Trần Minh Hằng",
+      "file": "hosos/HS-02-02.txt",
+      "agents": [
+        "finance",
+        "accounting",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-02-03",
+      "title": "Chi phí hoạt động vượt dự toán",
+      "amount": 742,
+      "flag": "budget_overrun",
+      "domain": "finance",
+      "domainName": "Tài chính – Kế toán",
+      "dept": "TCKT",
+      "owner": "Phạm Anh Khoa",
+      "file": "hosos/HS-02-03.txt",
+      "agents": [
+        "finance",
+        "accounting",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-02-04",
+      "title": "Công nợ quá hạn chưa đối chiếu",
+      "amount": 910,
+      "flag": "late_deadline",
+      "domain": "finance",
+      "domainName": "Tài chính – Kế toán",
+      "dept": "TCKT",
+      "owner": "Võ Thùy Dương",
+      "file": "hosos/HS-02-04.txt",
+      "agents": [
+        "finance",
+        "accounting",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-02-05",
+      "title": "Khóa sổ tháng và bảng kê chi phí",
+      "amount": 1850,
+      "flag": "",
+      "domain": "finance",
+      "domainName": "Tài chính – Kế toán",
+      "dept": "TCKT",
+      "owner": "Đỗ Quang Huy",
+      "file": "hosos/HS-02-05.txt",
+      "agents": [
+        "finance",
+        "accounting",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-03-01",
+      "title": "Mua vật tư nhỏ lẻ 4,2 triệu",
+      "amount": 4.2,
+      "flag": "missing_approval",
+      "domain": "procurement",
+      "domainName": "Mua sắm – Hợp đồng",
+      "dept": "QLDT",
+      "owner": "Nguyễn Minh Triết",
+      "file": "hosos/HS-03-01.txt",
+      "agents": [
+        "procurement",
+        "legal",
+        "finance",
+        "accounting"
+      ]
+    },
+    {
+      "id": "HS-03-02",
+      "title": "Mua dịch vụ 16 triệu",
+      "amount": 16,
+      "flag": "",
+      "domain": "procurement",
+      "domainName": "Mua sắm – Hợp đồng",
+      "dept": "QLDT",
+      "owner": "Lê Quang Bình",
+      "file": "hosos/HS-03-02.txt",
+      "agents": [
+        "procurement",
+        "legal",
+        "finance",
+        "accounting"
+      ]
+    },
+    {
+      "id": "HS-03-03",
+      "title": "Mua dụng cụ 74 triệu thiếu hợp đồng",
+      "amount": 74,
+      "flag": "missing_contract",
+      "domain": "procurement",
+      "domainName": "Mua sắm – Hợp đồng",
+      "dept": "QLDT",
+      "owner": "Võ Thị Ngọc Linh",
+      "file": "hosos/HS-03-03.txt",
+      "agents": [
+        "procurement",
+        "legal",
+        "finance",
+        "accounting"
+      ]
+    },
+    {
+      "id": "HS-03-04",
+      "title": "Chỉ định thầu tiết kiệm 3%",
+      "amount": 485,
+      "flag": "low_saving",
+      "domain": "procurement",
+      "domainName": "Mua sắm – Hợp đồng",
+      "dept": "QLDT",
+      "owner": "Trần Quốc Kiệt",
+      "file": "hosos/HS-03-04.txt",
+      "agents": [
+        "procurement",
+        "legal",
+        "finance",
+        "accounting"
+      ]
+    },
+    {
+      "id": "HS-03-05",
+      "title": "Thiếu phê duyệt kết quả lựa chọn trước ký",
+      "amount": 265,
+      "flag": "missing_selection",
+      "domain": "procurement",
+      "domainName": "Mua sắm – Hợp đồng",
+      "dept": "QLDT",
+      "owner": "Đặng Thị Bích Hà",
+      "file": "hosos/HS-03-05.txt",
+      "agents": [
+        "procurement",
+        "legal",
+        "finance",
+        "accounting"
+      ]
+    },
+    {
+      "id": "HS-04-01",
+      "title": "Chậm tiến độ khảo sát địa hình",
+      "amount": 370,
+      "flag": "late_deadline",
+      "domain": "project",
+      "domainName": "Dự án – Đầu tư",
+      "dept": "QLDT",
+      "owner": "Nguyễn Minh Triết",
+      "file": "hosos/HS-04-01.txt",
+      "agents": [
+        "project",
+        "finance",
+        "legal",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-04-02",
+      "title": "Dự toán nghiên cứu tăng 12%",
+      "amount": 1400,
+      "flag": "budget_overrun",
+      "domain": "project",
+      "domainName": "Dự án – Đầu tư",
+      "dept": "QLDT",
+      "owner": "Lê Quang Bình",
+      "file": "hosos/HS-04-02.txt",
+      "agents": [
+        "project",
+        "finance",
+        "legal",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-04-03",
+      "title": "Thiếu giả định tính NPV và IRR",
+      "amount": 5600,
+      "flag": "missing_forecast",
+      "domain": "project",
+      "domainName": "Dự án – Đầu tư",
+      "dept": "QLDT",
+      "owner": "Võ Thị Ngọc Linh",
+      "file": "hosos/HS-04-03.txt",
+      "agents": [
+        "project",
+        "finance",
+        "legal",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-04-04",
+      "title": "Hồ sơ giải ngân thiếu nghiệm thu",
+      "amount": 680,
+      "flag": "missing_acceptance",
+      "domain": "project",
+      "domainName": "Dự án – Đầu tư",
+      "dept": "QLDT",
+      "owner": "Trần Quốc Kiệt",
+      "file": "hosos/HS-04-04.txt",
+      "agents": [
+        "project",
+        "finance",
+        "legal",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-04-05",
+      "title": "Báo cáo tiến độ dự án được duyệt",
+      "amount": 2100,
+      "flag": "",
+      "domain": "project",
+      "domainName": "Dự án – Đầu tư",
+      "dept": "QLDT",
+      "owner": "Đặng Thị Bích Hà",
+      "file": "hosos/HS-04-05.txt",
+      "agents": [
+        "project",
+        "finance",
+        "legal",
+        "safety"
+      ]
+    },
+    {
+      "id": "HS-05-01",
+      "title": "Bảo dưỡng bơm dầu trễ hạn",
+      "amount": 65,
+      "flag": "late_deadline",
+      "domain": "maintenance",
+      "domainName": "Bảo trì – Vật tư",
+      "dept": "SC",
+      "owner": "Võ Minh Thành",
+      "file": "hosos/HS-05-01.txt",
+      "agents": [
+        "maintenance",
+        "production",
+        "safety",
+        "procurement",
+        "finance"
+      ]
+    },
+    {
+      "id": "HS-05-02",
+      "title": "Xuất kho vật tư không khớp phiếu",
+      "amount": 12,
+      "flag": "reconcile_gap",
+      "domain": "maintenance",
+      "domainName": "Bảo trì – Vật tư",
+      "dept": "SC",
+      "owner": "Lê Đức Thịnh",
+      "file": "hosos/HS-05-02.txt",
+      "agents": [
+        "maintenance",
+        "production",
+        "safety",
+        "procurement",
+        "finance"
+      ]
+    },
+    {
+      "id": "HS-05-03",
+      "title": "Kiểm định thiết bị nâng sắp hết hạn",
+      "amount": 24,
+      "flag": "safety_incident",
+      "domain": "maintenance",
+      "domainName": "Bảo trì – Vật tư",
+      "dept": "SC",
+      "owner": "Nguyễn Hoàng Nam",
+      "file": "hosos/HS-05-03.txt",
+      "agents": [
+        "maintenance",
+        "production",
+        "safety",
+        "procurement",
+        "finance"
+      ]
+    },
+    {
+      "id": "HS-05-04",
+      "title": "Sửa chữa tăng chi phí thiết bị",
+      "amount": 368,
+      "flag": "budget_overrun",
+      "domain": "maintenance",
+      "domainName": "Bảo trì – Vật tư",
+      "dept": "SC",
+      "owner": "Trần Minh Duy",
+      "file": "hosos/HS-05-04.txt",
+      "agents": [
+        "maintenance",
+        "production",
+        "safety",
+        "procurement",
+        "finance"
+      ]
+    },
+    {
+      "id": "HS-05-05",
+      "title": "Đã hoàn thành bảo trì hệ thống làm mát",
+      "amount": 42,
+      "flag": "",
+      "domain": "maintenance",
+      "domainName": "Bảo trì – Vật tư",
+      "dept": "SC",
+      "owner": "Phạm Anh Sơn",
+      "file": "hosos/HS-05-05.txt",
+      "agents": [
+        "maintenance",
+        "production",
+        "safety",
+        "procurement",
+        "finance"
+      ]
+    },
+    {
+      "id": "HS-06-01",
+      "title": "Chênh lệch bảng công ca trực",
+      "amount": 8,
+      "flag": "reconcile_gap",
+      "domain": "hr",
+      "domainName": "Nhân sự – Tiền lương",
+      "dept": "TH",
+      "owner": "Hoàng Thị Thúy Vy",
+      "file": "hosos/HS-06-01.txt",
+      "agents": [
+        "hr",
+        "accounting",
+        "finance",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-06-02",
+      "title": "Tăng ca chưa có phê duyệt",
+      "amount": 6,
+      "flag": "missing_approval",
+      "domain": "hr",
+      "domainName": "Nhân sự – Tiền lương",
+      "dept": "TH",
+      "owner": "Nguyễn Khánh Lan",
+      "file": "hosos/HS-06-02.txt",
+      "agents": [
+        "hr",
+        "accounting",
+        "finance",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-06-03",
+      "title": "Thanh toán công tác phí thiếu hóa đơn",
+      "amount": 5.6,
+      "flag": "missing_invoice",
+      "domain": "hr",
+      "domainName": "Nhân sự – Tiền lương",
+      "dept": "TH",
+      "owner": "Phạm Đức Quang",
+      "file": "hosos/HS-06-03.txt",
+      "agents": [
+        "hr",
+        "accounting",
+        "finance",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-06-04",
+      "title": "Tuyển dụng nhân sự kỹ thuật chưa phê duyệt",
+      "amount": 0,
+      "flag": "missing_approval",
+      "domain": "hr",
+      "domainName": "Nhân sự – Tiền lương",
+      "dept": "TH",
+      "owner": "Lê Hồng Nhung",
+      "file": "hosos/HS-06-04.txt",
+      "agents": [
+        "hr",
+        "accounting",
+        "finance",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-06-05",
+      "title": "Tổng hợp kế hoạch đào tạo quý",
+      "amount": 22,
+      "flag": "",
+      "domain": "hr",
+      "domainName": "Nhân sự – Tiền lương",
+      "dept": "TH",
+      "owner": "Võ Thành Nam",
+      "file": "hosos/HS-06-05.txt",
+      "agents": [
+        "hr",
+        "accounting",
+        "finance",
+        "legal"
+      ]
+    },
+    {
+      "id": "HS-07-01",
+      "title": "Văn bản đến chưa giao đơn vị chủ trì",
+      "amount": 0,
+      "flag": "no_owner",
+      "domain": "governance",
+      "domainName": "Quản trị – Văn thư",
+      "dept": "TH",
+      "owner": "Hoàng Thị Thúy Vy",
+      "file": "hosos/HS-07-01.txt",
+      "agents": [
+        "records",
+        "legal",
+        "finance",
+        "audit"
+      ]
+    },
+    {
+      "id": "HS-07-02",
+      "title": "Nghị quyết chưa có bảng theo dõi thực hiện",
+      "amount": 0,
+      "flag": "missing_record",
+      "domain": "governance",
+      "domainName": "Quản trị – Văn thư",
+      "dept": "TH",
+      "owner": "Nguyễn Khánh Lan",
+      "file": "hosos/HS-07-02.txt",
+      "agents": [
+        "records",
+        "legal",
+        "finance",
+        "audit"
+      ]
+    },
+    {
+      "id": "HS-07-03",
+      "title": "Dự thảo tờ trình chưa rõ thẩm quyền",
+      "amount": 155,
+      "flag": "missing_approval",
+      "domain": "governance",
+      "domainName": "Quản trị – Văn thư",
+      "dept": "TH",
+      "owner": "Phạm Đức Quang",
+      "file": "hosos/HS-07-03.txt",
+      "agents": [
+        "records",
+        "legal",
+        "finance",
+        "audit"
+      ]
+    },
+    {
+      "id": "HS-07-04",
+      "title": "Văn bản sai phiên bản trước ký",
+      "amount": 230,
+      "flag": "reconcile_gap",
+      "domain": "governance",
+      "domainName": "Quản trị – Văn thư",
+      "dept": "TH",
+      "owner": "Lê Hồng Nhung",
+      "file": "hosos/HS-07-04.txt",
+      "agents": [
+        "records",
+        "legal",
+        "finance",
+        "audit"
+      ]
+    },
+    {
+      "id": "HS-07-05",
+      "title": "Báo cáo giao ban đã có phân công",
+      "amount": 0,
+      "flag": "",
+      "domain": "governance",
+      "domainName": "Quản trị – Văn thư",
+      "dept": "TH",
+      "owner": "Võ Thành Nam",
+      "file": "hosos/HS-07-05.txt",
+      "agents": [
+        "records",
+        "legal",
+        "finance",
+        "audit"
+      ]
+    },
+    {
+      "id": "HS-08-01",
+      "title": "Mực nước hồ tăng nhanh",
+      "amount": 0,
+      "flag": "safety_incident",
+      "domain": "safety",
+      "domainName": "An toàn – Môi trường",
+      "dept": "AT",
+      "owner": "Nguyễn Bảo Long",
+      "file": "hosos/HS-08-01.txt",
+      "agents": [
+        "safety",
+        "production",
+        "maintenance",
+        "records"
+      ]
+    },
+    {
+      "id": "HS-08-02",
+      "title": "Diễn tập PCCC thiếu biên bản",
+      "amount": 18,
+      "flag": "missing_record",
+      "domain": "safety",
+      "domainName": "An toàn – Môi trường",
+      "dept": "AT",
+      "owner": "Trần Mỹ Duyên",
+      "file": "hosos/HS-08-02.txt",
+      "agents": [
+        "safety",
+        "production",
+        "maintenance",
+        "records"
+      ]
+    },
+    {
+      "id": "HS-08-03",
+      "title": "Kế hoạch PCTT chưa cập nhật nhân sự",
+      "amount": 12,
+      "flag": "no_owner",
+      "domain": "safety",
+      "domainName": "An toàn – Môi trường",
+      "dept": "AT",
+      "owner": "Phạm Đình Trung",
+      "file": "hosos/HS-08-03.txt",
+      "agents": [
+        "safety",
+        "production",
+        "maintenance",
+        "records"
+      ]
+    },
+    {
+      "id": "HS-08-04",
+      "title": "Hồ sơ kiểm định an toàn thiếu chứng thư",
+      "amount": 56,
+      "flag": "safety_incident",
+      "domain": "safety",
+      "domainName": "An toàn – Môi trường",
+      "dept": "AT",
+      "owner": "Võ Hữu Phát",
+      "file": "hosos/HS-08-04.txt",
+      "agents": [
+        "safety",
+        "production",
+        "maintenance",
+        "records"
+      ]
+    },
+    {
+      "id": "HS-08-05",
+      "title": "Báo cáo môi trường đúng hạn",
+      "amount": 24,
+      "flag": "",
+      "domain": "safety",
+      "domainName": "An toàn – Môi trường",
+      "dept": "AT",
+      "owner": "Hoàng Minh Khôi",
+      "file": "hosos/HS-08-05.txt",
+      "agents": [
+        "safety",
+        "production",
+        "maintenance",
+        "records"
+      ]
+    }
+  ]
+}

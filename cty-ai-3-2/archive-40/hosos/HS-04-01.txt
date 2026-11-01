@@ -1,0 +1,40 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-04-01
+TÊN HỒ SƠ: Chậm tiến độ khảo sát địa hình
+NGÀY LẬP: 2026-10-12
+ĐƠN VỊ: Phòng Quản lý đầu tư và Kinh doanh
+TRƯỞNG ĐƠN VỊ GIẢ: Phạm Hoàng Phúc (Trưởng phòng)
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Nguyễn Minh Triết
+LĨNH VỰC: Dự án – Đầu tư
+LOẠI NGHIỆP VỤ: dự án thủy điện
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 370
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤUẬN
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Gói khảo sát dự kiến bàn giao ngày 15 nhưng báo cáo chuyên môn chưa được xác nhận; ảnh hưởng tiến độ thẩm định.
+Tài liệu này được biên soạn dưới dạng văn bản có cấu trúc để các Agent có thể đọc nguyên văn, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Hợp đồng tư vấn
+2. tiến độ
+3. sản phẩm khảo sát
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: late_deadline.
+Chưa xác minh hoặc thiếu minh chứng: approval.
+Không có chứng từ gốc, chữ ký số, phê duyệt hoặc thanh toán thật đi kèm.
+
+IV. PHỐI HỢP AGENT
+Nhóm chuyên môn tham gia: project, finance, legal, safety.
+Đầu ra bắt buộc: nhận xét theo dữ liệu TXT, nguồn dòng văn bản, cảnh báo, kế hoạch hành động, nhật ký bàn giao và trình người kiểm tra.
+Agent Kiểm soát chéo nhận kết quả chuyên môn trước Agent Thư ký. Người được giao chịu trách nhiệm xác minh, không xem kết luận mô phỏng là kết luận kiểm toán.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025: quy định mua sắm, chỉ áp dụng khi nghiệp vụ thuộc phạm vi và có xác minh tài liệu ký.
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024: Quy chế quản lý tài chính, chỉ dùng tham khảo khi chưa xác nhận hiệu lực và sửa đổi.
+Không suy đoán mức phê duyệt hay tính hợp lệ từ tình huống giả.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Quản lý đầu tư và Kinh doanh rà soát minh chứng và kết quả Agent; báo cáo đầu mối điều hành trước khi có bất kỳ quyết định chính thức.
+
+HẾT HỒ SƠ MÔ PHỎNG
