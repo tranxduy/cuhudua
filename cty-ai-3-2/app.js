@@ -153,11 +153,47 @@ function validateFormContent(c,raw){
  return errors;
 }
 
+
+function renderCaseWorkflow(){
+ const c=byId(selected);if(!c)return;
+ const names={DONE:"Đã xử lý (mô phỏng)",RETURNED:"Trả bổ sung",WAITING:"Đang chờ",NOT_STARTED:"Chưa tới bước"};
+ $("caseWorkflow").innerHTML=stageList(c).map((x,i)=>'<div class="step '+(x.status==="DONE"?"done":x.status==="WAITING"?"wait":"")+'"><strong>B'+x.order+". "+E(x.title)+'</strong><small>Người: '+E(x.actor)+'</small><small>Ngày: '+E(x.datetime?x.datetime.slice(0,10):"Chưa phát sinh")+'</small><span>'+E(names[x.status]||x.status)+'</span><button style="margin-top:8px" class="ghost" data-stage="'+i+'">Xem biểu mẫu '+(i+1)+'</button></div>').join("");
+ const v=stageList(c)[activeForm]||stageList(c)[0];
+ $("formTitle").textContent="Biểu mẫu "+v.order+" · "+v.title;
+ const d=cache.get(c.id);
+ $("formPreview").textContent=d?extractForm(c,activeForm):"Chưa tải tệp nguồn. Bấm Xem biểu mẫu để đọc trực tiếp TXT cho giai đoạn này.";
+}
+function matrixRows(){
+ return [["Mã hồ sơ","Tháng","Đơn vị","Trạng thái","Nhân viên lập","Trưởng bộ phận","TCKT kiểm soát","TGĐ duyệt","Nghiệm thu","Kế toán","Báo cáo"],...cases().map(c=>[c.id,c.month,c.dept,c.status,...stageList(c).map(x=>x.status+" | "+x.actor+" | "+(x.datetime?x.datetime.slice(0,10):"Chưa có ngày"))])];
+}
+function renderWorkflowMatrix(){
+ const all=cases(),total=all.length,steps=all.flatMap(c=>stageList(c));
+ const doneBy=n=>all.filter(c=>stageList(c)[n]?.status==="DONE").length;
+ metric("workflowMetrics",[["Tổng hồ sơ",total],["TCKT đã kiểm soát",doneBy(2)],["TGĐ đã duyệt giả",doneBy(3)],["Đã nghiệm thu giả",doneBy(4)],["Đã lên báo cáo",doneBy(6)]]);
+ $("workflowStageStats").innerHTML=STAGE_NAMES.map((title,i)=>{const xs=all.map(c=>stageList(c)[i]);return'<div class="barrow"><span>B'+(i+1)+' · '+E(title)+'</span><div class="bar"><i style="width:'+100*xs.filter(x=>x.status==="DONE").length/(total||1)+'%"></i></div><b>'+xs.filter(x=>x.status==="DONE").length+'/'+total+'</b></div>'}).join("");
+ const statuses={DONE:"✓",RETURNED:"Trả lại",WAITING:"Chờ",NOT_STARTED:"–"};
+ $("workflowTable").innerHTML='<table><thead><tr><th>Mã</th><th>Kỳ</th><th>Người lập</th><th>Trưởng bộ phận</th><th>TCKT</th><th>TGĐ</th><th>Thực hiện</th><th>Kế toán</th><th>Báo cáo</th></tr></thead><tbody>'+
+ all.map(c=>'<tr><td><button class="ghost" data-open="'+E(c.id)+'">'+E(c.id)+'</button></td><td>'+c.month+'/2026</td>'+stageList(c).map((x,i)=>'<td title="'+E(x.actor+' · '+(x.datetime||"Chưa có ngày"))+'">'+E(statuses[x.status]||x.status)+'</td>').join("")+'</tr>').join("")+'</tbody></table>';
+}
+async function showForm(n){
+ const c=byId(selected);if(!c)return;
+ activeForm=Number(n);
+ try{await read(c);renderCase();renderCaseWorkflow()}
+ catch(err){const a=state(c);a.status="failed";event(c,"ERROR","TXT","Người kiểm tra","Không đọc được biểu mẫu: "+err.message);toast(err.message);renderCaseWorkflow();save()}
+}
+function activeFormText(){const c=byId(selected);return c?extractForm(c,activeForm):""}
+function printHtmlForm(){
+ const c=byId(selected);if(!c)return;
+ const step=stageList(c)[activeForm],content=E(activeFormText());
+ const html='<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>'+E(step.formId)+'</title><style>@page{size:A4;margin:2cm 2cm 2cm 3cm}body{font:13px/1.65 "Times New Roman",serif;color:#111}h1{text-align:center;font-size:18px}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}small{color:#888}</style></head><body><h1>CTY AI 3.2 – BIỂU MẪU GIẢ ĐỊNH</h1><small>KHÔNG CÓ GIÁ TRỊ PHÁP LÝ / KHÔNG PHẢI BẢN KÝ</small><pre>'+content+'</pre></body></html>';
+ download(step.formId+".html",html,"text/html;charset=utf-8");
+}
+
 function render(){if(!M)return;renderDashboard();renderCaseList();renderCase();renderCaseWorkflow();renderWorkflowMatrix();renderFinance();renderProjects();renderReports();renderAgents();renderTasks();renderPeople();renderLogs()}
 function show(tab){view=tab;document.querySelectorAll("[data-tab]").forEach(b=>b.classList.toggle("selected",b.dataset.tab===tab));document.querySelectorAll(".page").forEach(p=>p.hidden=p.id!=="p-"+tab);render();window.scrollTo({top:0,behavior:"smooth"})}
 function csv(rows){return "\ufeff"+rows.map(r=>r.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n")}
 function download(name,content,mime){let b=new Blob([content],{type:mime||"text/plain;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-function reportRows(type){if(type==="finance")return[["Tháng","Số hồ sơ","Đề nghị","Đã duyệt","Đã xử lý","Thanh toán"],...financeMonths()];if(type==="projects")return[["Mã","Dự án","Ngân sách","Hồ sơ","Đề nghị","Đã xử lý","Thanh toán","KH %","TH %"],...projectRows()];if(type==="domains")return[["Lĩnh vực","Đã đọc","Tổng hồ sơ","Đề nghị","Đã xử lý","CLOSED"],...domainRows()];if(type==="tasks")return[["Mã","Người","Nhiệm vụ","Hoàn thành"],...db.tasks.map(t=>[t.caseId,t.owner,t.title,t.done])];if(type==="logs")return[["Mã","Loại","Từ","Đến","Nội dung","Lúc"],...db.events.map(e=>[e.caseId,e.type,e.from,e.to,e.description,e.time])];return qrows}
+function reportRows(type){if(type==="finance")return[["Tháng","Số hồ sơ","Đề nghị","Đã duyệt","Đã xử lý","Thanh toán"],...financeMonths()];if(type==="projects")return[["Mã","Dự án","Ngân sách","Hồ sơ","Đề nghị","Đã xử lý","Thanh toán","KH %","TH %"],...projectRows()];if(type==="domains")return[["Lĩnh vực","Đã đọc","Tổng hồ sơ","Đề nghị","Đã xử lý","CLOSED"],...domainRows()];if(type==="tasks")return[["Mã","Người","Nhiệm vụ","Hoàn thành"],...db.tasks.map(t=>[t.caseId,t.owner,t.title,t.done])];if(type==="workflow")return matrixRows();if(type==="logs")return[["Mã","Loại","Từ","Đến","Nội dung","Lúc"],...db.events.map(e=>[e.caseId,e.type,e.from,e.to,e.description,e.time])];return qrows}
 function query(q){let s=String(q||"").toLowerCase(),rows=[["Chỉ tiêu","Giá trị","Nguồn"]],note="";
 if(s.includes("chi phí")&&s.includes("cao nhất"))rows=[["Khoản mục","Đã xử lý triệu","Hồ sơ"],...financeTypes().map(x=>[x[0],num(x[3]),x[1]])];
 else if(s.includes("chi phí")&&s.includes("tháng"))rows=reportRows("finance");
@@ -184,14 +220,14 @@ if(cmd==="review"){s.review=$("reviewInput").value;event(c,"DECISION","Người 
 if(cmd==="download"){try{download(c.id+".txt",(await read(c)).raw)}catch(e){toast(e.message)}}
 if(cmd==="export")download(c.id+"-bien-ban.txt",["CTY AI 3.2 – BIÊN BẢN HỒ SƠ MÔ PHỎNG",c.id,c.title,"Trạng thái: "+statusName(c),"Đã xử lý: "+num(s.parsed?.processed||0)+" triệu",...Object.values(s.results).flatMap(x=>["Agent "+AN[x.id]+": "+x.comment,...x.findings.map(f=>"Cảnh báo: "+f.text+(f.evidence?" (dòng "+f.evidence.line+")":""))]),"Ý kiến: "+(s.review||"Chưa có")].join("\n"));
 save();render()}
-function act(a){if(a==="runall")runAll();if(a==="sample"){selected=cases()[0].id;show("cases");runCase(cases()[0],false).then(render)}
+function act(a){if(a==="runall")runAll();if(a==="formsall")caseCommand("download");if(a==="workflowcsv")download("CTY-AI-3.2-MA-TRAN-7-BUOC.csv",csv(matrixRows()),"text/csv;charset=utf-8");if(a==="downloadform"){const c=byId(selected);if(c)download(stageList(c)[activeForm].formId+".txt",activeFormText());}if(a==="printform")printHtmlForm();if(a==="sample"){selected=cases()[0].id;show("cases");runCase(cases()[0],false).then(render)}
 if(a==="financecsv"||a==="projectcsv"||a==="allcsv"||a==="taskcsv"||a==="logcsv"||a==="querycsv"){const ty={financecsv:"finance",projectcsv:"projects",allcsv:"domains",taskcsv:"tasks",logcsv:"logs",querycsv:"query"}[a];download("CTY-AI-3.2-"+ty+".csv",csv(reportRows(ty)),"text/csv;charset=utf-8")}
 if(a==="financetxt")download("CTY-AI-3.2-CHI-PHI-10-THANG.txt",["BÁO CÁO CHI PHÍ GIẢ ĐỊNH ĐẾN 31/10/2026",coverageMessage("finance"),"Chi phí đã xử lý: "+num(total(valid("finance"),"processed"))+" triệu","Theo tháng:",...financeMonths().map(r=>"Tháng "+r[0]+": "+num(r[4])+" triệu"),"Theo khoản mục:",...financeTypes().map(r=>r[0]+": "+num(r[3])+" triệu"),"Không phải BCTC thật."].join("\n"));
 if(a==="alljson")download("CTY-AI-3.2-report.json",JSON.stringify({coverage:valid().length,domains:domainRows(),financeMonths:financeMonths(),projects:projectRows()},null,2),"application/json");
 if(a==="print")window.print();if(a==="ask")query($("question").value);if(a==="template")download("CTY-AI-3.2-MAU-TXT.txt",template());if(a==="import")importFile();
 if(a==="backup")download("CTY-AI-3.2-backup.json",JSON.stringify(db,null,2),"application/json");
 if(a==="reset"&&confirm("Xóa toàn bộ trạng thái demo, hồ sơ TXT nhập và log trên thiết bị này?")){db=blank();cache.clear();selected=M.cases[0].id;save();render()}}
-function click(e){let b=e.target.closest("button");if(!b)return;if(b.dataset.tab){show(b.dataset.tab);return}if(b.dataset.open){selected=b.dataset.open;show("cases");return}if(b.dataset.agent){agent=b.dataset.agent;renderAgents();return}if(b.dataset.case){caseCommand(b.dataset.case);return}if(b.dataset.ask){$("question").value=b.dataset.ask;query(b.dataset.ask);return}if(b.dataset.action)act(b.dataset.action)}
+function click(e){let b=e.target.closest("button");if(!b)return;if(b.dataset.tab){show(b.dataset.tab);return}if(b.dataset.open){selected=b.dataset.open;activeForm=0;show("cases");return}if(b.dataset.agent){agent=b.dataset.agent;renderAgents();return}if(b.dataset.stage!==undefined){showForm(b.dataset.stage);return}if(b.dataset.case){caseCommand(b.dataset.case);return}if(b.dataset.ask){$("question").value=b.dataset.ask;query(b.dataset.ask);return}if(b.dataset.action)act(b.dataset.action)}
 async function boot(){try{let response=await fetch("manifest.json",{cache:"no-cache"});if(!response.ok)throw Error("HTTP "+response.status);M=await response.json();
 if(M.cases?.length!==360||M.domains?.length!==8||M.domains.some(d=>M.cases.filter(c=>c.domain===d.key).length!==45))throw Error("Không đủ dữ liệu 8 × 45");
 selected=M.cases[0].id;
@@ -204,6 +240,6 @@ $("logType").onchange=renderLogs;$("logSearch").oninput=renderLogs;
 $("restoreFile").onchange=async e=>{let f=e.target.files?.[0];if(!f)return;try{if(f.size>6000000)throw Error("Tệp quá lớn");let d=JSON.parse(await f.text());if(d.version!==322||!d.runs||!Array.isArray(d.tasks)||!Array.isArray(d.events)||!Array.isArray(d.custom))throw Error("Sai cấu trúc");if(confirm("Khôi phục thay dữ liệu hiện tại?")){db=d;cache.clear();save();render()}}catch(err){toast(err.message)}};
 document.addEventListener("click",click);$("bootAlert").hidden=true;render();
 }catch(e){$("bootAlert").textContent="Không tải được danh mục hồ sơ: "+e.message+". Báo cáo không được tạo khi thiếu dữ liệu.";}}
-window.CTY32={boot,runAll,runCase,read,parse,validate,cases,state,valid,financeMonths,financeTypes,projectRows,domainRows,getStore:()=>db,render,template,importFile};
+window.CTY32={boot,runAll,runCase,read,parse,validate,cases,state,valid,financeMonths,financeTypes,projectRows,domainRows,getStore:()=>db,render,template,importFile,stageList,extractForm,matrixRows,showForm};
 boot();
 })();
