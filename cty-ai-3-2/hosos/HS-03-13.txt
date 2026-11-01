@@ -1,12 +1,15 @@
-CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+CTY AI 3.2 — TÌNH HUỐNG VÀ 07 BIỂU MẪU GIẢ ĐỊNH – KHÔNG PHẢI HỒ SƠ ĐƯỢC KÝ THẬT
 MÃ_HỒ_SƠ: HS-03-13
 TÊN_HỒ_SƠ: Dịch vụ vệ sinh công nghiệp – đủ hồ sơ trình duyệt (tháng 08)
 LĨNH_VỰC: procurement
-THÁNG: 8
+THÁNG: 3
 NĂM: 2026
 ĐƠN_VỊ: QLDT
 NHÂN_VIÊN_GIẢ: Võ Thị Ngọc Linh
 TRƯỞNG_BỘ_PHẬN_GIẢ: Phạm Hoàng Phúc
+NGƯỜI_KIỂM_SOÁT_TCKT: Đỗ Quang Huy
+TỔNG_GIÁM_ĐỐC_GIẢ: Đỗ Quang Hưng
+KẾ_TOÁN_GHI_NHẬN: Lê Thị Bảo Ngọc
 LOẠI_KHOẢN_MỤC: Dịch vụ
 GIÁ_TRỊ_ĐỀ_NGHỊ: 235.6
 DỰ_TOÁN_HỒ_SƠ: 225
@@ -15,42 +18,137 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
 TRẠNG_THÁI: PENDING
 CỜ_KIỂM_TRA: CHO_PHE_DUYET
-BẢN_CÔNG_KHAI: DEMO_ONLY
+KỲ_BÁO_CÁO: 03/2026
+CHỨNG_TỪ_THỰC_TẾ: KHÔNG CÓ; 07 biểu mẫu đều được dựng để thử nghiệm
+Đơn vị tiền: TRIỆU ĐỒNG giả định. Tất cả nhân sự và chữ ký là tên hư cấu.
 
-01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
-Căn cứ nhu cầu thực hiện dịch vụ vệ sinh công nghiệp – đủ hồ sơ trình duyệt (tháng 08), đơn vị QLDT lập hồ sơ đề nghị giá trị 235,6 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
-Đầu mối lập hồ sơ: Võ Thị Ngọc Linh; trách nhiệm kiểm tra: Phạm Hoàng Phúc.
+==== TỔNG HỢP CÁC GIAI ĐOẠN XỬ LÝ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ / DỰ THẢO | DONE | Võ Thị Ngọc Linh | 2026-03-05 | BM1-HS-03-13
+BƯỚC 2: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ | DONE | Phạm Hoàng Phúc | 2026-03-06 | BM2-HS-03-13
+BƯỚC 3: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN | DONE | Đỗ Quang Huy | 2026-03-09 | BM3-HS-03-13
+BƯỚC 4: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC | WAITING | Đỗ Quang Hưng | CHƯA CÓ NGÀY | BM4-HS-03-13
+BƯỚC 5: BIÊN BẢN THỰC HIỆN / NGHIỆM THU | NOT_STARTED | Võ Thị Ngọc Linh | CHƯA CÓ NGÀY | BM5-HS-03-13
+BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | NOT_STARTED | Lê Thị Bảo Ngọc | CHƯA CÓ NGÀY | BM6-HS-03-13
+BƯỚC 7: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ | NOT_STARTED | Trần Minh Hằng | CHƯA CÓ NGÀY | BM7-HS-03-13
 
-02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
-Dự toán riêng cho hồ sơ 225 triệu đồng; số đề nghị 235,6 triệu đồng, chênh lệch 10,6 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ / DỰ THẢO =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM1-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-03-05, giờ dự kiến 08:30
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ / DỰ THẢO
+-------------------------------------------------------
+Kính gửi: Phạm Hoàng Phúc. Người lập: Võ Thị Ngọc Linh.
+Nội dung: Dịch vụ vệ sinh công nghiệp – đủ hồ sơ trình duyệt (tháng 08). Đề nghị thực hiện công việc Dịch vụ với giá trị 235,6 triệu đồng.
+Cơ sở: nhu cầu sản xuất kinh doanh giả định; dự toán hồ sơ 225 triệu đồng.
+Chứng từ kèm theo (mẫu): phiếu đề nghị ĐN-HS-03-13, dự toán DT-HS-03-13, bảng kê và minh chứng mô phỏng.
+Kiến nghị: chuyển trưởng bộ phận kiểm tra để trình TCKT và người có thẩm quyền.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Võ Thị Ngọc Linh — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 01 =====
 
-03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
-Trạng thái bộ chứng từ: CHỜ QUYẾT ĐỊNH.
-Mã chứng từ mô phỏng: YC-HS-03-13; DT-HS-03-13; BB-HS-03-13; QD-HS-03-13; CT-HS-03-13.
-Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
-LOẠI MUA SẮM: Dịch vụ
-PHƯƠNG THỨC DỰ KIẾN: Lựa chọn nhà thầu theo kế hoạch và quy định (chờ xác minh)
-HỒ SƠ KIỂM SOÁT: Nhu cầu, kế hoạch/dự toán, căn cứ giá, lựa chọn nhà thầu (nếu áp dụng), phê duyệt kết quả, hợp đồng, nghiệm thu và thanh toán.
-CĂN CỨ CHỈ DẪN: QĐ29 ngày 31/12/2025 (chỉ dẫn mô phỏng; rà trực tiếp văn bản ký khi áp dụng thật).
+===== BIỂU MẪU 02 | PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM2-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-03-06, giờ dự kiến 09:45
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ
+-------------------------------------------------------
+Kính gửi: Phòng Tài chính – Kế toán.
+Trưởng bộ phận rà soát tính cần thiết, nguồn kinh phí và sự phù hợp với kế hoạch của nghiệp vụ Dịch vụ.
+Nhận xét: Có phát sinh cao hơn dự toán, cần thuyết minh hoặc phê duyệt điều chỉnh.
+Hồ sơ trình: ĐN-HS-03-13; DT-HS-03-13; phụ lục khối lượng / giải trình (giả).
+Ý kiến: Đồng ý trình TCKT kiểm soát điều kiện; không phải quyết định chi.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Phạm Hoàng Phúc — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 02 =====
 
-04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
-B1 - ĐỀ NGHỊ: Võ Thị Ngọc Linh lập phiếu đề nghị xử lý tháng 8/2026.
-B2 - KIỂM TRA: Trưởng đơn vị Phạm Hoàng Phúc rà kế hoạch, ngân sách và điều kiện thực hiện.
-B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
-B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
-B5 - QUYẾT ĐỊNH: ĐANG CHỜ PHÊ DUYỆT GIẢ ĐỊNH.
-B6 - THỰC HIỆN: Chưa thực hiện; giá trị đã xử lý là 0.
-B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+===== BIỂU MẪU 03 | PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM3-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-03-09, giờ dự kiến 10:20
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN
+-------------------------------------------------------
+Kính gửi: Tổng Giám đốc (thông qua cấp trình).
+Người rà soát TCKT: Đỗ Quang Huy; độc lập với người lập hồ sơ theo dữ liệu giả định.
+Bảng kiểm: 1) đề nghị có người lập và trưởng bộ phận; 2) dự toán 225 triệu; 3) chứng từ đối chiếu; 4) điều kiện thanh toán; 5) thẩm quyền TGĐ/HĐQT cần xác định theo hồ sơ thật.
+Giá trị kiểm soát đề nghị 235,6 triệu; trường hợp vượt dự toán cần phê duyệt bổ sung trong tình huống.
+Kết quả: Đã kiểm soát và đồng ý trình theo dữ liệu mô phỏng.
+LƯU Ý: TCKT xác nhận kiểm soát, không thay thế thẩm quyền phê duyệt của Tổng Giám đốc.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Đỗ Quang Huy — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 03 =====
 
-05. BÁO CÁO KẾT QUẢ HỒ SƠ
-Giá trị được duyệt giả định: 0 triệu đồng.
-Giá trị đã xử lý giả định trong kỳ: 0 triệu đồng.
-Giá trị đã thanh toán giả định: 0 triệu đồng.
-Giá trị chờ xử lý trên đề nghị: 235,6 triệu đồng.
-Kết quả hồ sơ: Chờ phê duyệt.
-Kiến nghị: Trình đúng người có thẩm quyền; chưa ghi nhận chi phí đã xử lý.
+===== BIỂU MẪU 04 | PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM4-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 11:15
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC
+-------------------------------------------------------
+Nội dung trình phê duyệt: Dịch vụ vệ sinh công nghiệp – đủ hồ sơ trình duyệt (tháng 08); người trình: Phạm Hoàng Phúc.
+Giá trị đề nghị 235,6 triệu; giá trị được duyệt giả định 0 triệu.
+Căn cứ mô phỏng: hồ sơ đề nghị, phiếu kiểm tra TCKT, báo cáo giải trình và quy định nội bộ cần đối chiếu khi áp dụng thật.
+Quyết định: Chưa có quyết định; dừng thực hiện cho đến khi được duyệt.
+Chữ ký TGĐ: CHƯA KÝ.
+TRẠNG THÁI GIAI ĐOẠN: WAITING
+CHỦ THỂ: Đỗ Quang Hưng — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 04 =====
 
-06. ĐẦU RA CỦA HỆ THỐNG CTY AI
-Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
-Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
-HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH
+===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN / NGHIỆM THU =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM5-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 14:05
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN / NGHIỆM THU
+-------------------------------------------------------
+Đơn vị thực hiện: QLDT; đầu mối: Võ Thị Ngọc Linh.
+Nhiệm vụ: Dịch vụ vệ sinh công nghiệp – đủ hồ sơ trình duyệt (tháng 08). Tài liệu nghiệm thu/nhật ký thực hiện được lập giả để phục vụ mô phỏng.
+Hồ sơ thực hiện: bảng khối lượng KL-HS-03-13, biên bản nghiệm thu NT-HS-03-13, hóa đơn giả lập HD-HS-03-13 (không có hóa đơn thật).
+Kết quả: CHƯA HOÀN THÀNH; không được tự ghi nhận chi phí.
+Người xác nhận: Chưa xác nhận.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Võ Thị Ngọc Linh — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 05 =====
+
+===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM6-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 15:10
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
+-------------------------------------------------------
+Người ghi nhận kế toán: Lê Thị Bảo Ngọc.
+Căn cứ đối chiếu: quyết định phê duyệt giả, nghiệm thu giả và bảng kê nghiệp vụ.
+Giá trị đã xử lý: 0 triệu; giá trị thanh toán mô phỏng: 0 triệu.
+Quy tắc: chỉ ghi vào báo cáo nghiệp vụ khi trạng thái CLOSED và chứng từ TXT hợp lệ; không tự tạo bút toán sổ cái thực.
+Trạng thái: Chưa ghi nhận vì chưa hoàn tất điều kiện.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Lê Thị Bảo Ngọc — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 06 =====
+
+===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM7-HS-03-13/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 16:05
+Mã hồ sơ: HS-03-13 | Phòng/đơn vị: QLDT | Kỳ: 03/2026
+TÊN BIỂU MẪU: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ
+-------------------------------------------------------
+Kỳ báo cáo: tháng 03/2026; người tổng hợp: Trần Minh Hằng.
+Đơn vị và nguồn: QLDT; chứng cứ nguồn TXT HS-03-13.
+Số đề nghị: 235,6 triệu; số được duyệt: 0 triệu; số đã xử lý: 0 triệu; đã thanh toán: 0 triệu.
+Kết luận: Chưa đưa vào giá trị hoàn tất; theo dõi trong danh mục chờ xử lý.
+Chú ý: tổng hợp chi phí TCKT khác với tổng giá trị mua sắm, sửa chữa hay giải ngân dự án; không cộng chồng các lĩnh vực.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Trần Minh Hằng — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 07 =====
+
+HẾT HỒ SƠ GIẢ ĐỊNH CTY AI 3.2. KHÔNG PHẢI CHỨNG TỪ CÔNG TY.

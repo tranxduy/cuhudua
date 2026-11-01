@@ -1,12 +1,15 @@
-CTY AI 3.2 — HỒ SƠ TXT MÔ PHỎNG; KHÔNG PHẢI TÀI LIỆU DOANH NGHIỆP THẬT
+CTY AI 3.2 – 07 MẪU VĂN BẢN GIẢ ĐỊNH, KHÔNG ĐƯỢC DÙNG KÝ HAY THANH TOÁN
 MÃ_HỒ_SƠ: HS-06-19
 TÊN_HỒ_SƠ: Bảng công ca vận hành – cần bổ sung phụ lục (tháng 06)
 LĨNH_VỰC: hr
-THÁNG: 6
+THÁNG: 4
 NĂM: 2026
 ĐƠN_VỊ: TH
 NHÂN_VIÊN_GIẢ: Lê Hồng Nhung
 TRƯỞNG_BỘ_PHẬN_GIẢ: Trần Bảo Minh
+NGƯỜI_KIỂM_SOÁT_TCKT: Lê Thị Bảo Ngọc
+TỔNG_GIÁM_ĐỐC_GIẢ: Đỗ Quang Hưng
+KẾ_TOÁN_GHI_NHẬN: Trần Minh Hằng
 LOẠI_KHOẢN_MỤC: Chấm công
 GIÁ_TRỊ_ĐỀ_NGHỊ: 72
 DỰ_TOÁN_HỒ_SƠ: 75.2
@@ -15,38 +18,121 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 72
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 72
 TRẠNG_THÁI: CLOSED
 CỜ_KIỂM_TRA: KHONG
-BẢN_CÔNG_KHAI: DEMO_ONLY
+ĐÂY LÀ DỮ LIỆU HƯ CẤU. KHÔNG CÓ CHỮ KÝ SỐ, CON DẤU HOẶC CHỨNG TỪ THẬT.
 
-01. TÌNH HUỐNG VÀ PHIẾU ĐỀ NGHỊ
-Hồ sơ nghiệp vụ bảng công ca vận hành – cần bổ sung phụ lục (tháng 06), phát sinh trong tháng 06/2026. Lê Hồng Nhung lập đề xuất với giá trị 72 triệu đồng; trưởng đơn vị là Trần Bảo Minh.
-Phạm vi: CÔNG TÁC NHÂN SỰ: Chấm công. Có sổ công/đào tạo/đề xuất giả, thông tin nhân sự và số tiền đều hư cấu. Phiếu đối chiếu bảng công và bảng lương được mô phỏng; không dùng để tính trả lương thật.
+==== NHẬT KÝ LUÂN CHUYỂN HỒ SƠ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ VÀ TỜ TRÌNH | DONE | Lê Hồng Nhung | 2026-04-06 | BM1-HS-06-19
+BƯỚC 2: PHIẾU TRƯỞNG ĐƠN VỊ KIỂM TRA / TRÌNH | DONE | Trần Bảo Minh | 2026-04-07 | BM2-HS-06-19
+BƯỚC 3: PHIẾU TCKT KIỂM SOÁT – ĐỒNG Ý TRÌNH | DONE | Lê Thị Bảo Ngọc | 2026-04-08 | BM3-HS-06-19
+BƯỚC 4: PHIẾU TGĐ PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-04-09 | BM4-HS-06-19
+BƯỚC 5: BIÊN BẢN THỰC HIỆN VÀ NGHIỆM THU | DONE | Lê Hồng Nhung | 2026-04-10 | BM5-HS-06-19
+BƯỚC 6: PHIẾU KẾ TOÁN GHI NHẬN | DONE | Trần Minh Hằng | 2026-04-13 | BM6-HS-06-19
+BƯỚC 7: BIỂU TỔNG HỢP BÁO CÁO KỲ | DONE | Phạm Anh Khoa | 2026-04-14 | BM7-HS-06-19
 
-02. BẢNG DỰ TOÁN / GIÁ TRỊ ĐỀ NGHỊ
-Số kế hoạch riêng của hồ sơ 75,2 triệu đồng. Đề nghị 72 triệu đồng, chênh lệch dự toán -3,2 triệu đồng. Dữ liệu được sinh nhằm thử nghiệm báo cáo.
-Danh mục chứng từ kiểm tra: Tờ trình YC-HS-06-19, bảng dự toán DT-HS-06-19, biên bản BB-HS-06-19, phiếu xác nhận CT-HS-06-19. Đây chỉ là mã chứng từ GIẢ, không phải bản ký thực.
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ VÀ TỜ TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM1-HS-06-19/DEMO
+Ngày: 2026-04-06; trạng thái DONE
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ VÀ TỜ TRÌNH
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Người dự thảo: Lê Hồng Nhung.
+Kính trình trưởng bộ phận: Trần Bảo Minh.
+Đề nghị xử lý Bảng công ca vận hành – cần bổ sung phụ lục (tháng 06); loại nghiệp vụ Chấm công.
+Giá trị đề nghị 72 triệu đồng. Dự toán dự kiến 75,2 triệu đồng.
+Hồ sơ giả: phiếu ĐN-HS-06-19, bảng dự toán DT-HS-06-19, lý do và đối tượng hưởng lợi (mô phỏng).
+Người xử lý: Lê Hồng Nhung. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 01 =====
 
-03. ĐỐI CHIẾU CHỨNG TỪ MÔ PHỎNG
-Tình trạng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
-Cờ rủi ro: KHONG.
-Người có trách nhiệm kiểm tra phải xác minh chứng từ nguồn nếu muốn áp dụng thật; web Public không thể chứng minh tài liệu đã ký hoặc hợp lệ.
+===== BIỂU MẪU 02 | PHIẾU TRƯỞNG ĐƠN VỊ KIỂM TRA / TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM2-HS-06-19/DEMO
+Ngày: 2026-04-07; trạng thái DONE
+TÊN BIỂU MẪU: PHIẾU TRƯỞNG ĐƠN VỊ KIỂM TRA / TRÌNH
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Trưởng đơn vị: Trần Bảo Minh.
+Đã kiểm tra nhu cầu, điều kiện phát sinh và đối chiếu kế hoạch chuyên môn theo bộ dữ liệu giả định.
+Chênh lệch đề nghị/dự toán: -3,2 triệu đồng. Trong giới hạn dự toán giả định.
+Xử lý: Đồng ý chuyển Phòng TCKT kiểm tra trước khi trình TGĐ.
+Người xử lý: Trần Bảo Minh. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 02 =====
 
-04. SƠ ĐỒ LUÂN CHUYỂN 7 BƯỚC
-B1: Lê Hồng Nhung lập hồ sơ và giao đầu mối.
-B2: Trần Bảo Minh kiểm tra quy mô, kế hoạch và lý do phát sinh.
-B3: Agent chuyên ngành nhận nội dung TXT và đối chiếu các trường số liệu.
-B4: Agent Kiểm soát chéo kiểm tra tính nhất quán và tổng hợp rủi ro.
-B5: Người có thẩm quyền giả định: đã ký phê duyệt giả.
-B6: Bộ phận nghiệp vụ: đã kết thúc nghiệp vụ giả.
-B7: Agent Thư ký đưa dữ liệu đã xử lý vào báo cáo riêng từng lĩnh vực; các đề nghị đang chờ không được tính là hoàn tất.
+===== BIỂU MẪU 03 | PHIẾU TCKT KIỂM SOÁT – ĐỒNG Ý TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM3-HS-06-19/DEMO
+Ngày: 2026-04-08; trạng thái DONE
+TÊN BIỂU MẪU: PHIẾU TCKT KIỂM SOÁT – ĐỒNG Ý TRÌNH
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Người kiểm soát nghiệp vụ tài chính: Lê Thị Bảo Ngọc; không cùng người lập hồ sơ.
+Bảng kiểm: số tiền; dự toán; thủ tục mua sắm/hợp đồng; chứng từ nghiệm thu; điều kiện thanh toán; thẩm quyền người quyết định.
+Số kiểm tra: đề nghị 72 triệu, dự toán 75,2 triệu.
+Ý kiến: Đã kiểm soát, ĐỒNG Ý TRÌNH trong tình huống giả định.
+TCKT KHÔNG THAY THẨM QUYỀN PHÊ DUYỆT CỦA TGĐ. Quy chế tài chính QĐ21/2024 chỉ là tham chiếu chờ xác minh hiệu lực.
+Người xử lý: Lê Thị Bảo Ngọc. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 03 =====
 
-05. PHIẾU KẾT QUẢ CỦA HỒ SƠ
-Kết luận mô phỏng: Đã hoàn tất xử lý (giả định) và nhập báo cáo.
-Giá trị đề nghị: 72 triệu. Giá trị đã duyệt: 72 triệu. Giá trị đã xử lý: 72 triệu.
-Giá trị đã thanh toán: 72 triệu; còn chưa hoàn tất theo đề nghị: 0 triệu.
-Không hạch toán vào sổ thật, không quyết định chi tiền và không được dùng làm bằng chứng kế toán.
+===== BIỂU MẪU 04 | PHIẾU TGĐ PHÊ DUYỆT =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM4-HS-06-19/DEMO
+Ngày: 2026-04-09; trạng thái DONE
+TÊN BIỂU MẪU: PHIẾU TGĐ PHÊ DUYỆT
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Kính trình Tổng Giám đốc: Đỗ Quang Hưng.
+Nguồn trình gồm đề nghị, ý kiến Trưởng đơn vị, phiếu kiểm soát TCKT và tài liệu bổ sung (tất cả giả định).
+Giá trị đề nghị 72 triệu; giá trị được phê duyệt GIẢ ĐỊNH 72 triệu.
+Kết quả: Đồng ý triển khai trong phạm vi giá trị được duyệt giả định.
+Người xử lý: Đỗ Quang Hưng. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 04 =====
 
-06. KIẾN NGHỊ VÀ ĐẦU RA TỰ ĐỘNG
-Trạng thái để báo cáo: CLOSED.
-Đề nghị Agent tiếp nhận theo lĩnh vực, ghi nguồn dòng, phân loại rủi ro, tạo task duy nhất theo caseId.
-Người chủ trì Lê Hồng Nhung chịu trách nhiệm xác minh và xác nhận trước khi coi hoàn tất.
-HẾT HỒ SƠ CTY AI 3.2 – NỘI DUNG VĂN BẢN GIẢ ĐỊNH
+===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN VÀ NGHIỆM THU =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM5-HS-06-19/DEMO
+Ngày: 2026-04-10; trạng thái DONE
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN VÀ NGHIỆM THU
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Đơn vị triển khai: TH.
+Người thực hiện: Lê Hồng Nhung.
+Bộ chứng từ khối lượng: nhiệm vụ CT-HS-06-19, phiếu giao NT-HS-06-19, nghiệm thu BB-HS-06-19, hóa đơn giả HD-HS-06-19.
+Kết quả: Đã thực hiện và nghiệm thu GIẢ, giá trị đã xử lý 72 triệu đồng.
+Người xử lý: Lê Hồng Nhung. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 05 =====
+
+===== BIỂU MẪU 06 | PHIẾU KẾ TOÁN GHI NHẬN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM6-HS-06-19/DEMO
+Ngày: 2026-04-13; trạng thái DONE
+TÊN BIỂU MẪU: PHIẾU KẾ TOÁN GHI NHẬN
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Người kế toán: Trần Minh Hằng.
+Đối chiếu đề nghị, quyết định phê duyệt, nghiệm thu, bảng giá trị; chỉ ghi nhận khi đầy đủ điều kiện trong tình huống mô phỏng.
+Giá trị đã xử lý 72 triệu, đã thanh toán giả định 72 triệu.
+Tình trạng: Đã lập chứng từ ghi nhận KẾ TOÁN GIẢ; không ghi sổ thật.
+Người xử lý: Trần Minh Hằng. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 06 =====
+
+===== BIỂU MẪU 07 | BIỂU TỔNG HỢP BÁO CÁO KỲ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN – TÌNH HUỐNG GIẢ ĐỊNH
+Số: BM7-HS-06-19/DEMO
+Ngày: 2026-04-14; trạng thái DONE
+TÊN BIỂU MẪU: BIỂU TỔNG HỢP BÁO CÁO KỲ
+Hồ sơ: HS-06-19 | Đơn vị: TH | Kỳ: 4/2026
+-----------------------------------------------------
+Người tổng hợp báo cáo: Phạm Anh Khoa; kỳ 04/2026.
+Tổng hợp theo hồ sơ HS-06-19, loại Chấm công, đề nghị 72 triệu, được duyệt 72 triệu, đã xử lý 72 triệu, thanh toán 72 triệu.
+Kết luận: Đưa vào báo cáo theo lĩnh vực có nguồn TXT.
+Không cộng trùng chi phí kế toán với giá trị mua sắm, chi phí sửa chữa hoặc giá trị dự án.
+Người xử lý: Phạm Anh Khoa. Kết quả giai đoạn: HOÀN TẤT MÔ PHỎNG.
+Chữ ký, đóng dấu: [CHỈ MÔ PHỎNG, KHÔNG CÓ XÁC THỰC]
+===== KẾT THÚC BIỂU MẪU 07 =====
+HẾT HỒ SƠ GIẢ ĐỊNH CTY AI 3.2.

@@ -1,12 +1,15 @@
-CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+CTY AI 3.2 – HỒ SƠ CHỨNG TỪ GIẢ ĐỊNH 07 GIAI ĐOẠN – KHÔNG PHẢI BẢN KÝ
 MÃ_HỒ_SƠ: HS-04-40
 TÊN_HỒ_SƠ: Đấu thầu tư vấn – đã có báo cáo kết quả (tháng 01)
 LĨNH_VỰC: project
-THÁNG: 1
+THÁNG: 5
 NĂM: 2026
 ĐƠN_VỊ: QLDT
 NHÂN_VIÊN_GIẢ: Đặng Thị Bích Hà
 TRƯỞNG_BỘ_PHẬN_GIẢ: Phạm Hoàng Phúc
+NGƯỜI_KIỂM_SOÁT_TCKT: Trần Minh Hằng
+TỔNG_GIÁM_ĐỐC_GIẢ: Đỗ Quang Hưng
+KẾ_TOÁN_GHI_NHẬN: Phạm Anh Khoa
 LOẠI_KHOẢN_MỤC: Tư vấn
 GIÁ_TRỊ_ĐỀ_NGHỊ: 465.1
 DỰ_TOÁN_HỒ_SƠ: 507
@@ -15,45 +18,119 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 465.1
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 465.1
 TRẠNG_THÁI: CLOSED
 CỜ_KIỂM_TRA: CHENH_LECH_NHO
-BẢN_CÔNG_KHAI: DEMO_ONLY
+Ghi chú: Toàn bộ tên người, dấu, số tiền, chữ ký và thông tin trong tệp đều GIẢ ĐỊNH.
 
-01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
-Căn cứ nhu cầu thực hiện đấu thầu tư vấn – đã có báo cáo kết quả (tháng 01), đơn vị QLDT lập hồ sơ đề nghị giá trị 465,1 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
-Đầu mối lập hồ sơ: Đặng Thị Bích Hà; trách nhiệm kiểm tra: Phạm Hoàng Phúc.
+==== BẢNG THEO DÕI LUÂN CHUYỂN 7 BƯỚC ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ | DONE | Đặng Thị Bích Hà | 2026-05-12 | BM1-HS-04-40
+BƯỚC 2: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH | DONE | Phạm Hoàng Phúc | 2026-05-13 | BM2-HS-04-40
+BƯỚC 3: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH | DONE | Trần Minh Hằng | 2026-05-14 | BM3-HS-04-40
+BƯỚC 4: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-05-15 | BM4-HS-04-40
+BƯỚC 5: BIÊN BẢN THỰC HIỆN – NGHIỆM THU | DONE | Đặng Thị Bích Hà | 2026-05-18 | BM5-HS-04-40
+BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | DONE | Phạm Anh Khoa | 2026-05-19 | BM6-HS-04-40
+BƯỚC 7: PHIẾU TỔNG HỢP BÁO CÁO THÁNG | DONE | Võ Thùy Dương | 2026-05-20 | BM7-HS-04-40
 
-02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
-Dự toán riêng cho hồ sơ 507 triệu đồng; số đề nghị 465,1 triệu đồng, chênh lệch -41,9 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ NGHIỆP VỤ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM1-HS-04-40/DEMO
+Ngày: 2026-05-12, trạng thái DONE
+Tên biểu mẫu: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Kính gửi: Trưởng bộ phận Phạm Hoàng Phúc.
+Người dự thảo Đặng Thị Bích Hà đề xuất Đấu thầu tư vấn – đã có báo cáo kết quả (tháng 01).
+Căn cứ nhu cầu thực hiện nghiệp vụ Tư vấn; đề nghị 465,1 triệu đồng; dự toán 507 triệu đồng.
+Tệp giả đính kèm: ĐN-HS-04-40, DT-HS-04-40, bảng kê mô phỏng; chuyển trưởng đơn vị kiểm tra trước khi trình.
+Người xử lý: Đặng Thị Bích Hà. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 01 =====
 
-03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
-Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
-Mã chứng từ mô phỏng: YC-HS-04-40; DT-HS-04-40; BB-HS-04-40; QD-HS-04-40; CT-HS-04-40.
-Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
-MÃ DỰ ÁN: DA-E
-TÊN DỰ ÁN: Dự án cải tạo đường quản lý (giả định)
-TỔNG MỨC ĐẦU TƯ GIẢ ĐỊNH (TRIỆU): 9700
-TIẾN ĐỘ KẾ HOẠCH (%): 92
-TIẾN ĐỘ THỰC HIỆN GIẢ ĐỊNH (%): 77
-CHI PHÍ RIÊNG CỦA HỒ SƠ: 465,1 triệu; không cộng lặp tổng mức đầu tư ở từng giai đoạn.
-BẰNG CHỨNG: tiến độ hợp đồng, biên bản nghiệm thu, báo cáo khối lượng, tờ trình giải ngân (đều giả định).
+===== BIỂU MẪU 02 | PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM2-HS-04-40/DEMO
+Ngày: 2026-05-13, trạng thái DONE
+Tên biểu mẫu: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Kính gửi: Phòng Tài chính – Kế toán.
+Người trình: Phạm Hoàng Phúc. Đã kiểm tra nhu cầu, nguồn kinh phí, phạm vi công việc và dữ liệu dự toán giả định.
+Chênh lệch số đề nghị so với dự toán: -41,9 triệu đồng. Nằm trong giới hạn dự toán mô phỏng.
+Kết quả: Trình TCKT kiểm soát bước tiếp theo.
+Người xử lý: Phạm Hoàng Phúc. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 02 =====
 
-04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
-B1 - ĐỀ NGHỊ: Đặng Thị Bích Hà lập phiếu đề nghị xử lý tháng 1/2026.
-B2 - KIỂM TRA: Trưởng đơn vị Phạm Hoàng Phúc rà kế hoạch, ngân sách và điều kiện thực hiện.
-B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
-B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
-B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
-B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
-B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+===== BIỂU MẪU 03 | PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM3-HS-04-40/DEMO
+Ngày: 2026-05-14, trạng thái DONE
+Tên biểu mẫu: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Người kiểm soát TCKT: Trần Minh Hằng; không trùng nhân viên lập hồ sơ trong bộ dữ liệu thử.
+Checklist: dự toán; số tiền; biểu mẫu; hóa đơn/hợp đồng/nghiệm thu nếu áp dụng; điều kiện thanh toán; sự phù hợp kế hoạch và thẩm quyền.
+Ý kiến kiểm soát: Đồng ý trình người có thẩm quyền theo tình huống giả.
+TCKT KHÔNG THAY THẾ TGĐ PHÊ DUYỆT. Căn cứ QĐ29/2025 chỉ dùng khi thuộc phạm vi và được kiểm tra bản ký; Quy chế tài chính QĐ21/2024 chờ xác minh hiệu lực.
+Người xử lý: Trần Minh Hằng. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 03 =====
 
-05. BÁO CÁO KẾT QUẢ HỒ SƠ
-Giá trị được duyệt giả định: 465,1 triệu đồng.
-Giá trị đã xử lý giả định trong kỳ: 465,1 triệu đồng.
-Giá trị đã thanh toán giả định: 465,1 triệu đồng.
-Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
-Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
-Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
+===== BIỂU MẪU 04 | PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM4-HS-04-40/DEMO
+Ngày: 2026-05-15, trạng thái DONE
+Tên biểu mẫu: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Kính trình: Tổng Giám đốc Đỗ Quang Hưng.
+Tờ trình từ Phạm Hoàng Phúc, phiếu kiểm soát TCKT BM3-HS-04-40, bộ chứng từ nguồn giả định.
+Giá trị đề nghị 465,1 triệu, giá trị được duyệt theo tình huống 465,1 triệu.
+Quyết định mô phỏng: Đồng ý trong giới hạn phê duyệt giả định; chuyển thực hiện.
+Người xử lý: Đỗ Quang Hưng. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 04 =====
 
-06. ĐẦU RA CỦA HỆ THỐNG CTY AI
-Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
-Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
-HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH
+===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN – NGHIỆM THU =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM5-HS-04-40/DEMO
+Ngày: 2026-05-18, trạng thái DONE
+Tên biểu mẫu: BIÊN BẢN THỰC HIỆN – NGHIỆM THU
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Đơn vị thực hiện: QLDT; chủ trì Đặng Thị Bích Hà.
+Hồ sơ chứng minh giả: nhật ký công việc NK-HS-04-40, biên bản nghiệm thu NT-HS-04-40, bảng khối lượng KL-HS-04-40; không có tài liệu thật.
+Kết quả nghiệm thu giả định: Đã hoàn tất công việc, ghi giá trị xử lý 465,1 triệu đồng.
+Người xử lý: Đặng Thị Bích Hà. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 05 =====
+
+===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM6-HS-04-40/DEMO
+Ngày: 2026-05-19, trạng thái DONE
+Tên biểu mẫu: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Người ghi nhận kế toán: Phạm Anh Khoa.
+Đối chiếu phiếu TGĐ (giả), biên bản thực hiện (giả), số đề nghị và số đã duyệt, xác minh không vượt giá trị.
+Số đã xử lý 465,1 triệu; số thanh toán giả định 465,1 triệu.
+Tình trạng: Đã lập phiếu ghi nhận mô phỏng; không có bút toán sổ cái thật.
+Người xử lý: Phạm Anh Khoa. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 06 =====
+
+===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP BÁO CÁO THÁNG =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
+Số: BM7-HS-04-40/DEMO
+Ngày: 2026-05-20, trạng thái DONE
+Tên biểu mẫu: PHIẾU TỔNG HỢP BÁO CÁO THÁNG
+Mã hồ sơ HS-04-40, đơn vị QLDT, tháng 5/2026
+------------------------------------------------------
+Người tổng hợp: Võ Thùy Dương; kỳ báo cáo 05/2026.
+Cộng số liệu từ hồ sơ HS-04-40: đề nghị 465,1 triệu, duyệt 465,1 triệu, đã xử lý 465,1 triệu, thanh toán 465,1 triệu.
+Kết quả: Đã đưa vào báo cáo lĩnh vực theo tình huống giả định.
+Phải tách chi phí kế toán, mua sắm, giải ngân và sản lượng để tránh cộng trùng giữa lĩnh vực.
+Dự án DA-E: Dự án cải tạo đường quản lý (giả định); ngân sách dự án 9.700 triệu tính một lần, tiến độ KH 92%, thực hiện 77% (đều giả).
+Người xử lý: Võ Thùy Dương. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
+Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== KẾT THÚC BIỂU MẪU 07 =====
+HẾT HỒ SƠ GIẢ ĐỊNH 3.2

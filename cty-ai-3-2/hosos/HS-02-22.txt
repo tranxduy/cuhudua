@@ -1,12 +1,15 @@
-CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+CTY AI 3.2 — TÌNH HUỐNG VÀ 07 BIỂU MẪU GIẢ ĐỊNH – KHÔNG PHẢI HỒ SƠ ĐƯỢC KÝ THẬT
 MÃ_HỒ_SƠ: HS-02-22
 TÊN_HỒ_SƠ: Giá bán điện bình quân – vượt kế hoạch (tháng 06)
 LĨNH_VỰC: production
-THÁNG: 6
+THÁNG: 7
 NĂM: 2026
 ĐƠN_VỊ: VH
 NHÂN_VIÊN_GIẢ: Lê Văn Hoài
 TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hữu Vinh
+NGƯỜI_KIỂM_SOÁT_TCKT: Võ Thùy Dương
+TỔNG_GIÁM_ĐỐC_GIẢ: Đỗ Quang Hưng
+KẾ_TOÁN_GHI_NHẬN: Đỗ Quang Huy
 LOẠI_KHOẢN_MỤC: Doanh thu
 GIÁ_TRỊ_ĐỀ_NGHỊ: 2340.8
 DỰ_TOÁN_HỒ_SƠ: 2340.8
@@ -15,43 +18,138 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 2340.8
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 2340.8
 TRẠNG_THÁI: CLOSED
 CỜ_KIỂM_TRA: KHONG
-BẢN_CÔNG_KHAI: DEMO_ONLY
+KỲ_BÁO_CÁO: 07/2026
+CHỨNG_TỪ_THỰC_TẾ: KHÔNG CÓ; 07 biểu mẫu đều được dựng để thử nghiệm
+Đơn vị tiền: TRIỆU ĐỒNG giả định. Tất cả nhân sự và chữ ký là tên hư cấu.
 
-01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
-Căn cứ nhu cầu thực hiện giá bán điện bình quân – vượt kế hoạch (tháng 06), đơn vị VH lập hồ sơ đề nghị giá trị 2.340,8 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
-Đầu mối lập hồ sơ: Lê Văn Hoài; trách nhiệm kiểm tra: Nguyễn Hữu Vinh.
+==== TỔNG HỢP CÁC GIAI ĐOẠN XỬ LÝ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ / DỰ THẢO | DONE | Lê Văn Hoài | 2026-07-09 | BM1-HS-02-22
+BƯỚC 2: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ | DONE | Nguyễn Hữu Vinh | 2026-07-10 | BM2-HS-02-22
+BƯỚC 3: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN | DONE | Võ Thùy Dương | 2026-07-13 | BM3-HS-02-22
+BƯỚC 4: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC | DONE | Đỗ Quang Hưng | 2026-07-14 | BM4-HS-02-22
+BƯỚC 5: BIÊN BẢN THỰC HIỆN / NGHIỆM THU | DONE | Lê Văn Hoài | 2026-07-15 | BM5-HS-02-22
+BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | DONE | Đỗ Quang Huy | 2026-07-16 | BM6-HS-02-22
+BƯỚC 7: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ | DONE | Lê Thị Bảo Ngọc | 2026-07-17 | BM7-HS-02-22
 
-02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
-Dự toán riêng cho hồ sơ 2.340,8 triệu đồng; số đề nghị 2.340,8 triệu đồng, chênh lệch 0 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ / DỰ THẢO =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM1-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-09, giờ dự kiến 08:30
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ / DỰ THẢO
+-------------------------------------------------------
+Kính gửi: Nguyễn Hữu Vinh. Người lập: Lê Văn Hoài.
+Nội dung: Giá bán điện bình quân – vượt kế hoạch (tháng 06). Đề nghị thực hiện công việc Doanh thu với giá trị 2.340,8 triệu đồng.
+Cơ sở: nhu cầu sản xuất kinh doanh giả định; dự toán hồ sơ 2.340,8 triệu đồng.
+Chứng từ kèm theo (mẫu): phiếu đề nghị ĐN-HS-02-22, dự toán DT-HS-02-22, bảng kê và minh chứng mô phỏng.
+Kiến nghị: chuyển trưởng bộ phận kiểm tra để trình TCKT và người có thẩm quyền.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Lê Văn Hoài — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 01 =====
 
-03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
-Trạng thái bộ chứng từ: ĐÃ ĐỦ TRONG HỒ SƠ GIẢ ĐỊNH.
-Mã chứng từ mô phỏng: YC-HS-02-22; DT-HS-02-22; BB-HS-02-22; QD-HS-02-22; CT-HS-02-22.
-Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
-SẢN LƯỢNG KẾ HOẠCH (kWh): 1272000
-SẢN LƯỢNG GHI NHẬN GIẢ (kWh): 1203312
-DOANH THU MINH HỌA (TRIỆU ĐỒNG): 1.221
-TÀI LIỆU NGUỒN: Phiếu ghi chỉ số, nhật ký ca, bảng kê điện năng, đối chiếu kinh doanh điện.
-NGUYÊN TẮC: Điện năng và doanh thu này là sản phẩm của một hồ sơ theo ca/giai đoạn độc lập; khi tổng hợp phải dùng đúng các hồ sơ hoàn tất, không thay cho hóa đơn điện thực tế.
+===== BIỂU MẪU 02 | PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM2-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-10, giờ dự kiến 09:45
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ
+-------------------------------------------------------
+Kính gửi: Phòng Tài chính – Kế toán.
+Trưởng bộ phận rà soát tính cần thiết, nguồn kinh phí và sự phù hợp với kế hoạch của nghiệp vụ Doanh thu.
+Nhận xét: Giá trị đề nghị trong giới hạn dự toán mô phỏng.
+Hồ sơ trình: ĐN-HS-02-22; DT-HS-02-22; phụ lục khối lượng / giải trình (giả).
+Ý kiến: Đồng ý trình TCKT kiểm soát điều kiện; không phải quyết định chi.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Nguyễn Hữu Vinh — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 02 =====
 
-04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
-B1 - ĐỀ NGHỊ: Lê Văn Hoài lập phiếu đề nghị xử lý tháng 6/2026.
-B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hữu Vinh rà kế hoạch, ngân sách và điều kiện thực hiện.
-B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
-B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
-B5 - QUYẾT ĐỊNH: CÓ QUYẾT ĐỊNH GIẢ ĐỊNH.
-B6 - THỰC HIỆN: Đã hoàn tất xử lý giả định, tạo bản ghi kết quả.
-B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+===== BIỂU MẪU 03 | PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM3-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-13, giờ dự kiến 10:20
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN
+-------------------------------------------------------
+Kính gửi: Tổng Giám đốc (thông qua cấp trình).
+Người rà soát TCKT: Võ Thùy Dương; độc lập với người lập hồ sơ theo dữ liệu giả định.
+Bảng kiểm: 1) đề nghị có người lập và trưởng bộ phận; 2) dự toán 2.340,8 triệu; 3) chứng từ đối chiếu; 4) điều kiện thanh toán; 5) thẩm quyền TGĐ/HĐQT cần xác định theo hồ sơ thật.
+Giá trị kiểm soát đề nghị 2.340,8 triệu; trường hợp vượt dự toán cần phê duyệt bổ sung trong tình huống.
+Kết quả: Đã kiểm soát và đồng ý trình theo dữ liệu mô phỏng.
+LƯU Ý: TCKT xác nhận kiểm soát, không thay thế thẩm quyền phê duyệt của Tổng Giám đốc.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Võ Thùy Dương — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 03 =====
 
-05. BÁO CÁO KẾT QUẢ HỒ SƠ
-Giá trị được duyệt giả định: 2.340,8 triệu đồng.
-Giá trị đã xử lý giả định trong kỳ: 2.340,8 triệu đồng.
-Giá trị đã thanh toán giả định: 2.340,8 triệu đồng.
-Giá trị chờ xử lý trên đề nghị: 0 triệu đồng.
-Kết quả hồ sơ: Đã hoàn tất cho mục đích thống kê mô phỏng.
-Kiến nghị: Đối chiếu hồ sơ nguồn; không tự xác nhận hợp lệ.
+===== BIỂU MẪU 04 | PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM4-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-14, giờ dự kiến 11:15
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC
+-------------------------------------------------------
+Nội dung trình phê duyệt: Giá bán điện bình quân – vượt kế hoạch (tháng 06); người trình: Nguyễn Hữu Vinh.
+Giá trị đề nghị 2.340,8 triệu; giá trị được duyệt giả định 2.340,8 triệu.
+Căn cứ mô phỏng: hồ sơ đề nghị, phiếu kiểm tra TCKT, báo cáo giải trình và quy định nội bộ cần đối chiếu khi áp dụng thật.
+Quyết định: Phê duyệt theo giới hạn và dữ liệu giả định; giao bộ phận chủ trì thực hiện.
+Chữ ký TGĐ: MÔ PHỎNG – KHÔNG CÓ CHỮ KÝ ĐIỆN TỬ THỰC.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Đỗ Quang Hưng — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 04 =====
 
-06. ĐẦU RA CỦA HỆ THỐNG CTY AI
-Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
-Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
-HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH
+===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN / NGHIỆM THU =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM5-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-15, giờ dự kiến 14:05
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN / NGHIỆM THU
+-------------------------------------------------------
+Đơn vị thực hiện: VH; đầu mối: Lê Văn Hoài.
+Nhiệm vụ: Giá bán điện bình quân – vượt kế hoạch (tháng 06). Tài liệu nghiệm thu/nhật ký thực hiện được lập giả để phục vụ mô phỏng.
+Hồ sơ thực hiện: bảng khối lượng KL-HS-02-22, biên bản nghiệm thu NT-HS-02-22, hóa đơn giả lập HD-HS-02-22 (không có hóa đơn thật).
+Kết quả: Hoàn tất theo tình huống giả định, giá trị thực hiện 2.340,8 triệu đồng.
+Người xác nhận: Lê Văn Hoài (xác nhận giả).
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Lê Văn Hoài — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 05 =====
+
+===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM6-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-16, giờ dự kiến 15:10
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
+-------------------------------------------------------
+Người ghi nhận kế toán: Đỗ Quang Huy.
+Căn cứ đối chiếu: quyết định phê duyệt giả, nghiệm thu giả và bảng kê nghiệp vụ.
+Giá trị đã xử lý: 2.340,8 triệu; giá trị thanh toán mô phỏng: 2.340,8 triệu.
+Quy tắc: chỉ ghi vào báo cáo nghiệp vụ khi trạng thái CLOSED và chứng từ TXT hợp lệ; không tự tạo bút toán sổ cái thực.
+Trạng thái: Ghi nhận mô phỏng phục vụ báo cáo tháng 7.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Đỗ Quang Huy — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 06 =====
+
+===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM7-HS-02-22/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-17, giờ dự kiến 16:05
+Mã hồ sơ: HS-02-22 | Phòng/đơn vị: VH | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ
+-------------------------------------------------------
+Kỳ báo cáo: tháng 07/2026; người tổng hợp: Lê Thị Bảo Ngọc.
+Đơn vị và nguồn: VH; chứng cứ nguồn TXT HS-02-22.
+Số đề nghị: 2.340,8 triệu; số được duyệt: 2.340,8 triệu; số đã xử lý: 2.340,8 triệu; đã thanh toán: 2.340,8 triệu.
+Kết luận: Đã đưa số liệu giả định của hồ sơ CLOSED vào báo cáo từng lĩnh vực.
+Chú ý: tổng hợp chi phí TCKT khác với tổng giá trị mua sắm, sửa chữa hay giải ngân dự án; không cộng chồng các lĩnh vực.
+Kế hoạch điện năng: 1272000 kWh; thực hiện: 1203312 kWh; doanh thu điện mô phỏng: 1.221 triệu.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Lê Thị Bảo Ngọc — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 07 =====
+
+HẾT HỒ SƠ GIẢ ĐỊNH CTY AI 3.2. KHÔNG PHẢI CHỨNG TỪ CÔNG TY.

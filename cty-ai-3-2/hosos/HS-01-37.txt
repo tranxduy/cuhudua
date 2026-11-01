@@ -1,12 +1,15 @@
-CTY AI 3.2 — TỆP HỒ SƠ VĂN BẢN GIẢ ĐỊNH; KHÔNG PHẢI CHỨNG TỪ CÔNG TY
+CTY AI 3.2 — TÌNH HUỐNG VÀ 07 BIỂU MẪU GIẢ ĐỊNH – KHÔNG PHẢI HỒ SƠ ĐƯỢC KÝ THẬT
 MÃ_HỒ_SƠ: HS-01-37
 TÊN_HỒ_SƠ: Tiền lương và phụ cấp – đối chiếu chênh lệch (tháng 02)
 LĨNH_VỰC: finance
-THÁNG: 2
+THÁNG: 7
 NĂM: 2026
 ĐƠN_VỊ: TCKT
 NHÂN_VIÊN_GIẢ: Trần Minh Hằng
 TRƯỞNG_BỘ_PHẬN_GIẢ: Nguyễn Hồng An
+NGƯỜI_KIỂM_SOÁT_TCKT: Võ Thùy Dương
+TỔNG_GIÁM_ĐỐC_GIẢ: Đỗ Quang Hưng
+KẾ_TOÁN_GHI_NHẬN: Đỗ Quang Huy
 LOẠI_KHOẢN_MỤC: Chi phí nhân công
 GIÁ_TRỊ_ĐỀ_NGHỊ: 45
 DỰ_TOÁN_HỒ_SƠ: 43
@@ -15,42 +18,137 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
 TRẠNG_THÁI: PENDING
 CỜ_KIỂM_TRA: CHO_PHE_DUYET
-BẢN_CÔNG_KHAI: DEMO_ONLY
+KỲ_BÁO_CÁO: 07/2026
+CHỨNG_TỪ_THỰC_TẾ: KHÔNG CÓ; 07 biểu mẫu đều được dựng để thử nghiệm
+Đơn vị tiền: TRIỆU ĐỒNG giả định. Tất cả nhân sự và chữ ký là tên hư cấu.
 
-01. PHIẾU ĐỀ NGHỊ – NỘI DUNG NGHIỆP VỤ
-Căn cứ nhu cầu thực hiện tiền lương và phụ cấp – đối chiếu chênh lệch (tháng 02), đơn vị TCKT lập hồ sơ đề nghị giá trị 45 triệu đồng. Nguồn dữ liệu minh họa do hệ thống tạo, chưa phải giá trị doanh nghiệp.
-Đầu mối lập hồ sơ: Trần Minh Hằng; trách nhiệm kiểm tra: Nguyễn Hồng An.
+==== TỔNG HỢP CÁC GIAI ĐOẠN XỬ LÝ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ / DỰ THẢO | DONE | Trần Minh Hằng | 2026-07-13 | BM1-HS-01-37
+BƯỚC 2: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ | DONE | Nguyễn Hồng An | 2026-07-14 | BM2-HS-01-37
+BƯỚC 3: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN | DONE | Võ Thùy Dương | 2026-07-15 | BM3-HS-01-37
+BƯỚC 4: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC | WAITING | Đỗ Quang Hưng | CHƯA CÓ NGÀY | BM4-HS-01-37
+BƯỚC 5: BIÊN BẢN THỰC HIỆN / NGHIỆM THU | NOT_STARTED | Trần Minh Hằng | CHƯA CÓ NGÀY | BM5-HS-01-37
+BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | NOT_STARTED | Đỗ Quang Huy | CHƯA CÓ NGÀY | BM6-HS-01-37
+BƯỚC 7: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ | NOT_STARTED | Lê Thị Bảo Ngọc | CHƯA CÓ NGÀY | BM7-HS-01-37
 
-02. TỜ TRÌNH VÀ DỰ TOÁN ĐỐI CHIẾU
-Dự toán riêng cho hồ sơ 43 triệu đồng; số đề nghị 45 triệu đồng, chênh lệch 2 triệu đồng. Yêu cầu kiểm tra lý do nếu vượt dự toán.
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ / DỰ THẢO =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM1-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-13, giờ dự kiến 08:30
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ / DỰ THẢO
+-------------------------------------------------------
+Kính gửi: Nguyễn Hồng An. Người lập: Trần Minh Hằng.
+Nội dung: Tiền lương và phụ cấp – đối chiếu chênh lệch (tháng 02). Đề nghị thực hiện công việc Chi phí nhân công với giá trị 45 triệu đồng.
+Cơ sở: nhu cầu sản xuất kinh doanh giả định; dự toán hồ sơ 43 triệu đồng.
+Chứng từ kèm theo (mẫu): phiếu đề nghị ĐN-HS-01-37, dự toán DT-HS-01-37, bảng kê và minh chứng mô phỏng.
+Kiến nghị: chuyển trưởng bộ phận kiểm tra để trình TCKT và người có thẩm quyền.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Trần Minh Hằng — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 01 =====
 
-03. BIÊN BẢN/CHỨNG TỪ GIẢ ĐỊNH
-Trạng thái bộ chứng từ: CHỜ QUYẾT ĐỊNH.
-Mã chứng từ mô phỏng: YC-HS-01-37; DT-HS-01-37; BB-HS-01-37; QD-HS-01-37; CT-HS-01-37.
-Các mã chỉ là chỉ mục tình huống, KHÔNG đại diện hóa đơn, biên bản hoặc quyết định thật.
-PHÂN LOẠI CHI PHÍ: Chi phí nhân công
-BẢNG KIỂM TRA KẾ TOÁN: Có bảng dự toán theo khoản mục, dự thảo bút toán và bảng đối chiếu (tất cả đều mô phỏng).
-BÚT TOÁN ĐỀ NGHỊ: Ghi nhận vào sổ chi phí khi đủ chứng từ và được người đúng thẩm quyền phê duyệt; phần mềm demo không ghi sổ kế toán thực.
-NGUYÊN TẮC BÁO CÁO: Chỉ tính GIÁ_TRỊ_ĐÃ_XỬ_LÝ ở hồ sơ CLOSED vào tổng chi phí lũy kế đến tháng 10; không cộng số đề nghị của hồ sơ chờ.
+===== BIỂU MẪU 02 | PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM2-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-14, giờ dự kiến 09:45
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM TRA VÀ TRÌNH DUYỆT CỦA TRƯỞNG ĐƠN VỊ
+-------------------------------------------------------
+Kính gửi: Phòng Tài chính – Kế toán.
+Trưởng bộ phận rà soát tính cần thiết, nguồn kinh phí và sự phù hợp với kế hoạch của nghiệp vụ Chi phí nhân công.
+Nhận xét: Có phát sinh cao hơn dự toán, cần thuyết minh hoặc phê duyệt điều chỉnh.
+Hồ sơ trình: ĐN-HS-01-37; DT-HS-01-37; phụ lục khối lượng / giải trình (giả).
+Ý kiến: Đồng ý trình TCKT kiểm soát điều kiện; không phải quyết định chi.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Nguyễn Hồng An — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 02 =====
 
-04. NHẬT KÝ LUÂN CHUYỂN GIẢ ĐỊNH
-B1 - ĐỀ NGHỊ: Trần Minh Hằng lập phiếu đề nghị xử lý tháng 2/2026.
-B2 - KIỂM TRA: Trưởng đơn vị Nguyễn Hồng An rà kế hoạch, ngân sách và điều kiện thực hiện.
-B3 - CHUYÊN MÔN: Các Agent theo nghiệp vụ đọc hồ sơ và trả kết quả có dẫn nguồn.
-B4 - KIỂM SOÁT CHÉO: Agent Kiểm soát tổng hợp, ghi nhận vấn đề và không tự cấp quyền.
-B5 - QUYẾT ĐỊNH: ĐANG CHỜ PHÊ DUYỆT GIẢ ĐỊNH.
-B6 - THỰC HIỆN: Chưa thực hiện; giá trị đã xử lý là 0.
-B7 - BÁO CÁO: Đưa trường GIÁ_TRỊ_ĐÃ_XỬ_LÝ vào báo cáo đúng loại nghiệp vụ và tháng.
+===== BIỂU MẪU 03 | PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM3-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-07-15, giờ dự kiến 10:20
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU KIỂM SOÁT TÀI CHÍNH – KẾ TOÁN
+-------------------------------------------------------
+Kính gửi: Tổng Giám đốc (thông qua cấp trình).
+Người rà soát TCKT: Võ Thùy Dương; độc lập với người lập hồ sơ theo dữ liệu giả định.
+Bảng kiểm: 1) đề nghị có người lập và trưởng bộ phận; 2) dự toán 43 triệu; 3) chứng từ đối chiếu; 4) điều kiện thanh toán; 5) thẩm quyền TGĐ/HĐQT cần xác định theo hồ sơ thật.
+Giá trị kiểm soát đề nghị 45 triệu; trường hợp vượt dự toán cần phê duyệt bổ sung trong tình huống.
+Kết quả: Đã kiểm soát và đồng ý trình theo dữ liệu mô phỏng.
+LƯU Ý: TCKT xác nhận kiểm soát, không thay thế thẩm quyền phê duyệt của Tổng Giám đốc.
+TRẠNG THÁI GIAI ĐOẠN: DONE
+CHỦ THỂ: Võ Thùy Dương — ĐÃ XỬ LÝ THEO TÌNH HUỐNG GIẢ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 03 =====
 
-05. BÁO CÁO KẾT QUẢ HỒ SƠ
-Giá trị được duyệt giả định: 0 triệu đồng.
-Giá trị đã xử lý giả định trong kỳ: 0 triệu đồng.
-Giá trị đã thanh toán giả định: 0 triệu đồng.
-Giá trị chờ xử lý trên đề nghị: 45 triệu đồng.
-Kết quả hồ sơ: Chờ phê duyệt.
-Kiến nghị: Trình đúng người có thẩm quyền; chưa ghi nhận chi phí đã xử lý.
+===== BIỂU MẪU 04 | PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM4-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 11:15
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU PHÊ DUYỆT CỦA TỔNG GIÁM ĐỐC
+-------------------------------------------------------
+Nội dung trình phê duyệt: Tiền lương và phụ cấp – đối chiếu chênh lệch (tháng 02); người trình: Nguyễn Hồng An.
+Giá trị đề nghị 45 triệu; giá trị được duyệt giả định 0 triệu.
+Căn cứ mô phỏng: hồ sơ đề nghị, phiếu kiểm tra TCKT, báo cáo giải trình và quy định nội bộ cần đối chiếu khi áp dụng thật.
+Quyết định: Chưa có quyết định; dừng thực hiện cho đến khi được duyệt.
+Chữ ký TGĐ: CHƯA KÝ.
+TRẠNG THÁI GIAI ĐOẠN: WAITING
+CHỦ THỂ: Đỗ Quang Hưng — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 04 =====
 
-06. ĐẦU RA CỦA HỆ THỐNG CTY AI
-Số liệu phục vụ báo cáo 10 tháng năm 2026 phải tính từ từng hồ sơ riêng lẻ, chỉ ghi nhận `GIÁ_TRỊ_ĐÃ_XỬ_LÝ` nếu trạng thái CLOSED.
-Người dùng có thể nhập tệp TXT theo mẫu để thử nghiệm quy trình; dữ liệu thật phải sử dụng môi trường nội bộ bảo mật.
-HẾT HỒ SƠ CTY AI 3.2 – TÀI LIỆU GIẢ ĐỊNH
+===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN / NGHIỆM THU =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM5-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 14:05
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN / NGHIỆM THU
+-------------------------------------------------------
+Đơn vị thực hiện: TCKT; đầu mối: Trần Minh Hằng.
+Nhiệm vụ: Tiền lương và phụ cấp – đối chiếu chênh lệch (tháng 02). Tài liệu nghiệm thu/nhật ký thực hiện được lập giả để phục vụ mô phỏng.
+Hồ sơ thực hiện: bảng khối lượng KL-HS-01-37, biên bản nghiệm thu NT-HS-01-37, hóa đơn giả lập HD-HS-01-37 (không có hóa đơn thật).
+Kết quả: CHƯA HOÀN THÀNH; không được tự ghi nhận chi phí.
+Người xác nhận: Chưa xác nhận.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Trần Minh Hằng — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 05 =====
+
+===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM6-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 15:10
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
+-------------------------------------------------------
+Người ghi nhận kế toán: Đỗ Quang Huy.
+Căn cứ đối chiếu: quyết định phê duyệt giả, nghiệm thu giả và bảng kê nghiệp vụ.
+Giá trị đã xử lý: 0 triệu; giá trị thanh toán mô phỏng: 0 triệu.
+Quy tắc: chỉ ghi vào báo cáo nghiệp vụ khi trạng thái CLOSED và chứng từ TXT hợp lệ; không tự tạo bút toán sổ cái thực.
+Trạng thái: Chưa ghi nhận vì chưa hoàn tất điều kiện.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Đỗ Quang Huy — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 06 =====
+
+===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (TÌNH HUỐNG MÔ PHỎNG)
+Số: BM7-HS-01-37/DEMO                                      MẪU GIẢ - KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: CHƯA PHÁT SINH, giờ dự kiến 16:05
+Mã hồ sơ: HS-01-37 | Phòng/đơn vị: TCKT | Kỳ: 07/2026
+TÊN BIỂU MẪU: PHIẾU TỔNG HỢP VÀ GHI VÀO BÁO CÁO KỲ
+-------------------------------------------------------
+Kỳ báo cáo: tháng 07/2026; người tổng hợp: Lê Thị Bảo Ngọc.
+Đơn vị và nguồn: TCKT; chứng cứ nguồn TXT HS-01-37.
+Số đề nghị: 45 triệu; số được duyệt: 0 triệu; số đã xử lý: 0 triệu; đã thanh toán: 0 triệu.
+Kết luận: Chưa đưa vào giá trị hoàn tất; theo dõi trong danh mục chờ xử lý.
+Chú ý: tổng hợp chi phí TCKT khác với tổng giá trị mua sắm, sửa chữa hay giải ngân dự án; không cộng chồng các lĩnh vực.
+TRẠNG THÁI GIAI ĐOẠN: NOT_STARTED
+CHỦ THỂ: Lê Thị Bảo Ngọc — CHƯA XỬ LÝ
+Ô ký tên / ký số: [CHỮ KÝ MÔ PHỎNG, KHÔNG CÓ GIÁ TRỊ PHÁP LÝ]
+===== KẾT THÚC BIỂU MẪU 07 =====
+
+HẾT HỒ SƠ GIẢ ĐỊNH CTY AI 3.2. KHÔNG PHẢI CHỨNG TỪ CÔNG TY.
