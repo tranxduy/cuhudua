@@ -207,9 +207,68 @@ else if(s.includes("lĩnh vực")||s.includes("tổng hợp"))rows=reportRows("d
 else note="Chưa hỗ trợ loại câu hỏi này. Không suy đoán dữ liệu. Hãy thử câu hỏi mẫu.";
 qrows=rows;$("answer").innerHTML='<div class="notice">'+E(note||"Kết quả theo số liệu mô phỏng từ các hồ sơ TXT đã đối chiếu, kỳ 01–10/2026.")+'</div><div class="table-scroll">'+table(rows)+'</div>'}
 const questions=["Tổng chi phí đã xử lý đến tháng 10?","Chi phí nào cao nhất?","Chi phí theo từng tháng","Báo cáo 5 dự án đầu tư","Dự án nào giải ngân nhiều?","Hồ sơ đang chờ phê duyệt","Hồ sơ nào thiếu chứng từ?","Có bao nhiêu lượt bàn giao Agent?","Báo cáo sản lượng và doanh thu","Các công việc chưa hoàn thành","Báo cáo tổng hợp 8 lĩnh vực"];
-function template(){return ["CTY AI 3.2 – MẪU TÌNH HUỐNG TXT GIẢ ĐỊNH","MÃ_HỒ_SƠ: CUSTOM-001","TÊN_HỒ_SƠ: Mua vật tư kiểm tra hồ sơ tháng 10","LĨNH_VỰC: finance","THÁNG: 10","NĂM: 2026","ĐƠN_VỊ: TCKT","NHÂN_VIÊN_GIẢ: Nhân viên thử nghiệm","LOẠI_KHOẢN_MỤC: Vật tư","GIÁ_TRỊ_ĐỀ_NGHỊ: 120","DỰ_TOÁN_HỒ_SƠ: 130","GIÁ_TRỊ_ĐÃ_DUYỆT: 120","GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 120","GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 100","TRẠNG_THÁI: CLOSED","CỜ_KIỂM_TRA: KHONG","","01. PHIẾU ĐỀ NGHỊ","Mô tả tình huống, nơi lập và người chủ trì. Đây chỉ là tài liệu giả.","02. KIỂM TRA DỰ TOÁN","Mô tả dự toán và tài liệu đối chiếu.","03. CHỨNG TỪ GIẢ ĐỊNH","Liệt kê hồ sơ và trạng thái từng chứng từ; không đính kèm tài liệu mật.","04. LUỒNG XỬ LÝ","B1 tiếp nhận, B2 kiểm tra, B3 chuyên môn, B4 kiểm soát chéo, B5 trình duyệt, B6 ghi nhận kết quả, B7 báo cáo.","05. KẾT LUẬN","Ghi kết quả, giá trị đã xử lý và vấn đề cần bổ sung.","Chỉ dùng dữ liệu giả hoặc được phép công khai. Đơn vị tiền: triệu đồng."].join("\n")}
+
+function template(){
+ const month="10",days=["05","06","07","08","09","12","13"],stage=STAGE_NAMES;
+ const top=["CTY AI 3.2 – MẪU TÌNH HUỐNG TXT 7 BIỂU MẪU GIẢ ĐỊNH",
+ "MÃ_HỒ_SƠ: CUSTOM-001","TÊN_HỒ_SƠ: Mua vật tư và ghi nhận kết quả tháng 10",
+ "LĨNH_VỰC: finance","THÁNG: 10","NĂM: 2026","ĐƠN_VỊ: TCKT",
+ "NHÂN_VIÊN_GIẢ: Nguyễn Văn Mẫu","LOẠI_KHOẢN_MỤC: Vật tư",
+ "GIÁ_TRỊ_ĐỀ_NGHỊ: 120","DỰ_TOÁN_HỒ_SƠ: 130","GIÁ_TRỊ_ĐÃ_DUYỆT: 120","GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 120",
+ "GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 100","TRẠNG_THÁI: CLOSED","CỜ_KIỂM_TRA: KHONG",
+ "LƯU Ý: Mọi nhân sự, chữ ký, dự toán và kết quả đều giả định."];
+ const actors=["Nguyễn Văn Mẫu","Nguyễn Thị Trưởng phòng","Trần Văn Kiểm soát","Lê Văn Tổng Giám đốc","Nguyễn Văn Mẫu","Đỗ Thị Kế toán","Võ Thị Tổng hợp"];
+ for(let i=0;i<7;i++){top.push("BƯỚC_"+(i+1)+"_TRẠNG_THÁI: DONE","BƯỚC_"+(i+1)+"_NGÀY: 2026-"+month+"-"+days[i],"BƯỚC_"+(i+1)+"_NGƯỜI: "+actors[i]);}
+ top.push("","==== NHẬT KÝ LUÂN CHUYỂN MÔ PHỎNG ====");
+ for(let i=0;i<7;i++)top.push("BƯỚC "+(i+1)+": "+stage[i]+" | DONE | "+actors[i]+" | 2026-"+month+"-"+days[i]+" | BM"+(i+1)+"-CUSTOM-001");
+ for(let i=0;i<7;i++){
+   const nn=String(i+1).padStart(2,"0");
+   top.push("","===== BIỂU MẪU "+nn+" | "+stage[i]+" =====",
+   "CÔNG TY THỬ NGHIỆM – MẪU GIẢ ĐỊNH KHÔNG CÓ GIÁ TRỊ PHÁP LÝ",
+   "Số: BM"+(i+1)+"-CUSTOM-001/DEMO","Ngày xử lý: 2026-"+month+"-"+days[i],
+   "Người thực hiện: "+actors[i],"Hồ sơ: CUSTOM-001; số tiền đề nghị 120 triệu; dự toán 130 triệu.",
+   i===0?"01. ĐỀ NGHỊ: Đề xuất mua vật tư, nêu lý do và bảng kê số lượng giá dự kiến.":
+   i===1?"02. TRƯỞNG PHÒNG: Kiểm tra sự cần thiết, dự toán, đồng ý trình phòng TCKT.":
+   i===2?"03. TCKT: Kiểm soát chứng từ, đủ điều kiện trình; không thay thẩm quyền phê duyệt.":
+   i===3?"04. TGĐ: Phê duyệt 120 triệu đồng giả định sau khi TCKT kiểm soát.":
+   i===4?"05. NGHIỆM THU: Ghi nhận hoàn tất giao vật tư, giá trị 120 triệu theo biên bản giả.":
+   i===5?"06. KẾ TOÁN: Đối chiếu 120 triệu đã xử lý và 100 triệu đã thanh toán theo tình huống.":
+   "07. BÁO CÁO: Tổng hợp 120 triệu vào chi phí tháng 10; ghi công nợ giả 20 triệu.",
+   "TRẠNG THÁI: DONE","Chữ ký / con dấu: [MÔ PHỎNG, KHÔNG CÓ CHỮ KÝ THẬT]",
+   "===== KẾT THÚC BIỂU MẪU "+nn+" =====");
+ }
+ top.push("KẾT THÚC – HỒ SƠ TXT THỬ NGHIỆM, KHÔNG DÙNG THANH TOÁN.");
+ return top.join("\n");
+}
+function importedWorkflow(c,raw){
+ const names=STAGE_NAMES,defs=stageList({...c,workflow:null});
+ const hasAny=Boolean(field(raw,"BƯỚC_1_TRẠNG_THÁI"));
+ if(!hasAny)return defs;
+ return names.map((title,i)=>{
+   const k=i+1,status=field(raw,"BƯỚC_"+k+"_TRẠNG_THÁI")||"NOT_STARTED";
+   const date=field(raw,"BƯỚC_"+k+"_NGÀY"),actor=field(raw,"BƯỚC_"+k+"_NGƯỜI")||defs[i].actor;
+   return{...defs[i],title,actor,status,datetime:date?date+"T09:00:00+07:00":null,formId:"BM"+k+"-"+c.id,remarks:"Dữ liệu từng bước do người nhập cung cấp, chưa xác minh chữ ký"};
+ });
+}
+function checkImportedWorkflow(c){
+ const steps=c.workflow||[];let problems=[];
+ if(steps.length!==7)return["Thiếu 7 bước"];
+ let stopped=false;
+ for(let i=0;i<steps.length;i++){
+  const x=steps[i];
+  if(!["DONE","RETURNED","WAITING","NOT_STARTED"].includes(x.status))problems.push("Trạng thái bước "+(i+1)+" không hợp lệ");
+  if(stopped&&x.status==="DONE")problems.push("Bước "+(i+1)+" đã hoàn tất dù luồng trước còn chờ hoặc bị trả lại");
+  if(x.status!=="DONE")stopped=true;
+  if(x.datetime&&!/^2026-\d{2}-\d{2}T/.test(x.datetime))problems.push("Sai ngày bước "+(i+1));
+ }
+ if(c.status==="CLOSED"&&!steps.every(x=>x.status==="DONE"))problems.push("CLOSED yêu cầu cả 7 bước hoàn tất");
+ if(c.status!=="CLOSED"&&steps.every(x=>x.status==="DONE"))problems.push("Hồ sơ chưa CLOSED nhưng 7 bước đều hoàn thành");
+ if(c.status==="APPROVED"&&steps[3].status!=="DONE")problems.push("APPROVED phải có bước TGĐ phê duyệt mô phỏng");
+ if(c.status==="PENDING"&&steps[3].status==="DONE")problems.push("PENDING không được đánh dấu TGĐ đã duyệt");
+ return problems;
+}
 async function importFile(){let f=$("uploadFile").files?.[0];if(!f){toast("Chọn một tệp TXT.");return}if(f.size>150000){toast("TXT vượt 150KB.");return}let raw=await f.text(),p=parse(raw);let c={...p,local:true,sourceText:raw,path:"local:"+f.name,domainName:M.domains.find(x=>x.key===p.domain)?.name||p.domain};
-if(!c.id||cases().some(x=>x.id===c.id)){toast("Mã hồ sơ trống hoặc trùng.");return}let errors=validate(c,p);if(errors.length){$("importResult").textContent="Tệp chưa đúng: "+errors.join("; ");return}
+if(!c.id||cases().some(x=>x.id===c.id)){toast("Mã hồ sơ trống hoặc trùng.");return}c.workflow=importedWorkflow(c,raw);let errors=[...validate(c,p),...checkImportedWorkflow(c)];if(errors.length){$("importResult").textContent="Tệp chưa đúng: "+errors.join("; ");return}
 db.custom.push(c);selected=c.id;save();await runCase(c,false);$("importResult").textContent="Đã nhập và xử lý "+c.id;show("cases");toast("Đã xử lý TXT vừa nhập ở thiết bị này.")}
 async function caseCommand(cmd){const c=byId(selected);if(!c)return;let s=state(c);
 if(cmd==="read"){try{await read(c)}catch(e){s.status="failed";event(c,"ERROR","Loader","Người sử dụng",e.message);toast(e.message)}}
