@@ -64,6 +64,24 @@ function importTxt(raw){
  if(!c.title||c.year!==2026||c.month<1||c.month>10||!["PENDING","APPROVED","REVIEW","CLOSED"].includes(c.status))throw Error("Kỳ, tiêu đề hoặc trạng thái không hợp lệ");
  if([c.proposed,c.budget,c.approved,c.processed,c.paid].some(x=>!Number.isFinite(x)||x<0)||c.approved>c.proposed||c.processed>c.approved||c.paid>c.processed||(c.status!=="CLOSED"&&c.processed!==0))throw Error("Giá trị không hợp lệ");
  const errors=checkSource(c,raw);if(errors.length)throw Error(errors.join("; "));
+ const hasStages=Boolean(field(raw,"BƯỚC_1_TRẠNG_THÁI"));
+ if(hasStages){
+ const base=defaultSteps(c);let blocked=false;
+ c.workflow=base.map((step,i)=>{
+  let n=i+1,st=field(raw,"BƯỚC_"+n+"_TRẠNG_THÁI")||"NOT_STARTED",who=field(raw,"BƯỚC_"+n+"_NGƯỜI")||step.actor,day=field(raw,"BƯỚC_"+n+"_NGÀY");
+  if(!["DONE","WAITING","RETURNED","NOT_STARTED"].includes(st))throw Error("Trạng thái B"+n+" không hợp lệ");
+  if(blocked&&st==="DONE")throw Error("B"+n+" đã hoàn thành trong khi bước trước chưa hoàn tất");
+  if(st!=="DONE")blocked=true;
+  if(day&&!/^2026-(0[1-9]|1[0-2])-[0-3][0-9]$/.test(day))throw Error("Ngày B"+n+" sai");
+  if(st==="DONE"&&!day)throw Error("B"+n+" đã hoàn tất nhưng chưa có ngày");
+  if(st!=="DONE"&&day&&st!=="RETURNED")throw Error("B"+n+" chưa làm nhưng có ngày xử lý");
+  return{...step,status:st,actor:who,datetime:day?day+"T09:00:00+07:00":null};
+ });
+ if(statusSource==="CLOSED"&&c.workflow.some(x=>x.status!=="DONE"))throw Error("CLOSED cần hoàn thành đủ 7 bước");
+ if(statusSource!=="CLOSED"&&c.workflow.every(x=>x.status==="DONE"))throw Error("Hồ sơ chưa CLOSED nhưng cả 7 bước đều hoàn tất");
+ if(statusSource==="PENDING"&&c.workflow[3].status==="DONE")throw Error("PENDING chưa thể có bước phê duyệt TGĐ DONE");
+ if(statusSource==="APPROVED"&&c.workflow[3].status!=="DONE")throw Error("APPROVED phải có bước TGĐ đã duyệt giả");
+ }
  db.custom.push(c);db.verified[c.id]=true;cache.set(c.id,raw);log(c,"VERIFY","TXT nhập","Điều phối","Đã nhập hồ sơ giả định");save();return c}
 const api={init,get manifest(){return manifest},all,find,people,steps,index,status,holder,phase,vals,cases,sum,baseSum,issues,aging,log,verify,verifyAll,act,getForm,projects,domains,importTxt,get data(){return db},setData(x){if(x.version!==33||!x.overrides||!x.verified||!Array.isArray(x.events)||!Array.isArray(x.custom))throw Error("Sai cấu trúc sao lưu");db=x;cache.clear();save()},reset(){db=empty();cache.clear();save()},save,fmt,date};
 window.CTX=api;
