@@ -193,7 +193,7 @@ function setup(){
  $("opTaskOwnerFilter").onchange=e=>{view.owner=e.target.value;renderTaskManager()};
  $("opTaskDue").value=today();
  document.addEventListener("click",click);
- window.CTYOPS={reportWorkflow,reportPeople,reportPersonDetail,renderTaskManager,staffStats,assignments,statuses,plainReport,workflowCSV,peopleCSV,tasksCSV,taskCreate,taskUpdate,action,get tasks(){return T},setTasks(v){if(v?.version!==1||!Array.isArray(v.items))throw Error("Sao lưu nhiệm vụ không hợp lệ");T=v;persist();resetPeopleOptions();renderTaskManager()},refresh:()=>{resetPeopleOptions();reportWorkflow();reportPeople();renderTaskManager()},get view(){return view}};
+ window.CTYOPS={reportWorkflow,reportPeople,reportPersonDetail,renderTaskManager,staffStats,assignments,statuses,plainReport,workflowCSV,peopleCSV,tasksCSV,taskCreate,taskUpdate,action,get tasks(){return T},setTasks(v){if(v?.version!==1||!Array.isArray(v.items))throw Error("Sao lưu nhiệm vụ không hợp lệ");T=v;persist();resetPeopleOptions();renderTaskManager()},resetTasks(){T={version:1,items:[],serial:0};view.editor="";persist();resetPeopleOptions();renderTaskManager()},refresh:()=>{resetPeopleOptions();reportWorkflow();reportPeople();renderTaskManager()},get view(){return view}};
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",setup);else setup();
 })();
