@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-07-05
+TÊN HỒ SƠ: Báo cáo giao ban đã có phân công
+NGÀY LẬP: 2026-10-25
+ĐƠN VỊ: Phòng Tổng hợp
+TRƯỞNG ĐƠN VỊ GIẢ: Trần Bảo Minh
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Võ Thành Nam
+LĨNH VỰC: Quản trị – Văn thư
+LOẠI NGHIỆP VỤ: họp giao ban
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 0
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Biên bản giả định ghi rõ người thực hiện, mốc hoàn thành và kết quả.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Biên bản họp
+2. bảng giao việc
+3. xác nhận
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: không có dấu hiệu rủi ro theo dữ liệu giả định.
+Các minh chứng mục II được giả định đã có; chưa được xác thực.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: records, legal, finance, audit.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Tổng hợp xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG
