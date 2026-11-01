@@ -1,0 +1,39 @@
+CTY AI 3.2 — HỒ SƠ MÔ PHỎNG / KHÔNG PHẢI TÀI LIỆU CÔNG TY THẬT
+MÃ HỒ SƠ: HS-06-01
+TÊN HỒ SƠ: Chênh lệch bảng công ca trực
+NGÀY LẬP: 2026-10-12
+ĐƠN VỊ: Phòng Tổng hợp
+TRƯỞNG ĐƠN VỊ GIẢ: Trần Bảo Minh
+NHÂN VIÊN PHỤ TRÁCH GIẢ: Hoàng Thị Thúy Vy
+LĨNH VỰC: Nhân sự – Tiền lương
+LOẠI NGHIỆP VỤ: chấm công
+GIÁ TRỊ GIẢ ĐỊNH (TRIỆU ĐỒNG): 8
+MỨC ĐỘ BẢO MẬT: PUBLIC DEMO - DỮ LIỆU HƯ CẤU
+
+I. TÌNH HUỐNG VÀ DỮ LIỆU ĐẦU VÀO
+Lịch trực ghi 24 công, bảng tính lương ghi 26 công với mã nhân sự giả định.
+Tài liệu này được soạn văn bản để Agent đọc trực tiếp, không cần OCR.
+
+II. DANH MỤC CHỨNG TỪ/HỒ SƠ MONG ĐỢI
+1. Bảng ca
+2. bảng chấm công
+3. bảng tính lương
+
+III. TRẠNG THÁI MINH CHỨNG GIẢ ĐỊNH
+Cờ tình huống: reconcile_gap.
+Một số minh chứng cần người phụ trách kiểm tra hoặc bổ sung.
+Không kèm chứng từ gốc, chữ ký số hoặc phê duyệt thật.
+
+IV. PHỐI HỢP AGENT
+Các Agent chuyên môn: hr, accounting, finance, legal.
+Đầu ra: nhận xét có dẫn dòng TXT, cảnh báo, nhiệm vụ, nhật ký bàn giao, trình người kiểm tra.
+Agent Kiểm soát chéo tổng hợp; Agent Thư ký lập việc; người có thẩm quyền ra quyết định.
+
+V. NGUỒN QUY ĐỊNH THAM CHIẾU
+QĐ số 29/QĐ-HĐQT.GSC ngày 31/12/2025, phạm vi mua sắm (khi có liên quan).
+QĐ số 21/QĐ-HĐQT.GSC ngày 06/12/2024, quy chế tài chính (chờ xác nhận hiệu lực).
+Không tự kết luận tính hợp lệ của hồ sơ giả định.
+
+VI. KIẾN NGHỊ THỬ NGHIỆM
+Đơn vị Phòng Tổng hợp xác minh, hoàn thiện hồ sơ, trình đúng thẩm quyền.
+HẾT HỒ SƠ MÔ PHỎNG
