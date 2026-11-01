@@ -145,7 +145,7 @@ async function action(name){
  if(["reportcsv","domaincsv","taskcsv","casecsv","financecsv","projectcsv","logcsv"].includes(name)){let type={reportcsv:"domains",domaincsv:"domains",taskcsv:"tasks",casecsv:"cases",financecsv:"finance",projectcsv:"projects",logcsv:"logs"}[name];download("CTY-AI-3.3-"+type+".csv",csv(reportRows(type)),"text/csv;charset=utf-8");return}
  if(name==="backup"){download("CTY-AI-3.3-backup.json",JSON.stringify(C.data,null,2),"application/json");return}
  if(name==="resetAll"){if(confirm("Xóa toàn bộ thao tác thử và hồ sơ nhập trên máy? Hãy sao lưu trước.")){C.reset();selected=C.all()[0].id;render()}return}
- if(name==="print"){window.print();return}
+ if(name==="print"){renderDomains();window.print();return}
  if(name==="template"){download("CTY-AI-3.3-MAU-7-BUOC.txt",template());return}
  if(name==="import"){let file=$("upload").files?.[0];if(!file)throw Error("Chọn tệp TXT trước");if(file.size>150000)throw Error("TXT vượt 150KB");let c=C.importTxt(await file.text());selected=c.id;formIndex=0;show("cases");toast("Đã nhập "+c.id);return}
  }catch(e){toast("Chưa thực hiện: "+e.message);if(name==="import")$("importNotice").textContent=e.message}}
