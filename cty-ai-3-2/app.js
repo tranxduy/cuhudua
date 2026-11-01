@@ -60,11 +60,11 @@ s.results[id]={id,deps,findings,comment,at:new Date().toISOString()};event(c,"AG
 for(let f of findings)event(c,"FINDING",id,"audit",f.text,f.evidence);
 if(!next(c)){s.parsed=p;s.finished=true;s.status={CLOSED:"closed",APPROVED:"pending",PENDING:"pending",REVIEW:"review"}[p.status];event(c,"DECISION","TXT giả định","Con người",p.status+" – dữ liệu quyết định có sẵn trong TXT; chưa có ký duyệt thực.");}
 else s.status="running";return true}
-async function runCase(c,single){try{const d=await read(c);if(state(c).finished&&!single)return true;let n=0;if(single)doAgent(c,d);else while(next(c)){doAgent(c,d);if(++n>20)throw Error("Agent chạy quá giới hạn");}save();return true}
-catch(e){let s=state(c);s.status="failed";s.finished=false;s.parsed=null;event(c,"ERROR","Loader","Người kiểm tra",e.message);save();return false}}
+async function runCase(c,single,deferSave=false){try{const d=await read(c);if(state(c).finished&&!single)return true;let n=0;if(single)doAgent(c,d);else while(next(c)){doAgent(c,d);if(++n>20)throw Error("Agent chạy quá giới hạn");}if(!deferSave)save();return true}
+catch(e){let s=state(c);s.status="failed";s.finished=false;s.parsed=null;event(c,"ERROR","Loader","Người kiểm tra",e.message);if(!deferSave)save();return false}}
 async function runAll(){if(busy||!M)return;busy=true;let queue=cases().filter(c=>!state(c).finished),pos=0,done=0,failed=0;
 $("progressNote").textContent="Đang đọc tệp TXT và xử lý hồ sơ…";
-async function worker(){while(pos<queue.length){let c=queue[pos++],ok=await runCase(c,false);done++;if(!ok)failed++;if(done%20===0||done===queue.length){$("progressNote").textContent="Hoàn tất "+done+"/"+queue.length+" hồ sơ mới; lỗi "+failed+".";let ready=cases().filter(c=>state(c).finished).length;$("progressCount").textContent=ready+"/"+cases().length;$("progressBar").style.width=(ready/cases().length*100)+"%";await Promise.resolve()}}}
+async function worker(){while(pos<queue.length){let c=queue[pos++],ok=await runCase(c,false,true);done++;if(!ok)failed++;if(done%20===0||done===queue.length){$("progressNote").textContent="Hoàn tất "+done+"/"+queue.length+" hồ sơ mới; lỗi "+failed+".";save();let ready=cases().filter(c=>state(c).finished).length;$("progressCount").textContent=ready+"/"+cases().length;$("progressBar").style.width=(ready/cases().length*100)+"%";await Promise.resolve()}}}
 await Promise.all(Array.from({length:Math.min(12,queue.length||1)},()=>worker()));busy=false;save();render();toast("Đã chạy "+done+" hồ sơ, lỗi "+failed+". Mở Báo cáo chi phí hoặc Dự án.");}
 function valid(domain){return cases().filter(c=>(!domain||c.domain===domain)&&state(c).finished&&state(c).parsed&&state(c).parsed.year===2026&&state(c).parsed.month<=10)}
 function total(arr,key){return arr.reduce((sum,c)=>sum+(state(c).parsed?.[key]||0),0)}
