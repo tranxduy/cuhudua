@@ -37,7 +37,7 @@ function renderCase(){
  let out='<div class="caseTitle"><div><small>'+E(c.id)+' · '+E(c.domainName)+' · T'+c.month+'/2026</small><h2>'+E(c.title)+'</h2></div>'+pill(st)+'</div>';
  out+='<div class="detailStats">'+[["Người lập",c.owner],["Người giữ",C.holder(c)],["Đề nghị",f(v.request)+" tr"],["Được duyệt",f(v.approved)+" tr"],["Đã xử lý gốc",f(v.baseProcessed)+" tr"],["Hiện tại",f(v.processed)+" tr"]].map(x=>line(...x)).join("")+'</div>';
  out+='<div class="info"><b>'+E(i<0?"Đã hoàn tất cả 7 bước":"Đang tắc tại B"+(i+1)+": "+steps[i].title)+'</b><div>'+C.issues(c).map(x=>"• "+E(x)).join("<br>")+'</div><div class="small">Nguồn TXT: '+(C.data.verified[c.id]?"Đã kiểm tra":"Chưa đọc (sẽ tự đọc khi thao tác)")+'</div></div>';
- out+='<div class="actions"><button class="soft" data-action="read">Đọc TXT</button><button class="soft" data-action="downloadCase">Tải hồ sơ TXT</button><button class="soft" data-action="resetCase">Khôi phục tình huống gốc</button></div>';
+ out+='<div class="actions"><button class="soft" data-action="read">Đọc TXT</button><button class="soft" data-action="downloadCase">Tải hồ sơ TXT</button><button class="soft" data-action="newTaskFromCase">+ Tạo nhiệm vụ liên kết</button><button class="soft" data-action="resetCase">Khôi phục tình huống gốc</button></div>';
  out+='<h3 style="margin-top:17px">7 bước xử lý và người chịu trách nhiệm</h3><div class="stages">'+steps.map((s,k)=>'<div class="stage '+(s.status==="DONE"?"done":s.status==="RETURNED"?"returned":k===i?"active":"")+'"><b>B'+(k+1)+': '+E(s.title)+'</b><small>'+E(s.actor)+'</small><small>'+E(s.datetime?.slice(0,10)||"Chưa có ngày")+' · '+E(s.status)+'</small><button data-stage="'+k+'" class="soft min">Xem biểu mẫu '+(k+1)+'</button></div>').join("")+'</div>';
  if(i>=0){
  const people=C.people();
@@ -140,6 +140,7 @@ async function action(name){
  if(name==="resetCase"){if(!confirm("Khôi phục về kịch bản gốc? Nhật ký thao tác vẫn được giữ."))return;await C.act(selected,"reset",{actor:"Điều phối mô phỏng"});}
  else await C.act(selected,name,{actor:$("operator")?.value,to:$("recipient")?.value,note:$("actionNote")?.value||"",amount:$("amount")?.value});
  render();toast("Đã ghi nhận thao tác mô phỏng "+name);return}
+ if(name==="newTaskFromCase"){if(!window.CTYOPS)throw Error("Chưa có mô-đun công việc");window.CTYOPS.prefillTask(selected);return}
  if(name==="read"){await C.verify(C.find(selected));render();toast("Đã xác minh nguồn TXT");return}
  if(name==="downloadCase"){let c=C.find(selected);download(c.id+".txt",await C.verify(c));return}
  if(name==="formtxt"){let c=C.find(selected);await C.verify(c);download(c.id+"-BM"+(formIndex+1)+".txt",C.getForm(c,formIndex));return}
