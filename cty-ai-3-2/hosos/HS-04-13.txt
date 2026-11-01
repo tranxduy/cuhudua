@@ -1,8 +1,8 @@
-CTY AI 3.2 – HỒ SƠ CHỨNG TỪ GIẢ ĐỊNH 07 GIAI ĐOẠN – KHÔNG PHẢI BẢN KÝ
+CTY AI 3.2 — HỒ SƠ VĂN BẢN GIẢ ĐỊNH CÓ 7 BIỂU MẪU VÀ NHẬT KÝ THÁNG, KHÔNG PHẢI BẢN KÝ
 MÃ_HỒ_SƠ: HS-04-13
-TÊN_HỒ_SƠ: Đấu thầu tư vấn – phát sinh chậm tiến độ (tháng 08)
+TÊN_HỒ_SƠ: Đấu thầu tư vấn – phát sinh chậm tiến độ (tháng 01)
 LĨNH_VỰC: project
-THÁNG: 8
+THÁNG: 1
 NĂM: 2026
 ĐƠN_VỊ: QLDT
 NHÂN_VIÊN_GIẢ: Võ Thị Ngọc Linh
@@ -18,119 +18,131 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 465.1
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 465.1
 TRẠNG_THÁI: CLOSED
 CỜ_KIỂM_TRA: KHONG
-Ghi chú: Toàn bộ tên người, dấu, số tiền, chữ ký và thông tin trong tệp đều GIẢ ĐỊNH.
+KỲ_BÁO_CÁO: 01/2026
+Ghi chú: TẤT CẢ tên người, dấu, chữ ký, số tiền, quyết định đều là GIẢ ĐỊNH.
 
-==== BẢNG THEO DÕI LUÂN CHUYỂN 7 BƯỚC ====
-BƯỚC 1: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ | DONE | Võ Thị Ngọc Linh | 2026-08-05 | BM1-HS-04-13
-BƯỚC 2: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH | DONE | Phạm Hoàng Phúc | 2026-08-06 | BM2-HS-04-13
-BƯỚC 3: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH | DONE | Đỗ Quang Huy | 2026-08-07 | BM3-HS-04-13
-BƯỚC 4: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-08-10 | BM4-HS-04-13
-BƯỚC 5: BIÊN BẢN THỰC HIỆN – NGHIỆM THU | DONE | Võ Thị Ngọc Linh | 2026-08-11 | BM5-HS-04-13
-BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | DONE | Lê Thị Bảo Ngọc | 2026-08-12 | BM6-HS-04-13
-BƯỚC 7: PHIẾU TỔNG HỢP BÁO CÁO THÁNG | DONE | Trần Minh Hằng | 2026-08-13 | BM7-HS-04-13
+==== BẢNG THEO DÕI LUÂN CHUYỂN HỒ SƠ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN | DONE | Võ Thị Ngọc Linh | 2026-01-05 | BM1-HS-04-13
+BƯỚC 2: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH | DONE | Phạm Hoàng Phúc | 2026-01-06 | BM2-HS-04-13
+BƯỚC 3: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH | DONE | Đỗ Quang Huy | 2026-01-07 | BM3-HS-04-13
+BƯỚC 4: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-01-08 | BM4-HS-04-13
+BƯỚC 5: BIÊN BẢN THỰC HIỆN – NGHIỆM THU | DONE | Võ Thị Ngọc Linh | 2026-01-09 | BM5-HS-04-13
+BƯỚC 6: PHIẾU KẾ TOÁN GHI NHẬN | DONE | Lê Thị Bảo Ngọc | 2026-01-12 | BM6-HS-04-13
+BƯỚC 7: PHIẾU TỔNG HỢP BÁO CÁO THÁNG | DONE | Trần Minh Hằng | 2026-01-13 | BM7-HS-04-13
 
-===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ NGHIỆP VỤ =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM1-HS-04-13/DEMO
-Ngày: 2026-08-05, trạng thái DONE
-Tên biểu mẫu: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Kính gửi: Trưởng bộ phận Phạm Hoàng Phúc.
-Người dự thảo Võ Thị Ngọc Linh đề xuất Đấu thầu tư vấn – phát sinh chậm tiến độ (tháng 08).
-Căn cứ nhu cầu thực hiện nghiệp vụ Tư vấn; đề nghị 465,1 triệu đồng; dự toán 444,2 triệu đồng.
-Tệp giả đính kèm: ĐN-HS-04-13, DT-HS-04-13, bảng kê mô phỏng; chuyển trưởng đơn vị kiểm tra trước khi trình.
-Người xử lý: Võ Thị Ngọc Linh. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM1-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-05
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Kính trình Trưởng đơn vị Phạm Hoàng Phúc.
+Người lập Võ Thị Ngọc Linh đề nghị xử lý Đấu thầu tư vấn – phát sinh chậm tiến độ (tháng 01).
+Loại nghiệp vụ: Tư vấn; giá trị đề nghị 465,1 triệu, dự toán riêng 444,2 triệu.
+Hồ sơ kèm (giả): Tờ trình ĐN-HS-04-13, bảng dự toán DT-HS-04-13, bảng giải trình nội dung và khối lượng.
+Đầu ra: chuyển trưởng đơn vị kiểm tra trước khi gửi TCKT.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Võ Thị Ngọc Linh.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 01 =====
 
-===== BIỂU MẪU 02 | PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM2-HS-04-13/DEMO
-Ngày: 2026-08-06, trạng thái DONE
-Tên biểu mẫu: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Kính gửi: Phòng Tài chính – Kế toán.
-Người trình: Phạm Hoàng Phúc. Đã kiểm tra nhu cầu, nguồn kinh phí, phạm vi công việc và dữ liệu dự toán giả định.
-Chênh lệch số đề nghị so với dự toán: 20,9 triệu đồng. Có vượt dự toán: phải bổ sung giải trình/điều chỉnh trước khi thực hiện.
-Kết quả: Trình TCKT kiểm soát bước tiếp theo.
-Người xử lý: Phạm Hoàng Phúc. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 02 | PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM2-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-06
+TÊN BIỂU MẪU: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Trưởng đơn vị: Phạm Hoàng Phúc.
+Đã rà sự cần thiết, tính hợp lệ biểu mẫu, kinh phí và điều kiện thực hiện theo nghiệp vụ giả định.
+Giá trị dự toán 444,2 triệu; đề nghị 465,1 triệu; chênh lệch 20,9 triệu.
+Ý kiến: Đồng ý trình Phòng Tài chính – Kế toán kiểm soát, chưa cho phép chi.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Phạm Hoàng Phúc.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 02 =====
 
 ===== BIỂU MẪU 03 | PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM3-HS-04-13/DEMO
-Ngày: 2026-08-07, trạng thái DONE
-Tên biểu mẫu: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Người kiểm soát TCKT: Đỗ Quang Huy; không trùng nhân viên lập hồ sơ trong bộ dữ liệu thử.
-Checklist: dự toán; số tiền; biểu mẫu; hóa đơn/hợp đồng/nghiệm thu nếu áp dụng; điều kiện thanh toán; sự phù hợp kế hoạch và thẩm quyền.
-Ý kiến kiểm soát: Đồng ý trình người có thẩm quyền theo tình huống giả.
-TCKT KHÔNG THAY THẾ TGĐ PHÊ DUYỆT. Căn cứ QĐ29/2025 chỉ dùng khi thuộc phạm vi và được kiểm tra bản ký; Quy chế tài chính QĐ21/2024 chờ xác minh hiệu lực.
-Người xử lý: Đỗ Quang Huy. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM3-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-07
+TÊN BIỂU MẪU: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Người kiểm soát TCKT: Đỗ Quang Huy (khác người lập theo dữ liệu giả).
+Checklist: hồ sơ đề nghị, thẩm quyền cấp trình, dự toán, bộ chứng từ, hợp đồng/nghiệm thu (nếu có), điều kiện thanh toán và tính thống nhất số tiền.
+Kết quả: Đã kiểm soát và đồng ý trình người có thẩm quyền; cần xác minh giá trị chữ ký khi áp dụng thật.
+LƯU Ý: Phòng TCKT kiểm tra nghiệp vụ và đồng ý trình, không thay thế phê duyệt của TGĐ. QĐ21/2024 về tài chính chỉ là tham chiếu chưa xác minh hiệu lực.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Đỗ Quang Huy.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 03 =====
 
 ===== BIỂU MẪU 04 | PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM4-HS-04-13/DEMO
-Ngày: 2026-08-10, trạng thái DONE
-Tên biểu mẫu: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Kính trình: Tổng Giám đốc Đỗ Quang Hưng.
-Tờ trình từ Phạm Hoàng Phúc, phiếu kiểm soát TCKT BM3-HS-04-13, bộ chứng từ nguồn giả định.
-Giá trị đề nghị 465,1 triệu, giá trị được duyệt theo tình huống 465,1 triệu.
-Quyết định mô phỏng: Đồng ý trong giới hạn phê duyệt giả định; chuyển thực hiện.
-Người xử lý: Đỗ Quang Hưng. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM4-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-08
+TÊN BIỂU MẪU: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Kính trình Tổng Giám đốc Đỗ Quang Hưng.
+Tài liệu trình: đề nghị, ý kiến trưởng bộ phận, phiếu kiểm soát TCKT, dự toán, hồ sơ giải trình; đều là dữ liệu mô phỏng.
+Giá trị đề nghị 465,1 triệu; giá trị được duyệt giả định 465,1 triệu.
+Quyết định: PHÊ DUYỆT MÔ PHỎNG trong phạm vi giá trị được duyệt, giao bộ phận chủ trì thực hiện.
+Chữ ký: MẪU TÊN GIẢ – KHÔNG CÓ CHỮ KÝ THẬT.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Đỗ Quang Hưng.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 04 =====
 
 ===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN – NGHIỆM THU =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM5-HS-04-13/DEMO
-Ngày: 2026-08-11, trạng thái DONE
-Tên biểu mẫu: BIÊN BẢN THỰC HIỆN – NGHIỆM THU
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Đơn vị thực hiện: QLDT; chủ trì Võ Thị Ngọc Linh.
-Hồ sơ chứng minh giả: nhật ký công việc NK-HS-04-13, biên bản nghiệm thu NT-HS-04-13, bảng khối lượng KL-HS-04-13; không có tài liệu thật.
-Kết quả nghiệm thu giả định: Đã hoàn tất công việc, ghi giá trị xử lý 465,1 triệu đồng.
-Người xử lý: Võ Thị Ngọc Linh. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM5-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-09
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN – NGHIỆM THU
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Đơn vị thực hiện: QLDT, đầu mối Võ Thị Ngọc Linh.
+Bộ chứng từ thực hiện giả: Phiếu công việc CV-HS-04-13, bảng khối lượng KL-HS-04-13, biên bản nghiệm thu NT-HS-04-13, bảng kê chất lượng (nếu áp dụng).
+Kết quả: Đã thực hiện, nghiệm thu giả định và xác nhận giá trị hoàn tất 465,1 triệu đồng.
+Người xác nhận: Võ Thị Ngọc Linh (mô phỏng).
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Võ Thị Ngọc Linh.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 05 =====
 
-===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM6-HS-04-13/DEMO
-Ngày: 2026-08-12, trạng thái DONE
-Tên biểu mẫu: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Người ghi nhận kế toán: Lê Thị Bảo Ngọc.
-Đối chiếu phiếu TGĐ (giả), biên bản thực hiện (giả), số đề nghị và số đã duyệt, xác minh không vượt giá trị.
-Số đã xử lý 465,1 triệu; số thanh toán giả định 465,1 triệu.
-Tình trạng: Đã lập phiếu ghi nhận mô phỏng; không có bút toán sổ cái thật.
-Người xử lý: Lê Thị Bảo Ngọc. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 06 | PHIẾU KẾ TOÁN GHI NHẬN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM6-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-12
+TÊN BIỂU MẪU: PHIẾU KẾ TOÁN GHI NHẬN
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Người ghi nhận: Lê Thị Bảo Ngọc.
+Căn cứ kiểm tra: tờ trình, phiếu trưởng bộ phận, kiểm soát TCKT, quyết định TGĐ (giả), nghiệm thu và chứng từ giá trị.
+Số đã xử lý giả định 465,1 triệu; đã thanh toán giả định 465,1 triệu; không vượt giá trị được duyệt 465,1 triệu.
+Kết luận: Đã lập phiếu ghi nhận nghiệp vụ GIẢ, không ghi sổ kế toán thực.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Lê Thị Bảo Ngọc.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 06 =====
 
 ===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP BÁO CÁO THÁNG =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM7-HS-04-13/DEMO
-Ngày: 2026-08-13, trạng thái DONE
-Tên biểu mẫu: PHIẾU TỔNG HỢP BÁO CÁO THÁNG
-Mã hồ sơ HS-04-13, đơn vị QLDT, tháng 8/2026
-------------------------------------------------------
-Người tổng hợp: Trần Minh Hằng; kỳ báo cáo 08/2026.
-Cộng số liệu từ hồ sơ HS-04-13: đề nghị 465,1 triệu, duyệt 465,1 triệu, đã xử lý 465,1 triệu, thanh toán 465,1 triệu.
-Kết quả: Đã đưa vào báo cáo lĩnh vực theo tình huống giả định.
-Phải tách chi phí kế toán, mua sắm, giải ngân và sản lượng để tránh cộng trùng giữa lĩnh vực.
-Dự án DA-C: Dự án nâng cấp hệ thống điều khiển (giả định); ngân sách dự án 8.500 triệu tính một lần, tiến độ KH 41%, thực hiện 41% (đều giả).
-Người xử lý: Trần Minh Hằng. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM7-HS-04-13/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-01-13
+TÊN BIỂU MẪU: PHIẾU TỔNG HỢP BÁO CÁO THÁNG
+Mã hồ sơ: HS-04-13 | Đơn vị: QLDT | Kỳ: 01/2026
+------------------------------------------------------------
+Người lập báo cáo: Trần Minh Hằng; kỳ báo cáo tháng 01/2026.
+Mã hồ sơ nguồn HS-04-13; đơn vị QLDT; khoản mục Tư vấn.
+Giá trị đề nghị 465,1 triệu; duyệt giả 465,1 triệu; đã xử lý giả 465,1 triệu; thanh toán giả 465,1 triệu.
+Kết quả: Đã tổng hợp vào báo cáo lĩnh vực theo kỳ giả định.
+Không cộng trùng chi phí kế toán với mua sắm, sửa chữa, giải ngân đầu tư hoặc sản lượng điện.
+Dự án DA-C: Dự án nâng cấp hệ thống điều khiển (giả định); tổng mức 8.500 triệu ghi 1 lần, KH tiến độ 41%, TH 41% (mô phỏng).
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Trần Minh Hằng.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 07 =====
-HẾT HỒ SƠ GIẢ ĐỊNH 3.2
+HẾT HỒ SƠ MÔ PHỎNG. KHÔNG DÙNG LÀM CHỨNG TỪ HẠCH TOÁN/CHI TIỀN.

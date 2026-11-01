@@ -1,8 +1,8 @@
-CTY AI 3.2 – HỒ SƠ CHỨNG TỪ GIẢ ĐỊNH 07 GIAI ĐOẠN – KHÔNG PHẢI BẢN KÝ
+CTY AI 3.2 — HỒ SƠ VĂN BẢN GIẢ ĐỊNH CÓ 7 BIỂU MẪU VÀ NHẬT KÝ THÁNG, KHÔNG PHẢI BẢN KÝ
 MÃ_HỒ_SƠ: HS-05-36
-TÊN_HỒ_SƠ: Bảo dưỡng hệ thống làm mát – đã nghiệm thu nội bộ (tháng 09)
+TÊN_HỒ_SƠ: Bảo dưỡng hệ thống làm mát – đã nghiệm thu nội bộ (tháng 05)
 LĨNH_VỰC: maintenance
-THÁNG: 6
+THÁNG: 5
 NĂM: 2026
 ĐƠN_VỊ: SC
 NHÂN_VIÊN_GIẢ: Võ Minh Thành
@@ -18,118 +18,130 @@ GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 133.2
 GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 106.6
 TRẠNG_THÁI: CLOSED
 CỜ_KIỂM_TRA: KHONG
-Ghi chú: Toàn bộ tên người, dấu, số tiền, chữ ký và thông tin trong tệp đều GIẢ ĐỊNH.
+KỲ_BÁO_CÁO: 05/2026
+Ghi chú: TẤT CẢ tên người, dấu, chữ ký, số tiền, quyết định đều là GIẢ ĐỊNH.
 
-==== BẢNG THEO DÕI LUÂN CHUYỂN 7 BƯỚC ====
-BƯỚC 1: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ | DONE | Võ Minh Thành | 2026-06-12 | BM1-HS-05-36
-BƯỚC 2: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH | DONE | Đặng Quốc Tuấn | 2026-06-15 | BM2-HS-05-36
-BƯỚC 3: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH | DONE | Phạm Anh Khoa | 2026-06-16 | BM3-HS-05-36
-BƯỚC 4: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-06-17 | BM4-HS-05-36
-BƯỚC 5: BIÊN BẢN THỰC HIỆN – NGHIỆM THU | DONE | Võ Minh Thành | 2026-06-18 | BM5-HS-05-36
-BƯỚC 6: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN | DONE | Võ Thùy Dương | 2026-06-19 | BM6-HS-05-36
-BƯỚC 7: PHIẾU TỔNG HỢP BÁO CÁO THÁNG | DONE | Đỗ Quang Huy | 2026-06-22 | BM7-HS-05-36
+==== BẢNG THEO DÕI LUÂN CHUYỂN HỒ SƠ ====
+BƯỚC 1: PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN | DONE | Võ Minh Thành | 2026-05-12 | BM1-HS-05-36
+BƯỚC 2: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH | DONE | Đặng Quốc Tuấn | 2026-05-13 | BM2-HS-05-36
+BƯỚC 3: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH | DONE | Phạm Anh Khoa | 2026-05-14 | BM3-HS-05-36
+BƯỚC 4: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT | DONE | Đỗ Quang Hưng | 2026-05-15 | BM4-HS-05-36
+BƯỚC 5: BIÊN BẢN THỰC HIỆN – NGHIỆM THU | DONE | Võ Minh Thành | 2026-05-18 | BM5-HS-05-36
+BƯỚC 6: PHIẾU KẾ TOÁN GHI NHẬN | DONE | Võ Thùy Dương | 2026-05-19 | BM6-HS-05-36
+BƯỚC 7: PHIẾU TỔNG HỢP BÁO CÁO THÁNG | DONE | Đỗ Quang Huy | 2026-05-20 | BM7-HS-05-36
 
-===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ NGHIỆP VỤ =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM1-HS-05-36/DEMO
-Ngày: 2026-06-12, trạng thái DONE
-Tên biểu mẫu: PHIẾU ĐỀ NGHỊ NGHIỆP VỤ
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Kính gửi: Trưởng bộ phận Đặng Quốc Tuấn.
-Người dự thảo Võ Minh Thành đề xuất Bảo dưỡng hệ thống làm mát – đã nghiệm thu nội bộ (tháng 09).
-Căn cứ nhu cầu thực hiện nghiệp vụ Cơ khí; đề nghị 133,2 triệu đồng; dự toán 145,2 triệu đồng.
-Tệp giả đính kèm: ĐN-HS-05-36, DT-HS-05-36, bảng kê mô phỏng; chuyển trưởng đơn vị kiểm tra trước khi trình.
-Người xử lý: Võ Minh Thành. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 01 | PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM1-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-12
+TÊN BIỂU MẪU: PHIẾU ĐỀ NGHỊ VÀ DỰ TOÁN
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Kính trình Trưởng đơn vị Đặng Quốc Tuấn.
+Người lập Võ Minh Thành đề nghị xử lý Bảo dưỡng hệ thống làm mát – đã nghiệm thu nội bộ (tháng 05).
+Loại nghiệp vụ: Cơ khí; giá trị đề nghị 133,2 triệu, dự toán riêng 145,2 triệu.
+Hồ sơ kèm (giả): Tờ trình ĐN-HS-05-36, bảng dự toán DT-HS-05-36, bảng giải trình nội dung và khối lượng.
+Đầu ra: chuyển trưởng đơn vị kiểm tra trước khi gửi TCKT.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Võ Minh Thành.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 01 =====
 
-===== BIỂU MẪU 02 | PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM2-HS-05-36/DEMO
-Ngày: 2026-06-15, trạng thái DONE
-Tên biểu mẫu: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA VÀ TRÌNH
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Kính gửi: Phòng Tài chính – Kế toán.
-Người trình: Đặng Quốc Tuấn. Đã kiểm tra nhu cầu, nguồn kinh phí, phạm vi công việc và dữ liệu dự toán giả định.
-Chênh lệch số đề nghị so với dự toán: -12 triệu đồng. Nằm trong giới hạn dự toán mô phỏng.
-Kết quả: Trình TCKT kiểm soát bước tiếp theo.
-Người xử lý: Đặng Quốc Tuấn. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 02 | PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM2-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-13
+TÊN BIỂU MẪU: PHIẾU TRƯỞNG BỘ PHẬN KIỂM TRA – TRÌNH
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Trưởng đơn vị: Đặng Quốc Tuấn.
+Đã rà sự cần thiết, tính hợp lệ biểu mẫu, kinh phí và điều kiện thực hiện theo nghiệp vụ giả định.
+Giá trị dự toán 145,2 triệu; đề nghị 133,2 triệu; chênh lệch -12 triệu.
+Ý kiến: Đồng ý trình Phòng Tài chính – Kế toán kiểm soát, chưa cho phép chi.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Đặng Quốc Tuấn.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 02 =====
 
 ===== BIỂU MẪU 03 | PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM3-HS-05-36/DEMO
-Ngày: 2026-06-16, trạng thái DONE
-Tên biểu mẫu: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Người kiểm soát TCKT: Phạm Anh Khoa; không trùng nhân viên lập hồ sơ trong bộ dữ liệu thử.
-Checklist: dự toán; số tiền; biểu mẫu; hóa đơn/hợp đồng/nghiệm thu nếu áp dụng; điều kiện thanh toán; sự phù hợp kế hoạch và thẩm quyền.
-Ý kiến kiểm soát: Đồng ý trình người có thẩm quyền theo tình huống giả.
-TCKT KHÔNG THAY THẾ TGĐ PHÊ DUYỆT. Căn cứ QĐ29/2025 chỉ dùng khi thuộc phạm vi và được kiểm tra bản ký; Quy chế tài chính QĐ21/2024 chờ xác minh hiệu lực.
-Người xử lý: Phạm Anh Khoa. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM3-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-14
+TÊN BIỂU MẪU: PHIẾU TCKT KIỂM SOÁT VÀ ĐỒNG Ý TRÌNH
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Người kiểm soát TCKT: Phạm Anh Khoa (khác người lập theo dữ liệu giả).
+Checklist: hồ sơ đề nghị, thẩm quyền cấp trình, dự toán, bộ chứng từ, hợp đồng/nghiệm thu (nếu có), điều kiện thanh toán và tính thống nhất số tiền.
+Kết quả: Đã kiểm soát và đồng ý trình người có thẩm quyền; cần xác minh giá trị chữ ký khi áp dụng thật.
+LƯU Ý: Phòng TCKT kiểm tra nghiệp vụ và đồng ý trình, không thay thế phê duyệt của TGĐ. QĐ21/2024 về tài chính chỉ là tham chiếu chưa xác minh hiệu lực.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Phạm Anh Khoa.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 03 =====
 
 ===== BIỂU MẪU 04 | PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM4-HS-05-36/DEMO
-Ngày: 2026-06-17, trạng thái DONE
-Tên biểu mẫu: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Kính trình: Tổng Giám đốc Đỗ Quang Hưng.
-Tờ trình từ Đặng Quốc Tuấn, phiếu kiểm soát TCKT BM3-HS-05-36, bộ chứng từ nguồn giả định.
-Giá trị đề nghị 133,2 triệu, giá trị được duyệt theo tình huống 133,2 triệu.
-Quyết định mô phỏng: Đồng ý trong giới hạn phê duyệt giả định; chuyển thực hiện.
-Người xử lý: Đỗ Quang Hưng. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM4-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-15
+TÊN BIỂU MẪU: PHIẾU TỔNG GIÁM ĐỐC PHÊ DUYỆT
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Kính trình Tổng Giám đốc Đỗ Quang Hưng.
+Tài liệu trình: đề nghị, ý kiến trưởng bộ phận, phiếu kiểm soát TCKT, dự toán, hồ sơ giải trình; đều là dữ liệu mô phỏng.
+Giá trị đề nghị 133,2 triệu; giá trị được duyệt giả định 133,2 triệu.
+Quyết định: PHÊ DUYỆT MÔ PHỎNG trong phạm vi giá trị được duyệt, giao bộ phận chủ trì thực hiện.
+Chữ ký: MẪU TÊN GIẢ – KHÔNG CÓ CHỮ KÝ THẬT.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Đỗ Quang Hưng.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 04 =====
 
 ===== BIỂU MẪU 05 | BIÊN BẢN THỰC HIỆN – NGHIỆM THU =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM5-HS-05-36/DEMO
-Ngày: 2026-06-18, trạng thái DONE
-Tên biểu mẫu: BIÊN BẢN THỰC HIỆN – NGHIỆM THU
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Đơn vị thực hiện: SC; chủ trì Võ Minh Thành.
-Hồ sơ chứng minh giả: nhật ký công việc NK-HS-05-36, biên bản nghiệm thu NT-HS-05-36, bảng khối lượng KL-HS-05-36; không có tài liệu thật.
-Kết quả nghiệm thu giả định: Đã hoàn tất công việc, ghi giá trị xử lý 133,2 triệu đồng.
-Người xử lý: Võ Minh Thành. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM5-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-18
+TÊN BIỂU MẪU: BIÊN BẢN THỰC HIỆN – NGHIỆM THU
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Đơn vị thực hiện: SC, đầu mối Võ Minh Thành.
+Bộ chứng từ thực hiện giả: Phiếu công việc CV-HS-05-36, bảng khối lượng KL-HS-05-36, biên bản nghiệm thu NT-HS-05-36, bảng kê chất lượng (nếu áp dụng).
+Kết quả: Đã thực hiện, nghiệm thu giả định và xác nhận giá trị hoàn tất 133,2 triệu đồng.
+Người xác nhận: Võ Minh Thành (mô phỏng).
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Võ Minh Thành.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 05 =====
 
-===== BIỂU MẪU 06 | PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM6-HS-05-36/DEMO
-Ngày: 2026-06-19, trạng thái DONE
-Tên biểu mẫu: PHIẾU GHI NHẬN NGHIỆP VỤ KẾ TOÁN
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Người ghi nhận kế toán: Võ Thùy Dương.
-Đối chiếu phiếu TGĐ (giả), biên bản thực hiện (giả), số đề nghị và số đã duyệt, xác minh không vượt giá trị.
-Số đã xử lý 133,2 triệu; số thanh toán giả định 106,6 triệu.
-Tình trạng: Đã lập phiếu ghi nhận mô phỏng; không có bút toán sổ cái thật.
-Người xử lý: Võ Thùy Dương. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+===== BIỂU MẪU 06 | PHIẾU KẾ TOÁN GHI NHẬN =====
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM6-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-19
+TÊN BIỂU MẪU: PHIẾU KẾ TOÁN GHI NHẬN
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Người ghi nhận: Võ Thùy Dương.
+Căn cứ kiểm tra: tờ trình, phiếu trưởng bộ phận, kiểm soát TCKT, quyết định TGĐ (giả), nghiệm thu và chứng từ giá trị.
+Số đã xử lý giả định 133,2 triệu; đã thanh toán giả định 106,6 triệu; không vượt giá trị được duyệt 133,2 triệu.
+Kết luận: Đã lập phiếu ghi nhận nghiệp vụ GIẢ, không ghi sổ kế toán thực.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Võ Thùy Dương.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 06 =====
 
 ===== BIỂU MẪU 07 | PHIẾU TỔNG HỢP BÁO CÁO THÁNG =====
-CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN — HỒ SƠ GIẢ ĐỊNH
-Số: BM7-HS-05-36/DEMO
-Ngày: 2026-06-22, trạng thái DONE
-Tên biểu mẫu: PHIẾU TỔNG HỢP BÁO CÁO THÁNG
-Mã hồ sơ HS-05-36, đơn vị SC, tháng 6/2026
-------------------------------------------------------
-Người tổng hợp: Đỗ Quang Huy; kỳ báo cáo 06/2026.
-Cộng số liệu từ hồ sơ HS-05-36: đề nghị 133,2 triệu, duyệt 133,2 triệu, đã xử lý 133,2 triệu, thanh toán 106,6 triệu.
-Kết quả: Đã đưa vào báo cáo lĩnh vực theo tình huống giả định.
-Phải tách chi phí kế toán, mua sắm, giải ngân và sản lượng để tránh cộng trùng giữa lĩnh vực.
-Người xử lý: Đỗ Quang Huy. Kết luận: ĐÃ HOÀN THÀNH GIẢ ĐỊNH.
-Chữ ký/đóng dấu: [KHÔNG CÓ CHỮ KÝ HOẶC CON DẤU THẬT]
+CÔNG TY CỔ PHẦN THỦY ĐIỆN GERUCO SÔNG CÔN (HỒ SƠ THỬ NGHIỆM)
+Số: BM7-HS-05-36/DEMO                      MẪU GIẢ – KHÔNG DÙNG KÝ/THANH TOÁN
+Ngày xử lý: 2026-05-20
+TÊN BIỂU MẪU: PHIẾU TỔNG HỢP BÁO CÁO THÁNG
+Mã hồ sơ: HS-05-36 | Đơn vị: SC | Kỳ: 05/2026
+------------------------------------------------------------
+Người lập báo cáo: Đỗ Quang Huy; kỳ báo cáo tháng 05/2026.
+Mã hồ sơ nguồn HS-05-36; đơn vị SC; khoản mục Cơ khí.
+Giá trị đề nghị 133,2 triệu; duyệt giả 133,2 triệu; đã xử lý giả 133,2 triệu; thanh toán giả 106,6 triệu.
+Kết quả: Đã tổng hợp vào báo cáo lĩnh vực theo kỳ giả định.
+Không cộng trùng chi phí kế toán với mua sắm, sửa chữa, giải ngân đầu tư hoặc sản lượng điện.
+TRẠNG THÁI: DONE – ĐÃ XỬ LÝ MÔ PHỎNG
+Người lập/xử lý: Đỗ Quang Huy.
+Ô ký, đóng dấu: [KHÔNG CÓ CHỮ KÝ / CON DẤU THẬT]
 ===== KẾT THÚC BIỂU MẪU 07 =====
-HẾT HỒ SƠ GIẢ ĐỊNH 3.2
+HẾT HỒ SƠ MÔ PHỎNG. KHÔNG DÙNG LÀM CHỨNG TỪ HẠCH TOÁN/CHI TIỀN.
