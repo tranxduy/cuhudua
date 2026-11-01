@@ -1,0 +1,1 @@
+Bản CTY AI 3.2 40 hồ sơ trước khi thay thế bằng 360 hồ sơ, lưu để đối chiếu. Tham chiếu manifest-40.json và dữ liệu hosos/HS-xx-01..05; không phải bản phát hành chính thức hiện hành.
