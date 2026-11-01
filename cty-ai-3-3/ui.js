@@ -84,6 +84,7 @@ function fullReport(){
  lines.push("","VI. NHẬT KÝ THAO TÁC",
  "Tổng: "+C.data.events.length+"; chuyển việc: "+C.data.events.filter(e=>e.type==="ASSIGN").length+"; trả: "+C.data.events.filter(e=>e.type==="RETURN").length+"; trình lại: "+C.data.events.filter(e=>e.type==="RESUBMIT").length+"; báo cáo: "+C.data.events.filter(e=>e.type==="REPORT").length,
  "Mọi quyết định chỉ nằm trên trình duyệt và không có giá trị phê duyệt thật. Không cộng ngang giá trị giữa tám lĩnh vực vì có khả năng trùng nghiệp vụ.");
+ if(window.CTYOPS){lines.push("","VII. BÁO CÁO THỰC THI LUỒNG, NHÂN SỰ VÀ NHIỆM VỤ BỔ SUNG",window.CTYOPS.plainReport("flow"),window.CTYOPS.plainReport("people"),"VIII. NHIỆM VỤ ĐỘC LẬP");for(const t of window.CTYOPS.tasks.items)lines.push(t.id+" | "+t.title+" | "+t.owner+" | "+t.status+" | hạn "+(t.due||"không đặt")+" | "+(t.caseId||"không liên kết"));}
  return lines.join("\n");
 }
 
@@ -143,8 +144,8 @@ async function action(name){
  if(name==="downloadCase"){let c=C.find(selected);download(c.id+".txt",await C.verify(c));return}
  if(name==="formtxt"){let c=C.find(selected);await C.verify(c);download(c.id+"-BM"+(formIndex+1)+".txt",C.getForm(c,formIndex));return}
  if(["reportcsv","domaincsv","taskcsv","casecsv","financecsv","projectcsv","logcsv"].includes(name)){let type={reportcsv:"domains",domaincsv:"domains",taskcsv:"tasks",casecsv:"cases",financecsv:"finance",projectcsv:"projects",logcsv:"logs"}[name];download("CTY-AI-3.3-"+type+".csv",csv(reportRows(type)),"text/csv;charset=utf-8");return}
- if(name==="backup"){download("CTY-AI-3.3-backup.json",JSON.stringify(C.data,null,2),"application/json");return}
- if(name==="resetAll"){if(confirm("Xóa toàn bộ thao tác thử và hồ sơ nhập trên máy? Hãy sao lưu trước.")){C.reset();selected=C.all()[0].id;render()}return}
+ if(name==="backup"){let full=window.CTYOPS?{kind:"CTY-AI-33-FULL",workflow:C.data,tasks:window.CTYOPS.tasks}:C.data;download("CTY-AI-3.3-backup.json",JSON.stringify(full,null,2),"application/json");return}
+ if(name==="resetAll"){if(confirm("Xóa toàn bộ thao tác thử và hồ sơ nhập trên máy? Hãy sao lưu trước.")){C.reset();window.CTYOPS?.resetTasks();selected=C.all()[0].id;render()}return}
  if(name==="print"){renderDomains();window.print();return}
  if(name==="template"){download("CTY-AI-3.3-MAU-7-BUOC.txt",template());return}
  if(name==="import"){let file=$("upload").files?.[0];if(!file)throw Error("Chọn tệp TXT trước");if(file.size>150000)throw Error("TXT vượt 150KB");let c=C.importTxt(await file.text());selected=c.id;formIndex=0;show("cases");toast("Đã nhập "+c.id);return}
@@ -164,7 +165,7 @@ async function boot(){try{
  $("reportDomain").onchange=e=>{filters.reportDomain=e.target.value;renderDomains()};
  $("auditType").onchange=e=>{filters.logType=e.target.value;renderAudit()};
  $("auditSearch").oninput=e=>{filters.logSearch=e.target.value.toLowerCase();renderAudit()};
- $("restore").onchange=async e=>{try{let f=e.target.files?.[0];if(!f)return;if(f.size>8000000)throw Error("Backup quá lớn");C.setData(JSON.parse(await f.text()));render();toast("Đã khôi phục")}catch(err){toast(err.message)}e.target.value=""};
+ $("restore").onchange=async e=>{try{let f=e.target.files?.[0];if(!f)return;if(f.size>8000000)throw Error("Backup quá lớn");let b=JSON.parse(await f.text());if(b.kind==="CTY-AI-33-FULL"){C.setData(b.workflow);window.CTYOPS?.setTasks(b.tasks)}else C.setData(b);render();toast("Đã khôi phục")}catch(err){toast(err.message)}e.target.value=""};
  document.addEventListener("click",handleClick);show("dashboard");
  }catch(e){$("error").hidden=false;$("error").textContent="Không đọc được cơ sở dữ liệu CTY AI 3.2: "+e.message}}
 window.CTY33UI={boot,render,show,reportRows,taskRows,template,action,fullReport};
