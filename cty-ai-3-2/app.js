@@ -172,6 +172,6 @@ $("logType").onchange=renderLogs;$("logSearch").oninput=renderLogs;
 $("restoreFile").onchange=async e=>{let f=e.target.files?.[0];if(!f)return;try{if(f.size>6000000)throw Error("Tệp quá lớn");let d=JSON.parse(await f.text());if(d.version!==322||!d.runs||!Array.isArray(d.tasks)||!Array.isArray(d.events)||!Array.isArray(d.custom))throw Error("Sai cấu trúc");if(confirm("Khôi phục thay dữ liệu hiện tại?")){db=d;cache.clear();save();render()}}catch(err){toast(err.message)}};
 document.addEventListener("click",click);$("bootAlert").hidden=true;render();
 }catch(e){$("bootAlert").textContent="Không tải được danh mục hồ sơ: "+e.message+". Báo cáo không được tạo khi thiếu dữ liệu.";}}
-window.CTY32={boot,runAll,runCase,read,parse,validate,cases,state,valid,financeMonths,financeTypes,projectRows,domainRows,getStore:()=>db,render,template};
+window.CTY32={boot,runAll,runCase,read,parse,validate,cases,state,valid,financeMonths,financeTypes,projectRows,domainRows,getStore:()=>db,render,template,importFile};
 boot();
 })();
