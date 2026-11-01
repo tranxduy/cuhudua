@@ -58,7 +58,7 @@ function reportWorkflow(){
  const stageNames=["Dự thảo","Trưởng đơn vị","TCKT","TGĐ","Nghiệm thu","Kế toán","Báo cáo"];
  $("opStages").innerHTML=stageNames.map((label,i)=>{let num=open.filter(c=>statuses(mode,c).index===i).length;return'<div class="barline"><span>B'+(i+1)+' · '+E(label)+'</span><div class="bar"><i style="width:'+100*num/(open.length||1)+'%"></i></div><b>'+num+' việc</b></div>'}).join("");
  $("opMonthly").innerHTML=table(["Tháng","Số HS","Đã xong","Chờ","Trả","Bước đã làm"],Array.from({length:10},(_,m)=>{let a=xs.filter(c=>c.month===m+1);return[m+1,a.length,a.filter(c=>statuses(mode,c).index<0).length,a.filter(c=>statuses(mode,c).index>=0).length,a.filter(c=>statuses(mode,c).status==="REVIEW").length,a.reduce((n,c)=>n+statuses(mode,c).stages.filter(s=>s.status==="DONE").length,0)]}));
- $("opWorkflowTable").innerHTML=table(["Hồ sơ","Kỳ","Lĩnh vực","Người lập","Đang ở bước","Người giữ","Trạng thái","Hoàn tất bước","Xử lý"],xs.map(c=>{let x=statuses(mode,c);return[caseButton(c),E(c.month+"/2026"),E(c.domainName),E(c.owner),E(x.phase),E(x.holder),E(x.status),x.stages.filter(s=>s.status==="DONE").length+"/7",caseButton(c)]}));
+ $("opWorkflowTable").innerHTML=table(["Hồ sơ","Kỳ","Lĩnh vực","Người lập","Đang ở bước","Người giữ","Trạng thái","Hoàn tất bước","B1–B7 (người / trạng thái)","Xử lý"],xs.map(c=>{let x=statuses(mode,c);return[caseButton(c),E(c.month+"/2026"),E(c.domainName),E(c.owner),E(x.phase),E(x.holder),E(x.status),x.stages.filter(s=>s.status==="DONE").length+"/7",x.stages.map((s,i)=>"B"+(i+1)+":"+s.status+" ("+s.actor+")").map(E).join("<small>") ,caseButton(c)]}));
 }
 function reportPeople(){
  let all=staffStats(view.peopleMode),list=all.filter(p=>(!view.dept||p.deptCode===view.dept)&&(!view.search||(p.name+" "+p.dept+" "+p.role).toLowerCase().includes(view.search)));
@@ -139,7 +139,7 @@ function taskUpdate(action){
 }
 function escapeCSV(rows){return"\ufeff"+rows.map(r=>r.map(x=>'"'+String(x??"").replace(/"/g,'""')+'"').join(",")).join("\r\n")}
 function download(name,content,mime="text/plain;charset=utf-8"){let b=new Blob([content],{type:mime}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1200)}
-function workflowCSV(){let m=view.mode;return[["Mã","Lĩnh vực","Tháng","Trạng thái","Bước hiện hành","Người giữ","Hoàn tất bước","Đề nghị","Đã xử lý gốc"],...C.all().filter(c=>!view.flowDomain||view.flowDomain===c.domain).map(c=>{let v=statuses(m,c);return[c.id,c.domainName,c.month,v.status,v.phase,v.holder,v.stages.filter(x=>x.status==="DONE").length,c.proposed,c.processed]})]}
+function workflowCSV(){let m=view.mode;return[["Mã","Lĩnh vực","Tháng","Trạng thái","Bước hiện hành","Người giữ","Hoàn tất bước","Đề nghị","Đã xử lý gốc",...Array.from({length:7},(_,i)=>"B"+(i+1)+" người | trạng thái | ngày")],...C.all().filter(c=>!view.flowDomain||view.flowDomain===c.domain).map(c=>{let v=statuses(m,c);return[c.id,c.domainName,c.month,v.status,v.phase,v.holder,v.stages.filter(x=>x.status==="DONE").length,c.proposed,c.processed,...v.stages.map(s=>s.actor+" | "+s.status+" | "+(s.datetime?.slice(0,10)||""))]})]}
 function peopleCSV(){return[["Họ tên giả","Đơn vị","Vai trò","Bước/việc đã làm","Đang giữ","Bước bị trả","Tỷ lệ hoàn thành %","Số việc có hạn quá ngày","Đã hoàn tất có ngày","Tải nhóm"],...staffStats(view.peopleMode).map(p=>[p.name,p.dept,p.role,p.done,p.active,p.returned,p.completion===null?"":p.completion,p.overdue,p.completedDated,p.teamOpen])]}
 function tasksCSV(){return[["Mã nhiệm vụ","Tên nhiệm vụ","Người giữ","Trạng thái","Hạn","Ưu tiên","Hồ sơ","Tạo ngày","Hoàn tất ngày","Mô tả"],...T.items.map(t=>[t.id,t.title,t.owner,t.status,t.due,t.priority,t.caseId,t.createdAt,t.completedAt,t.description])]}
 function plainReport(kind){
@@ -175,7 +175,7 @@ function click(e){
  return;
  }
  if(b.dataset.opPerson){view.person=b.dataset.opPerson;$("opPersonSelect").value=view.person;reportPersonDetail();return}
- if(b.dataset.opEdit){view.editor=b.dataset.opEdit;renderEditor();return}
+ if(b.dataset.opEdit){view.editor=b.dataset.opEdit;U.show("task-manager");renderTaskManager();return}
  if(b.dataset.op){try{action(b.dataset.op)}catch(err){notices(err.message)}return}
 }
 function setup(){
