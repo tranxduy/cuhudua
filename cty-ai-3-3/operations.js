@@ -113,6 +113,7 @@ function resetPeopleOptions(){
  const domainOpts='<option value="">Tất cả lĩnh vực</option>'+C.manifest.domains.map(d=>'<option value="'+E(d.key)+'">'+E(d.name)+'</option>').join("");$("opWorkflowDomain").innerHTML=domainOpts;
 }
 function snapshot(mode){return mode==="baseline"?"Nguồn 360 hồ sơ đến 31/10/2026":"Tại thời điểm mở báo cáo, gồm thao tác mô phỏng"}
+function prefillTask(caseId){let c=C.find(caseId);if(!c)throw Error("Không tìm thấy hồ sơ");U.show("task-manager");renderTaskManager();$("opTaskCase").value=c.id;$("opTaskTitle").value="Bổ sung/hoàn thiện hồ sơ "+c.id;$("opTaskDescription").value="Nội dung cần xử lý: "+(C.issues(c)[0]||c.title);$("opTaskOwner").value=C.holder(c)==="—"?c.owner:C.holder(c);$("opTaskTitle").focus?.();}
 function taskCreate(){
  let title=$("opTaskTitle").value.trim(),owner=$("opTaskOwner").value,due=$("opTaskDue").value,caseId=$("opTaskCase").value.trim(),priority=$("opTaskPriority").value,description=$("opTaskDescription").value.trim();
  if(!title||title.length<4)throw Error("Tên công việc cần ít nhất 4 ký tự");if(!owner)throw Error("Chọn người thực hiện");if(caseId&&!C.find(caseId))throw Error("Mã hồ sơ không tồn tại");
@@ -193,7 +194,7 @@ function setup(){
  $("opTaskOwnerFilter").onchange=e=>{view.owner=e.target.value;renderTaskManager()};
  $("opTaskDue").value=today();
  document.addEventListener("click",click);
- window.CTYOPS={reportWorkflow,reportPeople,reportPersonDetail,renderTaskManager,staffStats,assignments,statuses,plainReport,workflowCSV,peopleCSV,tasksCSV,taskCreate,taskUpdate,action,get tasks(){return T},setTasks(v){if(v?.version!==1||!Array.isArray(v.items))throw Error("Sao lưu nhiệm vụ không hợp lệ");T=v;persist();resetPeopleOptions();renderTaskManager()},resetTasks(){T={version:1,items:[],serial:0};view.editor="";persist();resetPeopleOptions();renderTaskManager()},refresh:()=>{resetPeopleOptions();reportWorkflow();reportPeople();renderTaskManager()},get view(){return view}};
+ window.CTYOPS={reportWorkflow,reportPeople,reportPersonDetail,renderTaskManager,staffStats,assignments,statuses,plainReport,workflowCSV,peopleCSV,tasksCSV,taskCreate,taskUpdate,action,prefillTask,get tasks(){return T},setTasks(v){if(v?.version!==1||!Array.isArray(v.items))throw Error("Sao lưu nhiệm vụ không hợp lệ");T=v;persist();resetPeopleOptions();renderTaskManager()},resetTasks(){T={version:1,items:[],serial:0};view.editor="";persist();resetPeopleOptions();renderTaskManager()},refresh:()=>{resetPeopleOptions();reportWorkflow();reportPeople();renderTaskManager()},get view(){return view}};
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",setup);else setup();
 })();
