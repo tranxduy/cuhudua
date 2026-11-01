@@ -55,6 +55,38 @@ function renderCase(){
  out+=C.data.events.filter(e=>e.caseId===c.id).slice(-35).reverse().map(e=>'<div class="feedEvent '+(["RETURN","ERROR"].includes(e.type)?"alert":"")+'"><b>'+E(e.type)+' · '+E(e.from)+' → '+E(e.to)+'</b><div>'+E(e.note)+'</div><small>'+E(e.date)+' · '+(e.step===null?"—":"B"+(e.step+1))+'</small></div>').join("");
  $("caseDetail").innerHTML=out+'</div>';
 }
+
+function fullReport(){
+ let all=C.all(),ds=C.domains(),open=all.filter(c=>C.status(c)!=="CLOSED"),lines=[
+ "CTY AI 3.3 – BÁO CÁO TOÀN DIỆN 8 LĨNH VỰC – DỮ LIỆU GIẢ ĐỊNH",
+ "Ngày tạo: "+C.date()+" (Việt Nam). Kỳ gốc: đến 31/10/2026. Thay đổi trên web là mô phỏng sau kỳ.",
+ "Không phải báo cáo kế toán, quản trị hoặc quyết định ký duyệt thật.","",
+ "I. TỔNG QUAN",
+ "Tổng hồ sơ: "+all.length+"; hoàn tất: "+all.filter(c=>C.status(c)==="CLOSED").length+"; còn việc: "+open.length+"; bị trả: "+open.filter(c=>C.status(c)==="REVIEW").length,
+ "TXT đã đối chiếu: "+Object.keys(C.data.verified).filter(k=>C.data.verified[k]).length+"/"+all.length,"",
+ "II. TÁM LĨNH VỰC"];
+ for(let d of ds){let xs=C.cases(d.key);
+ lines.push("",d.name.toUpperCase(),"Số hồ sơ "+d.count+"; đã hoàn tất "+d.closed+"; bị trả "+d.review+"; chờ "+d.pending,
+ "Đề nghị "+f(d.request)+" triệu; đã xử lý gốc "+f(d.baseline)+" triệu; hiện tại "+f(d.current)+" triệu.");
+ for(let m=1;m<=10;m++){let a=xs.filter(c=>c.month===m);lines.push("Tháng "+m+": "+a.length+" HS, xong "+a.filter(c=>C.status(c)==="CLOSED").length+", bị trả "+a.filter(c=>C.status(c)==="REVIEW").length+", gốc "+f(C.baseSum(a,"processed"))+", hiện tại "+f(C.sum(a,"processed"))+" triệu")}
+ lines.push("Các hồ sơ tồn ưu tiên:");
+ for(let c of xs.filter(c=>C.status(c)!=="CLOSED").sort((a,b)=>(C.status(a)==="REVIEW"?0:1)-(C.status(b)==="REVIEW"?0:1)).slice(0,20))lines.push(c.id+" | "+c.title+" | "+C.phase(c)+" | "+C.holder(c)+" | "+(C.issues(c)[0]||""));
+ }
+ lines.push("","III. TÀI CHÍNH – KẾ TOÁN");
+ const fcs=C.cases("finance");lines.push("Giá trị xử lý gốc 31/10: "+f(C.baseSum(fcs,"processed"))+" triệu; hiện tại "+f(C.sum(fcs,"processed"))+" triệu.");
+ for(let m=1;m<=10;m++){let a=fcs.filter(c=>c.month===m);lines.push("T"+m+": "+a.length+" HS; gốc "+f(C.baseSum(a,"processed"))+" triệu; hiện tại "+f(C.sum(a,"processed"))+" triệu")}
+ lines.push("","IV. DỰ ÁN ĐẦU TƯ");
+ for(let p of C.projects())lines.push(p.id+" – "+p.name+"; tổng mức "+f(p.budget)+" triệu; hoàn tất "+p.closed+"/"+p.cases.length+" hồ sơ; giải ngân gốc "+f(p.baseline)+", hiện tại "+f(p.current)+" triệu; bị trả "+p.review);
+ lines.push("","V. ĐIỂM NGHẼN – PHÂN CÔNG");
+ for(let i=0;i<7;i++){let a=open.filter(c=>C.index(c)===i);lines.push("B"+(i+1)+": "+a.length+" việc, trong đó trả bổ sung "+a.filter(c=>C.status(c)==="REVIEW").length)}
+ let owners=new Map();for(let c of open)owners.set(C.holder(c),(owners.get(C.holder(c))||0)+1);
+ for(let [name,count] of [...owners].sort((a,b)=>b[1]-a[1]).slice(0,30))lines.push(name+": "+count+" hồ sơ");
+ lines.push("","VI. NHẬT KÝ THAO TÁC",
+ "Tổng: "+C.data.events.length+"; chuyển việc: "+C.data.events.filter(e=>e.type==="ASSIGN").length+"; trả: "+C.data.events.filter(e=>e.type==="RETURN").length+"; trình lại: "+C.data.events.filter(e=>e.type==="RESUBMIT").length+"; báo cáo: "+C.data.events.filter(e=>e.type==="REPORT").length,
+ "Mọi quyết định chỉ nằm trên trình duyệt và không có giá trị phê duyệt thật. Không cộng ngang giá trị giữa tám lĩnh vực vì có khả năng trùng nghiệp vụ.");
+ return lines.join("\n");
+}
+
 function renderDomains(){
  const rows=C.domains();
  metric("domainSummary",[["Lĩnh vực",rows.length],["Số hồ sơ",C.all().length],["Hoàn tất",rows.reduce((n,x)=>n+x.closed,0)],["Bị trả",rows.reduce((n,x)=>n+x.review,0)],["Số thao tác",C.data.events.filter(x=>x.type!=="VERIFY").length]]);
@@ -62,6 +94,9 @@ function renderDomains(){
  const xs=C.cases(filters.reportDomain),name=C.manifest.domains.find(x=>x.key===filters.reportDomain)?.name||"",base=C.baseSum(xs,"processed"),cur=C.sum(xs,"processed");
  const group=[...new Set(xs.map(x=>x.type))].map(n=>{let a=xs.filter(c=>c.type===n);return[n,a.length,f(C.baseSum(a,"processed")),f(C.sum(a,"processed"))]});
  $("domainDetail").innerHTML='<div class="info"><b>'+E(name)+'</b> · '+xs.length+' hồ sơ. Giá trị đã xử lý gốc '+f(base)+' triệu, hiện tại '+f(cur)+' triệu, điều chỉnh '+f(cur-base)+' triệu. *Không cộng ngang các lĩnh vực để thành chi phí kế toán.</div><h3>Khoản mục nghiệp vụ</h3><div class="tableScroll">'+table(["Khoản mục","Hồ sơ","Đã xử lý gốc","Hiện tại"],group.map(r=>r.map(E)))+'</div><h3 style="margin-top:16px">Hồ sơ, người giữ và lý do vướng</h3><div class="tableScroll">'+table(["Mã","Tháng","Tình huống","Tắc ở bước","Người giữ","Trạng thái","Giá trị hiện tại"],xs.map(c=>[btn(c),c.month,E(c.title),E(C.phase(c)),E(C.holder(c)),pill(C.status(c)),f(C.vals(c).processed)]))+'</div>';
+const monthly=Array.from({length:10},(_,i)=>{let a=xs.filter(c=>c.month===i+1);return[i+1,a.length,a.filter(c=>C.status(c)==="CLOSED").length,a.filter(c=>C.status(c)==="REVIEW").length,f(C.baseSum(a,"processed")),f(C.sum(a,"processed"))]});
+ const owners=new Map();for(let c of xs.filter(c=>C.status(c)!=="CLOSED"))owners.set(C.holder(c),(owners.get(C.holder(c))||0)+1);
+ $("domainDetail").innerHTML+='<h3 style="margin-top:16px">Tiến độ theo từng tháng</h3><div class="tableScroll">'+table(["Tháng","Hồ sơ","Xong","Trả","Gốc","Hiện tại"],monthly.map(r=>r.map(E)))+'</div><h3 style="margin-top:16px">Người đang giữ việc</h3><div class="tableScroll">'+table(["Người","Số hồ sơ đang giữ"],[...owners].sort((a,b)=>b[1]-a[1]).slice(0,20).map(r=>r.map(E)))+'</div>';
 }
 function renderFinance(){
  const xs=C.cases("finance"),base=C.baseSum(xs,"processed"),cur=C.sum(xs,"processed");
@@ -98,6 +133,7 @@ function render(){if(!C.manifest)return;const fn={dashboard:renderDashboard,task
 function show(t){tab=t;document.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("selected",x.dataset.tab===t));document.querySelectorAll(".page").forEach(x=>x.hidden=x.id!=="p-"+t);render();window.scrollTo({top:0,behavior:"smooth"})}
 async function action(name){
  try{
+ if(name==="fullReport"){download("CTY-AI-3.3-BAO-CAO-TOAN-DIEN.txt",fullReport());return}
  if(name==="syncall"){let btn=$("syncBtn");btn.disabled=true;let r=await C.verifyAll((n,total,failed)=>btn.textContent="Đã đọc "+n+"/"+total+" · lỗi "+failed);btn.disabled=false;btn.textContent="↻ Đối chiếu 360 TXT";render();toast("Đã đối chiếu "+r.ok+" TXT; lỗi "+r.fail);return}
  if(["complete","assign","return","comment","resetCase"].includes(name)){
  if(name==="resetCase"){if(!confirm("Khôi phục về kịch bản gốc? Nhật ký thao tác vẫn được giữ."))return;await C.act(selected,"reset",{actor:"Điều phối mô phỏng"});}
@@ -131,6 +167,6 @@ async function boot(){try{
  $("restore").onchange=async e=>{try{let f=e.target.files?.[0];if(!f)return;if(f.size>8000000)throw Error("Backup quá lớn");C.setData(JSON.parse(await f.text()));render();toast("Đã khôi phục")}catch(err){toast(err.message)}e.target.value=""};
  document.addEventListener("click",handleClick);show("dashboard");
  }catch(e){$("error").hidden=false;$("error").textContent="Không đọc được cơ sở dữ liệu CTY AI 3.2: "+e.message}}
-window.CTY33UI={boot,render,show,reportRows,taskRows,template,action};
+window.CTY33UI={boot,render,show,reportRows,taskRows,template,action,fullReport};
 boot();
 })();
