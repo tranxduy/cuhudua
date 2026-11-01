@@ -1,0 +1,27 @@
+CTY AI 3.2 – MẪU HỒ SƠ TXT TÌNH HUỐNG BÊN NGOÀI (DỮ LIỆU HƯ CẤU)
+MÃ_HỒ_SƠ: CUSTOM-FIN-01
+TÊN_HỒ_SƠ: Chi phí mua vật tư tháng 10 đã hoàn thành
+LĨNH_VỰC: finance
+THÁNG: 10
+NĂM: 2026
+ĐƠN_VỊ: TCKT
+NHÂN_VIÊN_GIẢ: Nguyễn Văn Mẫu
+LOẠI_KHOẢN_MỤC: Chi phí vật tư
+GIÁ_TRỊ_ĐỀ_NGHỊ: 120
+DỰ_TOÁN_HỒ_SƠ: 135
+GIÁ_TRỊ_ĐÃ_DUYỆT: 120
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 120
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 100
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+
+
+01. PHIẾU ĐỀ NGHỊ
+Tình huống: Có dự toán 135 triệu, chứng từ đủ theo giả định, hoàn tất giá trị 120 triệu; thanh toán 100 triệu, còn 20 triệu phải trả. Mong muốn báo cáo chi phí tháng 10 tăng thêm 120 triệu.
+02. BẢNG DỰ TOÁN VÀ HỒ SƠ ĐÍNH KÈM
+Bảng dự toán, hóa đơn, hợp đồng, biên bản và quyết định dưới đây hoàn toàn là tên tài liệu giả; chưa có bản ký thực.
+03. BƯỚC THỰC HIỆN
+B1 Nhân viên lập đề nghị → B2 Trưởng bộ phận kiểm tra → B3 Agent chuyên môn → B4 Kiểm soát chéo → B5 Người có thẩm quyền giả định → B6 Hoàn tất/đình chỉ → B7 Báo cáo.
+04. KẾT QUẢ VÀ KIẾN NGHỊ
+Khi TRẠNG_THÁI chưa là CLOSED thì GIÁ_TRỊ_ĐÃ_XỬ_LÝ phải bằng 0. Người dùng thay đổi mã hồ sơ để tránh trùng với tình huống đã nhập.
+KHÔNG DÙNG HỒ SƠ GIẢ ĐỂ PHÊ DUYỆT, THANH TOÁN HAY HẠCH TOÁN THỰC TẾ.

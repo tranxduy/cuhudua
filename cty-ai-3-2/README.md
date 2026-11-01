@@ -1,58 +1,41 @@
-# CTY AI 3.2 — Hồ sơ TXT & mạng lưới Agent
+# CTY AI 3.2 – 360 hồ sơ TXT và báo cáo lũy kế 10 tháng
 
-> **Public demo bằng dữ liệu hư cấu.** Các tệp TXT là tệp thật nằm trong kho GitHub nhưng **không phải hồ sơ thật của Công ty Thủy điện Geruco Sông Côn**. Không có API AI, đăng nhập, phân quyền máy chủ, lưu trữ tập trung, ký số hoặc quyền thanh toán.
+**Trang web:** https://tranxduy.github.io/cuhudua/cty-ai-3-2/
 
-## 1. Đường dẫn
+## Quy mô
+- **8 lĩnh vực × 45 hồ sơ = 360 hồ sơ TXT riêng**, từ HS-01-01 đến HS-08-45.
+- **6 đơn vị giả định**, mỗi đơn vị có trưởng nhóm và 5 nhân viên; Tổng Giám đốc và Phó Tổng Giám đốc có tên giả. Kế toán trưởng là người đứng đầu nhóm TCKT giả định.
+- **12 Agent** phối hợp theo 8 sơ đồ phụ thuộc; Agent Kiểm soát chéo và Agent Thư ký chạy sau các Agent chuyên môn.
+- 5 dự án đầu tư giả định, mỗi dự án 9 hồ sơ.
 
-- Web dự kiến GitHub Pages: https://tranxduy.github.io/cuhudua/cty-ai-3-2/
-- Mã nguồn: `index.html`
-- Danh mục: `manifest.json`
-- 40 tệp TXT thực: `hosos/HS-01-01.txt` đến `hosos/HS-08-05.txt`
+## Cách thực hành
+1. Vào web, bấm **Đọc & xử lý 360 hồ sơ**. Hệ thống tải 360 TXT công khai (mỗi hồ sơ một file); tệp tải lỗi bị loại khỏi kết quả và ghi nhật ký lỗi.
+2. Vào **Báo cáo chi phí**: số liệu đến 31/10/2026, xem chi phí đề nghị, được duyệt, đã hoàn tất và đã thanh toán; xem theo 10 tháng và khoản mục. Đơn vị: **triệu đồng giả định**. Chỉ giá trị trong TXT có trạng thái CLOSED và khớp manifest mới tính là đã xử lý.
+3. Vào **Dự án đầu tư**: tổng mức dự án chỉ tính một lần, giải ngân từ hồ sơ hoàn tất, xem tiến độ từ hồ sơ gần nhất.
+4. Vào **8 lĩnh vực**: báo cáo theo lĩnh vực; tránh cộng chồng các nghiệp vụ.
+5. Vào **Hồ sơ TXT**: xem từng dòng có số dòng nguồn; chạy riêng từng Agent; xem nhật ký 7 bước ở tệp và handoff có cấu trúc.
+6. Vào **Nhập tình huống** tải mẫu TXT, sửa mã hồ sơ mới và tải lên để cho Agent xử lý thử; hồ sơ nhập được lưu **trên trình duyệt**, không tự tải lên GitHub.
+7. Vào **Nhật ký** xuất CSV hoặc sao lưu JSON.
 
-## 2. Quy mô
+## Quy tắc về số liệu
+- `GIÁ_TRỊ_ĐỀ_NGHỊ`: toàn bộ nhu cầu trong hồ sơ; không phải đã duyệt hoặc đã chi.
+- `GIÁ_TRỊ_ĐÃ_DUYỆT`: số được duyệt *theo hồ sơ giả*.
+- `GIÁ_TRỊ_ĐÃ_XỬ_LÝ`: chỉ khác 0 khi `TRẠNG_THÁI: CLOSED`; không vượt số đã duyệt; được đưa vào báo cáo chi phí/giải ngân.
+- `GIÁ_TRỊ_ĐÃ_THANH_TOÁN`: phần đã thanh toán giả, không vượt số đã xử lý.
+- `DỰ_TOÁN_HỒ_SƠ`: dự toán riêng, không dùng thay tổng mức dự án.
+- `TỔNG_MỨC_DỰ_ÁN` và `MÃ_DỰ_ÁN`: dành cho TXT dự án nhập ngoài; tổng mức chỉ tính một lần mỗi mã.
+- Sản lượng và doanh thu nhập ngoài qua `ĐIỆN_NĂNG_THỰC_HIỆN` và `DOANH_THU_DIEN`.
 
-- 40 hồ sơ TXT, 8 nhóm nghiệp vụ × 5 hồ sơ.
-- 6 nhóm đơn vị mô phỏng, mỗi nhóm có **1 trưởng đơn vị và 5 nhân viên giả**. Có Kế toán trưởng là trưởng nhóm TCKT.
-- 2 chức danh điều hành: Tổng Giám đốc và Phó Tổng Giám đốc (tên giả).
-- Tổng cộng **38 cá nhân giả**, **12 Agent chuyên trách** và bộ điều phối.
-- Các nhóm: TCKT, QLĐT&KD, Tổng hợp, phân xưởng Vận hành, phân xưởng Sửa chữa, tổ An toàn – Môi trường (tổ sau là đơn vị chức năng giả lập, không xác nhận là phòng thật).
+## Kết cấu dữ liệu
+- `manifest.json`: chỉ mục 360 hồ sơ, đơn vị và dự án.
+- `hosos/HS-XX-YY.txt`: **360 tệp TXT** từ đề nghị, dự toán, trạng thái chứng từ, nhật ký 7 bước và kết quả đến tháng.
+- `app.js`, `style.css`, `index.html`: mã nguồn chạy trực tiếp trong trình duyệt.
+- `mau-ho-so/`: 4 tình huống TXT có thể tải về và nhập lại.
+- `archive-40/`: bản CTY AI 3.2 cũ 40 hồ sơ, bao gồm tệp ứng dụng và manifest riêng để so sánh.
 
-## 3. Các chức năng sử dụng
+## Nguồn tham chiếu và giới hạn
+Chỉ sử dụng các nhóm nghiệp vụ và nguyên tắc phù hợp định hướng QĐ29/QĐ-HĐQT.GSC ngày 31/12/2025 và QĐ21/QĐ-HĐQT.GSC ngày 06/12/2024. QĐ21/2024 **chưa xác minh tình trạng hiệu lực hiện nay**. Không tuyên bố toàn bộ điều khoản QĐ29 đã được soát 100%.
 
-**Điều hành:** xem số hồ sơ, kết quả, số cần xử lý, lỗi tải và công việc, chạy 40 tệp bằng một nút.
+**Đây là demo.** Tất cả người, dự án, thời điểm, số liệu và tài liệu đều giả. Agent chỉ là mã quy tắc; không có AI LLM thực, OCR, xác thực chữ ký, cơ sở dữ liệu tập trung, đăng nhập hay kết nối kế toán. Không sử dụng để phê duyệt, hạch toán, thanh toán hay kiểm soát an toàn nhà máy thực tế.
 
-**Hồ sơ TXT:** danh sách/tìm/lọc; xem tệp gốc được tải bằng `fetch`, số dòng, mã hồ sơ, nút đọc và tải TXT; chạy từng Agent hoặc toàn bộ, xuất biên bản TXT theo mã hồ sơ. Tệp không tải được được ghi lỗi thay vì tạo kết quả ảo.
-
-**Agent:** sơ đồ phụ thuộc cho 8 luồng, thực hiện nhận/bàn giao và phân tích từ trường dữ liệu nằm trong nội dung TXT, lưu kết quả vào hồ sơ dùng chung. Agent Kiểm soát chéo hợp nhất các phát hiện; Agent Thư ký tạo đầu việc. Người dùng ghi ý kiến nhưng không thay thế phê duyệt thật.
-
-**Công việc:** tự sinh từ cờ tình huống, một mã `caseId:flag`/việc, tránh trùng khi chạy lại. Đánh dấu hoàn thành và xuất CSV.
-
-**Nhân sự:** cơ cấu giả định theo từng đơn vị, trưởng phòng/quản đốc/tổ trưởng và năm nhân viên, lãnh đạo công ty.
-
-**Truy vấn:** tìm theo từ khóa, chỉ mục, nội dung TXT đã đọc, người phụ trách, trạng thái; một số câu hỏi tiếng Việt xử lý bằng quy tắc. Không phải mô hình AI trò chuyện tự do.
-
-**Báo cáo:** toàn bộ hồ sơ, nhóm nghiệp vụ, số lần chạy Agent, số bàn giao, cảnh báo và trạng thái; xuất CSV/JSON và in/Lưu PDF từ trình duyệt.
-
-**Nhật ký:** INGEST, AGENT, HANDOFF, FINDING, TASK, REVIEW, ERROR; lọc và xuất CSV, sao lưu/khôi phục JSON.
-
-**Quy tắc:** danh mục kiểm soát tham chiếu QĐ29/2025 và QĐ21/2024 có cảnh báo tình trạng xác minh, không tự công nhận một hồ sơ là hợp lệ.
-
-## 4. Quy trình dùng trong 5 phút
-
-1. Mở trang web, kiểm tra `manifest.json` đã nạp danh mục 40 tệp.
-2. Bấm **Đọc và chạy 40 hồ sơ**.
-3. Vào **Hồ sơ TXT**, chọn một hồ sơ; xem nội dung nguồn và các đoạn trích có số dòng được Agent sử dụng.
-4. Vào **Công việc** xem việc Agent Thư ký tự sinh; vào **Mạng Agent** để nhìn thấy các quan hệ phụ thuộc.
-5. Vào **Báo cáo** hoặc **Nhật ký** để xuất kết quả.
-
-## 5. Dữ liệu và hạn chế
-
-- Dữ liệu trạng thái, log, công việc và TXT nhập thêm lưu trong `localStorage` trên từng thiết bị, **không đồng bộ**.
-- Tệp TXT công khai chỉ phục vụ kiểm thử, không có chứng từ gốc, chữ ký, bằng chứng phê duyệt hoặc số liệu vận hành thật.
-- “Agent đọc TXT” hiện là bộ phân tích mã JavaScript có cấu trúc và quy tắc cảnh báo, chưa sử dụng mô hình ngôn ngữ lớn.
-- Nút “Đã chạy” chỉ nói quy trình đã chạy, **không có nghĩa hồ sơ hợp pháp/hợp lệ**.
-- Những điều khoản trọng yếu của QĐ29 cần đối chiếu bản ký đầy đủ trước khi cho phép chặn hồ sơ thật; QĐ21/2024 phải xác minh hiệu lực hiện hành.
-- Khi làm bản nội bộ phải có backend, xác thực, quyền theo vị trí, nhật ký bất biến và thiết kế kết nối riêng; không triển khai dữ liệu thật trên trang GitHub Pages Public.
-
-## 6. Kiểm thử và chứng cứ
-Xem `TEST-REPORT-3.2.md`. Lưu ý: kiểm thử JavaScript trong môi trường DOM mô phỏng, **chưa có xác nhận kiểm thử thao tác trình duyệt thực tế hay HTTP GitHub Pages công khai**.
+Để dùng dữ liệu GSC thật: phải tách bản nội bộ, có máy chủ riêng, phân quyền và xác minh căn cứ bằng tài liệu ký.

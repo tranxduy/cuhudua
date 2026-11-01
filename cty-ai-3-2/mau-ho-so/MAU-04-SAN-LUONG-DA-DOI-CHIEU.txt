@@ -1,0 +1,28 @@
+CTY AI 3.2 – MẪU HỒ SƠ TXT TÌNH HUỐNG BÊN NGOÀI (DỮ LIỆU HƯ CẤU)
+MÃ_HỒ_SƠ: CUSTOM-POW-04
+TÊN_HỒ_SƠ: Sản lượng điện tổ máy thử nghiệm tháng 10
+LĨNH_VỰC: production
+THÁNG: 10
+NĂM: 2026
+ĐƠN_VỊ: VH
+NHÂN_VIÊN_GIẢ: Nguyễn Văn Mẫu
+LOẠI_KHOẢN_MỤC: Sản lượng kWh
+GIÁ_TRỊ_ĐỀ_NGHỊ: 0
+DỰ_TOÁN_HỒ_SƠ: 0
+GIÁ_TRỊ_ĐÃ_DUYỆT: 0
+GIÁ_TRỊ_ĐÃ_XỬ_LÝ: 0
+GIÁ_TRỊ_ĐÃ_THANH_TOÁN: 0
+TRẠNG_THÁI: CLOSED
+CỜ_KIỂM_TRA: KHONG
+ĐIỆN_NĂNG_THỰC_HIỆN: 1250000
+DOANH_THU_DIEN: 1150
+
+01. PHIẾU ĐỀ NGHỊ
+Tình huống: Hồ sơ sản xuất mẫu đã được đối chiếu theo giả định, sản lượng thực hiện 1.250.000 kWh và doanh thu điện 1.150 triệu đồng. Báo cáo sản lượng phải cộng riêng chỉ số này.
+02. BẢNG DỰ TOÁN VÀ HỒ SƠ ĐÍNH KÈM
+Bảng dự toán, hóa đơn, hợp đồng, biên bản và quyết định dưới đây hoàn toàn là tên tài liệu giả; chưa có bản ký thực.
+03. BƯỚC THỰC HIỆN
+B1 Nhân viên lập đề nghị → B2 Trưởng bộ phận kiểm tra → B3 Agent chuyên môn → B4 Kiểm soát chéo → B5 Người có thẩm quyền giả định → B6 Hoàn tất/đình chỉ → B7 Báo cáo.
+04. KẾT QUẢ VÀ KIẾN NGHỊ
+Khi TRẠNG_THÁI chưa là CLOSED thì GIÁ_TRỊ_ĐÃ_XỬ_LÝ phải bằng 0. Người dùng thay đổi mã hồ sơ để tránh trùng với tình huống đã nhập.
+KHÔNG DÙNG HỒ SƠ GIẢ ĐỂ PHÊ DUYỆT, THANH TOÁN HAY HẠCH TOÁN THỰC TẾ.
