@@ -159,7 +159,7 @@ const safeExport=(filename,str,mime)=>{const blob=new Blob([str],{type:mime||"te
 const optRules=(c,record)=>RULES.filter(r=>r.categories.includes(c.category)&&(!r.modes||r.modes.includes(record.method||"none"))&&(!r.range||(Number.isFinite(Number(record.amount))&&Number(record.amount)>=r.range[0]&&Number(record.amount)<r.range[1])));
 const save=()=>{localStorage.setItem(KEY,JSON.stringify(data))};
 const cur=()=>app.getCase(el("v31-case").value);
-const recordFor=id=>data.records[id]||(data.records[id]={method:"none",amount:0,estimate:"",award:"",buyer:"",appraiser:"",fields:{},history:[]});
+const recordFor=id=>data.records[id]||(data.records[id]={method:app.getCase(id)?.category==="procurement"?"other":"none",amount:Number(app.getCase(id)?.amount||0),estimate:"",award:"",buyer:"",appraiser:"",fields:{},history:[]});
 const init=()=>{
 const all=app.getState().cases;el("v31-case").innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.id)+" · "+esc(c.title)+'</option>').join("");
 el("v31-case").value=all.find(c=>c.category==="procurement")?.id||all[0]?.id||"";
@@ -234,12 +234,12 @@ el("v31-toprisk").innerHTML=cases.slice().sort((a,b)=>app.issued(b).length-app.i
 }
 function exportReport(format){const cases=app.getState().cases,rows=[["Mã hồ sơ","Tên","Nghiệp vụ","Trạng thái","Cảnh báo Agent","Cảnh báo kiểm tra chứng từ","Cần xác minh"]];for(const c of cases){const h=data.records[c.id]?.history||[],v=h.at(-1);rows.push([c.id,c.title,c.category,c.status,app.issued(c).length,v?.missing??"",v?.unknown??""])}if(format==="json")safeExport("CTY-AI-3.1-report.json",JSON.stringify(rows,null,2),"application/json");else safeExport("CTY-AI-3.1-report.csv",csv(rows),"text/csv;charset=utf-8")}
 el("v31-print").onclick=()=>window.print();el("v31-reportcsv").onclick=()=>exportReport("csv");el("v31-reportjson").onclick=()=>exportReport("json");
-function allLogs(){return app.getState().cases.flatMap(c=>(c.events||[]).map(e=>({caseId:c.id,...e}))).concat(data.events).sort((a,b)=>String(b.at).localeCompare(String(a.at)))}
+function allLogs(){return app.getState().cases.flatMap(c=>(c.events||[]).map(e=>({caseId:c.id,...e}))).sort((a,b)=>String(b.at).localeCompare(String(a.at)))}
 function renderLogs(){const kind=el("v31-logfilter").value,term=el("v31-logcase").value.trim().toLowerCase(),rows=allLogs().filter(e=>(!kind||e.kind===kind)&&(!term||e.caseId.toLowerCase().includes(term)));el("v31-logcount").textContent=rows.length+" sự kiện, hiển thị tối đa 300";el("v31-loglist").innerHTML=rows.slice(0,300).map(e=>'<div class="event"><small>'+esc(e.caseId)+" · "+esc(new Date(e.at).toLocaleString("vi-VN"))+" · "+esc(e.kind)+'</small><b>'+esc(e.from)+" → "+esc(e.to)+'</b><span>'+esc(e.msg)+'</span></div>').join("")||'<p class="muted">Chưa có sự kiện.</p>';}
 el("v31-logfilter").onchange=renderLogs;el("v31-logcase").oninput=renderLogs;
 el("v31-logcsv").onclick=()=>safeExport("CTY-AI-3.1-logs.csv",csv([["Mã hồ sơ","Thời gian","Từ","Đến","Loại","Nội dung"],...allLogs().map(e=>[e.caseId,e.at,e.from,e.to,e.kind,e.msg])]),"text/csv;charset=utf-8");
-const oldEvent=document.addEventListener;const navButtons=[...document.querySelectorAll('[data-view="compliance"],[data-view="queries"],[data-view="reports"],[data-view="logs"]')];
-navButtons.forEach(b=>b.addEventListener("click",()=>{if(b.dataset.view==="compliance"){const caseId=cur()?.id,existing=data.records[caseId];if(!existing)paintChecks();else paintChecks()}if(b.dataset.view==="reports")renderReports();if(b.dataset.view==="logs")renderLogs()}));
+const navButtons=[...document.querySelectorAll('[data-view="compliance"],[data-view="queries"],[data-view="reports"],[data-view="logs"]')];
+navButtons.forEach(b=>b.addEventListener("click",()=>{if(b.dataset.view==="compliance"){const previous=el("v31-case").value;const all=app.getState().cases;el("v31-case").innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.id)+" · "+esc(c.title)+'</option>').join("");el("v31-case").value=all.some(c=>c.id===previous)?previous:all[0]?.id||"";paintChecks()}if(b.dataset.view==="reports")renderReports();if(b.dataset.view==="logs")renderLogs()}));
 init();paintChecks();renderReports();renderLogs();
 })();
 </script></body></html>
