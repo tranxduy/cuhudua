@@ -38,7 +38,7 @@ return error}
 function getEvidence(c,name){const x=cache.get(c.id);if(!x)return null;const rows=x.raw.split(/\r?\n/),i=rows.findIndex(v=>v.startsWith(name+":"));return i<0?null:{file:c.path||"TXT nhập",line:i+1,text:rows[i]}}
 async function read(c){if(cache.has(c.id))return cache.get(c.id);let raw;
 if(c.local)raw=c.sourceText;else{let response=await fetch(c.path,{cache:"no-cache"});if(!response.ok)throw Error("Không tải được "+c.path+" (HTTP "+response.status+")");raw=await response.text()}
-if(raw.length<250)throw Error("Tệp TXT quá ngắn");const p=parse(raw),err=validate(c,p);if(err.length)throw Error(err.join("; "));
+if(raw.length<250)throw Error("Tệp TXT quá ngắn");const p=parse(raw),err=[...validate(c,p),...validateFormContent(c,raw)];if(err.length)throw Error(err.join("; "));
 const d={raw,p};cache.set(c.id,d);event(c,"INGEST","TXT","Điều phối","Đọc và đối chiếu "+p.lines+" dòng trong tệp "+(c.path||"TXT cục bộ"),{file:c.path||"local",line:2});return d}
 function next(c){let s=state(c);return FLOW[c.domain].find(([id,deps])=>!s.results[id]&&deps.every(d=>s.results[d]))}
 function issue(c,code,fieldName,detail){return {code,text:detail||FLAGS[code]||code,evidence:getEvidence(c,fieldName||"CỜ_KIỂM_TRA")}}
@@ -60,13 +60,13 @@ s.results[id]={id,deps,findings,comment,at:new Date().toISOString()};event(c,"AG
 for(let f of findings)event(c,"FINDING",id,"audit",f.text,f.evidence);
 if(!next(c)){s.parsed=p;s.finished=true;s.status={CLOSED:"closed",APPROVED:"pending",PENDING:"pending",REVIEW:"review"}[p.status];event(c,"DECISION","TXT giả định","Con người",p.status+" – dữ liệu quyết định có sẵn trong TXT; chưa có ký duyệt thực.");}
 else s.status="running";return true}
-async function runCase(c,single,deferSave=false){try{const d=await read(c);if(state(c).finished&&!single)return true;let n=0;if(single)doAgent(c,d);else while(next(c)){doAgent(c,d);if(++n>20)throw Error("Agent chạy quá giới hạn");}if(!deferSave)save();return true}
+async function runCase(c,single,deferSave=false){try{const d=await read(c);logSimulatedStages(c);if(state(c).finished&&!single)return true;let n=0;if(single)doAgent(c,d);else while(next(c)){doAgent(c,d);if(++n>20)throw Error("Agent chạy quá giới hạn");}if(!deferSave)save();return true}
 catch(e){let s=state(c);s.status="failed";s.finished=false;s.parsed=null;event(c,"ERROR","Loader","Người kiểm tra",e.message);if(!deferSave)save();return false}}
 async function runAll(){if(busy||!M)return;busy=true;let queue=cases().filter(c=>!state(c).finished),pos=0,done=0,failed=0;
 $("progressNote").textContent="Đang đọc tệp TXT và xử lý hồ sơ…";
 async function worker(){while(pos<queue.length){let c=queue[pos++],ok=await runCase(c,false,true);done++;if(!ok)failed++;if(done%20===0||done===queue.length){$("progressNote").textContent="Hoàn tất "+done+"/"+queue.length+" hồ sơ mới; lỗi "+failed+".";save();let ready=cases().filter(c=>state(c).finished).length;$("progressCount").textContent=ready+"/"+cases().length;$("progressBar").style.width=(ready/cases().length*100)+"%";await Promise.resolve()}}}
 await Promise.all(Array.from({length:Math.min(12,queue.length||1)},()=>worker()));busy=false;save();render();toast("Đã chạy "+done+" hồ sơ, lỗi "+failed+". Mở Báo cáo chi phí hoặc Dự án.");}
-function valid(domain){return cases().filter(c=>(!domain||c.domain===domain)&&state(c).finished&&state(c).parsed&&state(c).parsed.year===2026&&state(c).parsed.month<=10)}
+function valid(domain){return cases().filter(c=>(!domain||c.domain===domain)&&state(c).finished&&state(c).parsed&&state(c).parsed.year===2026&&state(c).parsed.month<=10&&(c.status!=="CLOSED"||stageList(c).every(x=>x.status==="DONE")))}
 function total(arr,key){return arr.reduce((sum,c)=>sum+(state(c).parsed?.[key]||0),0)}
 function count(domain){return cases().filter(c=>!domain||c.domain===domain).length}
 function coverage(domain){return valid(domain).length+"/"+count(domain)}
@@ -121,7 +121,39 @@ function renderPeople(){$("executives").innerHTML=M.executives.map(p=>'<div clas
 $("org").innerHTML=M.departments.map(d=>'<div class="orgbox"><b>'+E(d.name)+'</b><small>'+E(d.manager)+" · "+E(d.position)+'</small>'+d.staff.map(n=>'<div class="person">'+E(n)+'<small>Nhân viên giả</small></div>').join("")+'</div>').join("")}
 function renderLogs(){let type=$("logType").value,term=$("logSearch").value.toLowerCase(),items=db.events.filter(e=>(!type||e.type===type)&&(!term||e.caseId.toLowerCase().includes(term)));
 $("logCount").textContent=items.length+" sự kiện";$("logsList").innerHTML=items.slice(-200).reverse().map(e=>'<div class="event '+(e.type==="ERROR"?"error":"")+'"><b>'+E(e.caseId)+" · "+E(e.type)+" "+E(e.from)+" → "+E(e.to)+'</b><span>'+E(e.description)+'</span><small>'+new Date(e.time).toLocaleString("vi-VN")+'</small></div>').join("")}
-function render(){if(!M)return;renderDashboard();renderCaseList();renderCase();renderFinance();renderProjects();renderReports();renderAgents();renderTasks();renderPeople();renderLogs()}
+
+const STAGE_NAMES=["Nhân viên lập dự thảo","Trưởng bộ phận trình duyệt","TCKT kiểm soát và đồng ý trình","Tổng Giám đốc phê duyệt","Thực hiện / nghiệm thu","Kế toán ghi nhận","Cập nhật báo cáo kỳ"];
+let activeForm=0;
+function stageList(c){
+ if(Array.isArray(c.workflow)&&c.workflow.length===7)return c.workflow;
+ const mgr=M?.departments?.find(d=>d.code===c.dept)?.manager||"Trưởng bộ phận giả",ceo=M?.executives?.find(d=>d.role==="Tổng Giám đốc")?.name||"TGĐ giả";
+ const staff=M?.departments?.find(d=>d.code==="TCKT")?.staff||[];
+ const actors=[c.owner,mgr,staff.find(n=>n!==c.owner)||"Người kiểm soát TCKT",ceo,c.owner,staff[1]||"Kế toán giả",staff[2]||"Người tổng hợp giả"];
+ const stop=c.status==="CLOSED"?7:c.status==="APPROVED"?4:c.status==="PENDING"?3:2;
+ return STAGE_NAMES.map((title,i)=>({order:i+1,title,actor:actors[i],role:STAGE_NAMES[i],code:["DRAFT","MANAGER","FINANCE","CEO","EXECUTION","ACCOUNTING","REPORT"][i],datetime:null,status:i<stop?"DONE":c.status==="REVIEW"&&i===stop?"RETURNED":i===stop?"WAITING":"NOT_STARTED",formId:"BM"+(i+1)+"-"+c.id,remarks:"Mẫu trình duyệt tự dựng từ TXT nhập bên ngoài; chưa có chữ ký hoặc ngày xử lý thật"}));
+}
+function extractForm(c,n){
+ const doc=cache.get(c.id),v=String(n+1).padStart(2,"0"),h="===== BIỂU MẪU "+v+" |",end="===== KẾT THÚC BIỂU MẪU "+v+" =====";
+ if(doc){const a=doc.raw.indexOf(h),b=doc.raw.indexOf(end,a);if(a>=0&&b>=a)return doc.raw.slice(a,b+end.length)}
+ const step=stageList(c)[n],p=state(c).parsed||c;
+ return ["CTY AI 3.2 – BIỂU MẪU DỰNG TỪ THÔNG TIN TXT, KHÔNG CÓ CHỮ KÝ THỰC","Số: "+step.formId+"/DEMO","Ngày: "+(step.datetime?step.datetime.slice(0,10):"CHƯA KHAI BÁO"),"Loại: "+step.title,"Mã hồ sơ: "+c.id,"Người phụ trách giai đoạn: "+step.actor,"Trạng thái mô phỏng: "+step.status,"Nội dung: "+c.title,"Đề nghị: "+num(p.proposed)+" triệu đồng","Được duyệt giả định: "+num(p.approved)+" triệu đồng","Đã xử lý giả định: "+num(p.processed)+" triệu đồng","Lưu ý: mẫu tự dựng; cần cung cấp biểu mẫu riêng nếu muốn xác minh tài liệu từng bước."].join("\n");
+}
+function logSimulatedStages(c){
+ const s=state(c);if(s.stageLogged)return;
+ for(const x of stageList(c)){if(x.status==="NOT_STARTED")continue;
+ const when=x.datetime?x.datetime.slice(0,10):"chưa có ngày";
+ event(c,"STAGE",x.actor,x.code,"Bước "+x.order+" – "+x.title+" – "+x.status+"; thời điểm giả định: "+when+"; mã biểu mẫu "+x.formId,{file:c.path||"local",formId:x.formId,scenarioDate:x.datetime});
+ }
+ s.stageLogged=true;
+}
+function validateFormContent(c,raw){
+ if(c.local)return[];
+ let errors=[];if((raw.match(/===== BIỂU MẪU \d{2} \|/g)||[]).length!==7)errors.push("Tệp thiếu một hoặc nhiều biểu mẫu 01–07");
+ for(let x of stageList(c)){if(!raw.includes("BƯỚC "+x.order+":"))errors.push("Thiếu nhật ký bước "+x.order);if(!raw.includes(x.formId))errors.push("Thiếu mã phiếu "+x.formId);if(x.datetime&&!raw.includes(x.datetime.slice(0,10)))errors.push("Ngày giai đoạn "+x.order+" không trùng nguồn")}
+ return errors;
+}
+
+function render(){if(!M)return;renderDashboard();renderCaseList();renderCase();renderCaseWorkflow();renderWorkflowMatrix();renderFinance();renderProjects();renderReports();renderAgents();renderTasks();renderPeople();renderLogs()}
 function show(tab){view=tab;document.querySelectorAll("[data-tab]").forEach(b=>b.classList.toggle("selected",b.dataset.tab===tab));document.querySelectorAll(".page").forEach(p=>p.hidden=p.id!=="p-"+tab);render();window.scrollTo({top:0,behavior:"smooth"})}
 function csv(rows){return "\ufeff"+rows.map(r=>r.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n")}
 function download(name,content,mime){let b=new Blob([content],{type:mime||"text/plain;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
