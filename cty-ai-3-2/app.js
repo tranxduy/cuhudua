@@ -29,7 +29,7 @@ function field(raw,k){const t=raw.split(/\r?\n/).find(x=>x.startsWith(k+":"));re
 function parse(raw){const values={};for(const name of F)values[name]=field(raw,name);
 const N=n=>{let x=values[n];return x!==""&&/^-?\d+(\.\d+)?$/.test(x)?Number(x):NaN};
 return{id:values["MÃ_HỒ_SƠ"],title:values["TÊN_HỒ_SƠ"],domain:values["LĨNH_VỰC"],month:N("THÁNG"),year:N("NĂM"),dept:values["ĐƠN_VỊ"],owner:values["NHÂN_VIÊN_GIẢ"],type:values["LOẠI_KHOẢN_MỤC"],proposed:N("GIÁ_TRỊ_ĐỀ_NGHỊ"),budget:N("DỰ_TOÁN_HỒ_SƠ"),approved:N("GIÁ_TRỊ_ĐÃ_DUYỆT"),processed:N("GIÁ_TRỊ_ĐÃ_XỬ_LÝ"),paid:N("GIÁ_TRỊ_ĐÃ_THANH_TOÁN"),status:values["TRẠNG_THÁI"],flag:values["CỜ_KIỂM_TRA"],projectId:field(raw,"MÃ_DỰ_ÁN")||null,projectName:field(raw,"TÊN_DỰ_ÁN")||null,projectBudget:Number(field(raw,"TỔNG_MỨC_DỰ_ÁN")||0),progressPlan:Number(field(raw,"TIẾN_ĐỘ_KẾ_HOẠCH")||0),progressActual:Number(field(raw,"TIẾN_ĐỘ_THỰC_HIỆN")||0),kwhActual:Number(field(raw,"ĐIỆN_NĂNG_THỰC_HIỆN")||0),revenue:Number(field(raw,"DOANH_THU_DIEN")||0),lines:raw.split(/\r?\n/).length}}
-function validate(c,p){let error=[];if(p.id!==c.id||!p.title)error.push("Mã hoặc tên hồ sơ không khớp");if(!FLOW[p.domain])error.push("Lĩnh vực chưa hỗ trợ");if(p.year!==2026||!Number.isInteger(p.month)||p.month<1||p.month>12)error.push("Kỳ không hợp lệ");if(!["CLOSED","APPROVED","PENDING","REVIEW"].includes(p.status))error.push("Trạng thái không hợp lệ");
+function validate(c,p){let error=[];if(p.id!==c.id||!p.title||(!c.local&&p.title!==c.title))error.push("Mã hoặc tên hồ sơ không khớp");if(!FLOW[p.domain])error.push("Lĩnh vực chưa hỗ trợ");if(p.year!==2026||!Number.isInteger(p.month)||p.month<1||p.month>12)error.push("Kỳ không hợp lệ");if(!["CLOSED","APPROVED","PENDING","REVIEW"].includes(p.status))error.push("Trạng thái không hợp lệ");
 for(const k of ["proposed","budget","approved","processed","paid"])if(!Number.isFinite(p[k])||p[k]<0)error.push("Trường số "+k+" không hợp lệ");
 if(p.approved>p.proposed+.00001||p.processed>p.approved+.00001||p.paid>p.processed+.00001)error.push("Thứ tự số đề nghị/duyệt/xử lý/thanh toán sai");
 if(p.status!=="CLOSED"&&p.processed!==0)error.push("Hồ sơ chưa CLOSED nhưng có giá trị xử lý");
@@ -149,7 +149,7 @@ function logSimulatedStages(c){
 function validateFormContent(c,raw){
  if(c.local)return[];
  let errors=[];if((raw.match(/===== BIỂU MẪU \d{2} \|/g)||[]).length!==7)errors.push("Tệp thiếu một hoặc nhiều biểu mẫu 01–07");
- for(let x of stageList(c)){if(!raw.includes("BƯỚC "+x.order+":"))errors.push("Thiếu nhật ký bước "+x.order);if(!raw.includes(x.formId))errors.push("Thiếu mã phiếu "+x.formId);if(x.datetime&&!raw.includes(x.datetime.slice(0,10)))errors.push("Ngày giai đoạn "+x.order+" không trùng nguồn")}
+ for(let x of stageList(c)){if(!raw.includes("BƯỚC "+x.order+":"))errors.push("Thiếu nhật ký bước "+x.order);if(!raw.includes(" | "+x.status+" | "+x.actor+" | "+(x.datetime?x.datetime.slice(0,10):"CHƯA CÓ NGÀY")+" | "+x.formId))errors.push("Biên bản luân chuyển bước "+x.order+" không khớp nguồn");if(!raw.includes(x.formId))errors.push("Thiếu mã phiếu "+x.formId);if(x.datetime&&!raw.includes(x.datetime.slice(0,10)))errors.push("Ngày giai đoạn "+x.order+" không trùng nguồn")}
  return errors;
 }
 
@@ -173,7 +173,7 @@ function renderWorkflowMatrix(){
  $("workflowStageStats").innerHTML=STAGE_NAMES.map((title,i)=>{const xs=all.map(c=>stageList(c)[i]);return'<div class="barrow"><span>B'+(i+1)+' · '+E(title)+'</span><div class="bar"><i style="width:'+100*xs.filter(x=>x.status==="DONE").length/(total||1)+'%"></i></div><b>'+xs.filter(x=>x.status==="DONE").length+'/'+total+'</b></div>'}).join("");
  const statuses={DONE:"✓",RETURNED:"Trả lại",WAITING:"Chờ",NOT_STARTED:"–"};
  $("workflowTable").innerHTML='<table><thead><tr><th>Mã</th><th>Kỳ</th><th>Người lập</th><th>Trưởng bộ phận</th><th>TCKT</th><th>TGĐ</th><th>Thực hiện</th><th>Kế toán</th><th>Báo cáo</th></tr></thead><tbody>'+
- all.map(c=>'<tr><td><button class="ghost" data-open="'+E(c.id)+'">'+E(c.id)+'</button></td><td>'+c.month+'/2026</td>'+stageList(c).map((x,i)=>'<td title="'+E(x.actor+' · '+(x.datetime||"Chưa có ngày"))+'">'+E(statuses[x.status]||x.status)+'</td>').join("")+'</tr>').join("")+'</tbody></table>';
+ all.map(c=>'<tr><td><button class="ghost" data-open="'+E(c.id)+'">'+E(c.id)+'</button></td><td>'+c.month+'/2026</td>'+stageList(c).map((x,i)=>'<td><b>'+E(statuses[x.status]||x.status)+'</b><small style="display:block">'+E(x.actor)+'</small><small style="display:block">'+E(x.datetime?x.datetime.slice(0,10):"Chưa phát sinh")+'</small></td>').join("")+'</tr>').join("")+'</tbody></table>';
 }
 async function showForm(n){
  const c=byId(selected);if(!c)return;
